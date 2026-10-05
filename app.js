@@ -209,7 +209,7 @@ function ambiguityPanelHTML(){
     <label>Optional comment
       <textarea id="ambiguityComment" rows="2" placeholder="Anything you would like to add"></textarea>
     </label>
-    <button type="button" id="emailAmbiguity">Email suggestions</button>
+    <button type="button" id="emailAmbiguity">Open email draft</button>
     <small>This opens a draft email to ataylor@mlw.mw for you to review before sending.</small>
   </aside>`;
 }
@@ -274,7 +274,14 @@ function emailAmbiguitySelections(){
     "Discipline: "+discipline,"",
     "Comment: "+(comment||"(none)")
   ].join("\n");
-  window.location.href=`mailto:ataylor@mlw.mw?subject=${encodeURIComponent("MLW terminology suggestions")}&body=${encodeURIComponent(body)}`;
+  const mailto=`mailto:ataylor@mlw.mw?subject=${encodeURIComponent("MLW terminology suggestions")}&body=${encodeURIComponent(body)}`;
+  const link=document.createElement("a");
+  link.href=mailto;
+  link.target="_self";
+  link.rel="noopener";
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
 }
 
 let dashCategory="all";
