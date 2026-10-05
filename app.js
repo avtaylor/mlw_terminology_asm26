@@ -209,8 +209,9 @@ function ambiguityPanelHTML(){
     <label>Optional comment
       <textarea id="ambiguityComment" rows="2" placeholder="Anything you would like to add"></textarea>
     </label>
-    <button type="button" id="emailAmbiguity">Open email draft</button>
-    <small>This opens a draft email to ataylor@mlw.mw for you to review before sending.</small>
+    <button type="button" id="submitAmbiguity">Submit suggestions</button>
+    <div id="ambiguityStatus" class="submission-status" role="status" aria-live="polite"></div>
+    <small>Submissions are recorded in the MLW terminology feedback spreadsheet. No name or email address is collected.</small>
   </aside>`;
 }
 function ensureAmbiguityPanel(){
@@ -225,7 +226,7 @@ function ensureAmbiguityPanel(){
     shell=wrap;
   }
   shell.insertAdjacentHTML("beforeend",ambiguityPanelHTML());
-  $("#emailAmbiguity").addEventListener("click",emailAmbiguitySelections);
+  $("#submitAmbiguity").addEventListener("click",submitAmbiguitySelections);
   renderAmbiguitySelections();
 }
 function addAmbiguitySelection(aid,phrase){
@@ -262,26 +263,36 @@ function wireAmbiguityCollector(root=document){
     p.addEventListener("dblclick",()=>setTimeout(()=>captureAbstractSelection(p),0));
   });
 }
-function emailAmbiguitySelections(){
+async function submitAmbiguitySelections(){
   if(!ambiguitySelections.length){alert("Select at least one word or phrase from an abstract first.");return;}
   const discipline=$("#ambiguityDiscipline").value.trim();
-  if(!discipline){alert("Please enter your discipline.");$("#ambiguityDiscipline").focus();return;}
+  if(!discipline){alert("Please select your discipline.");$("#ambiguityDiscipline").focus();return;}
   const comment=$("#ambiguityComment").value.trim();
-  const body=[
-    "Terminology suggestions from the MLW Research Terminology Explorer","",
-    "Selected (abstract, word/phrase) tuples:",
-    ...ambiguitySelections.map(x=>`(${x.article}, ${x.word})`),"",
-    "Discipline: "+discipline,"",
-    "Comment: "+(comment||"(none)")
-  ].join("\n");
-  const mailto=`mailto:ataylor@mlw.mw?subject=${encodeURIComponent("MLW terminology suggestions")}&body=${encodeURIComponent(body)}`;
-  const link=document.createElement("a");
-  link.href=mailto;
-  link.target="_self";
-  link.rel="noopener";
-  document.body.appendChild(link);
-  link.click();
-  link.remove();
+  const button=$("#submitAmbiguity"), status=$("#ambiguityStatus");
+  const payload={discipline,comment,selections:ambiguitySelections.map(x=>({article:x.article,word:x.word}))};
+  button.disabled=true; button.textContent="Submitting…";
+  status.className="submission-status"; status.textContent="";
+  try{
+    const response=await fetch("/api/feedback",{
+      method:"POST",
+      headers:{"Content-Type":"text/plain;charset=utf-8"},
+      body:JSON.stringify(payload)
+    });
+    if(!response.ok) throw new Error("Submission service returned "+response.status);
+    const result=await response.json();
+    if(!result.success) throw new Error(result.error||"Submission failed.");
+    const n=result.termsSubmitted||ambiguitySelections.length;
+    status.className="submission-status success";
+    status.textContent=`Thank you. ${n} terminology suggestion${n===1?" was":"s were"} submitted successfully.`;
+    ambiguitySelections=[]; renderAmbiguitySelections();
+    $("#ambiguityComment").value="";
+  }catch(err){
+    console.error(err);
+    status.className="submission-status error";
+    status.textContent="The suggestions could not be submitted. Please try again.";
+  }finally{
+    button.disabled=false; button.textContent="Submit suggestions";
+  }
 }
 
 let dashCategory="all";
