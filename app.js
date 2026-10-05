@@ -46,6 +46,44 @@ function termLinkHTML(text,currentAbstractId=""){
   out+=esc(s.slice(cursor));
   return out;
 }
+let termReturnOrigin=null;
+function currentViewName(){
+  const active=document.querySelector(".tab.active");
+  return active?.dataset.view || "domains";
+}
+function captureTermOrigin(el){
+  const view=currentViewName();
+  termReturnOrigin={
+    view,
+    scrollY:window.scrollY,
+    abstractId:el.dataset.abstractId || el.closest("[data-abstract-id]")?.dataset.abstractId || "",
+    termId:el.dataset.termId || "",
+    text:(el.textContent||"").trim()
+  };
+}
+function restoreTermOrigin(){
+  if(!termReturnOrigin) return;
+  const origin=termReturnOrigin;
+  termReturnOrigin=null;
+  switchView(origin.view);
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    window.scrollTo({top:origin.scrollY,left:0,behavior:"auto"});
+    let target=null;
+    if(origin.abstractId){
+      target=document.querySelector(`[data-abstract-id="${CSS.escape(origin.abstractId)}"] .dict-link[data-term-id="${CSS.escape(String(origin.termId))}"]`);
+    }
+    if(!target){
+      target=[...document.querySelectorAll(`#${CSS.escape(origin.view)} .dict-link[data-term-id="${CSS.escape(String(origin.termId))}"]`)]
+        .find(x=>(x.textContent||"").trim()===origin.text) || null;
+    }
+    if(target){
+      target.classList.add("return-highlight");
+      target.focus({preventScroll:true});
+      setTimeout(()=>target.classList.remove("return-highlight"),1600);
+    }
+  }));
+}
+
 function wireDictionaryLinks(root=document){
   root.querySelectorAll(".dict-link").forEach(b=>{
     if(b.dataset.wired) return; b.dataset.wired="1";
@@ -54,6 +92,7 @@ function wireDictionaryLinks(root=document){
     b.addEventListener("click",e=>{
       e.stopPropagation(); hideTermTip();
       const id=+b.dataset.termId;
+      if(currentViewName()!=="dictionary") captureTermOrigin(b);
       switchView("dictionary"); $("#q").value=""; $("#domain").value=""; $("#varies").value="";
       renderDictionary(); selectTerm(id);
       const row=document.querySelector(`#results .term-row[data-id="${id}"]`);
@@ -104,8 +143,10 @@ function selectTerm(id){
   selected=DATA.terms.find(t=>t.id===id);
   $$("#results .term-row").forEach(x=>x.classList.toggle("active",+x.dataset.id===id));
   const t=selected;
-  $("#detail").innerHTML=`<h2>${esc(t.term)} ${t.abbr?`<span class="abbr">(${esc(t.abbr)})</span>`:""}</h2><div><span class="pill">${esc(t.domain)}</span>${t.varies?'<span class="pill varies">interpretation varies</span>':""}</div><h3>Canonical definition</h3><p>${esc(t.definition||"Not reconstructable from the supplied abstract text.")}</p><h3>External references</h3><div class="external-references">${externalRefsHTML(t.externalReferences)}</div><small class="external-note">Searches MeSH using any word in the term.</small><h3>Use across abstracts</h3>${t.occurrences.map(o=>`<div class="occ"><div class="occ-title">Abstract ${esc(o.abstractId)} — ${esc(o.title)}</div><div class="occ-meta">${esc(o.section)} · PDF page ${esc(o.page)}</div><p class="linked-text">${termLinkHTML(o.interpretation||"No separate interpretation could be reconstructed.",o.abstractId)}</p><details><summary>Context</summary><p class="snippet linked-text">${termLinkHTML(o.context,o.abstractId)}</p></details></div>`).join("")}`;
+  $("#detail").innerHTML=`${termReturnOrigin?'<button type="button" class="return-origin" id="returnOrigin">← Back to where you came from</button>':""}<h2>${esc(t.term)} ${t.abbr?`<span class="abbr">(${esc(t.abbr)})</span>`:""}</h2><div><span class="pill">${esc(t.domain)}</span>${t.varies?'<span class="pill varies">interpretation varies</span>':""}</div><h3>Canonical definition</h3><p>${esc(t.definition||"Not reconstructable from the supplied abstract text.")}</p><h3>External references</h3><div class="external-references">${externalRefsHTML(t.externalReferences)}</div><small class="external-note">Searches MeSH using any word in the term.</small><h3>Use across abstracts</h3>${t.occurrences.map(o=>`<div class="occ"><div class="occ-title">Abstract ${esc(o.abstractId)} — ${esc(o.title)}</div><div class="occ-meta">${esc(o.section)} · PDF page ${esc(o.page)}</div><p class="linked-text">${termLinkHTML(o.interpretation||"No separate interpretation could be reconstructed.",o.abstractId)}</p><details><summary>Context</summary><p class="snippet linked-text">${termLinkHTML(o.context,o.abstractId)}</p></details></div>`).join("")}`;
   wireDictionaryLinks($("#detail"));
+  const back=$("#returnOrigin");
+  if(back) back.addEventListener("click",restoreTermOrigin);
 }
 function setLevelButtons(prefix,level){
   $("#"+prefix+"L1").classList.toggle("active",level===1); $("#"+prefix+"L2").classList.toggle("active",level===2);
@@ -147,9 +188,93 @@ function renderAbstracts(){
           <div class="policy-summary"><span>Possible policy implication for Malawi / other countries</span><p class="linked-text">${termLinkHTML(a.policyImplication||"",aid)}</p><small>LLM-inferred from the abstract; this is not necessarily a recommendation made by the study authors.</small></div>
         </div>
       </details>
-      <div class="actual-abstract"><h3>Abstract</h3><p class="linked-text">${abstractHTML}</p></div></article>`;
+      <div class="actual-abstract"><h3>Abstract</h3><p class="linked-text selectable-abstract" data-abstract-id="${esc(aid)}">${abstractHTML}</p></div></article>`;
   }).join("");
   wireDictionaryLinks($("#abstractList"));
+  wireAmbiguityCollector($("#abstractList"));
+}
+
+let ambiguitySelections=[];
+function ambiguityPanelHTML(){
+  return `<aside class="ambiguity-panel" id="ambiguityPanel">
+    <h3>Suggest ambiguous terms</h3>
+    <p>Select text in any abstract by dragging over it, or double-click a word. Each selection is recorded as <strong>(abstract, word/phrase)</strong>.</p>
+    <div id="ambiguityTuples" class="ambiguity-tuples" aria-live="polite"></div>
+    <label>Your discipline
+      <select id="ambiguityDiscipline">
+        <option value="">Select your discipline…</option>
+        ${DATA.meta.disciplineDashboard.disciplines.map(d=>`<option value="${esc(d)}">${esc(d)}</option>`).join("")}
+      </select>
+    </label>
+    <label>Optional comment
+      <textarea id="ambiguityComment" rows="2" placeholder="Anything you would like to add"></textarea>
+    </label>
+    <button type="button" id="emailAmbiguity">Email suggestions</button>
+    <small>This opens a draft email to ataylor@mlw.mw for you to review before sending.</small>
+  </aside>`;
+}
+function ensureAmbiguityPanel(){
+  if($("#ambiguityPanel")) return;
+  const list=$("#abstractList");
+  let shell=list.parentElement;
+  if(!shell.classList.contains("abstract-feedback-layout")){
+    const wrap=document.createElement("div");
+    wrap.className="abstract-feedback-layout";
+    shell.insertBefore(wrap,list);
+    wrap.appendChild(list);
+    shell=wrap;
+  }
+  shell.insertAdjacentHTML("beforeend",ambiguityPanelHTML());
+  $("#emailAmbiguity").addEventListener("click",emailAmbiguitySelections);
+  renderAmbiguitySelections();
+}
+function addAmbiguitySelection(aid,phrase){
+  phrase=(phrase||"").replace(/\s+/g," ").trim();
+  if(!phrase || phrase.length>180) return;
+  if(!ambiguitySelections.some(x=>x.article===aid && x.word.toLowerCase()===phrase.toLowerCase())){
+    ambiguitySelections.push({article:aid,word:phrase});
+    renderAmbiguitySelections();
+  }
+}
+function renderAmbiguitySelections(){
+  const box=$("#ambiguityTuples"); if(!box)return;
+  box.innerHTML=ambiguitySelections.length
+    ? ambiguitySelections.map((x,i)=>`<div class="ambiguity-tuple"><code>(${esc(x.article)}, ${esc(x.word)})</code><button type="button" data-remove-tuple="${i}" aria-label="Remove ${esc(x.word)}">×</button></div>`).join("")
+    : '<span class="muted">No words selected yet.</span>';
+  box.querySelectorAll("[data-remove-tuple]").forEach(b=>b.addEventListener("click",()=>{
+    ambiguitySelections.splice(+b.dataset.removeTuple,1); renderAmbiguitySelections();
+  }));
+}
+function captureAbstractSelection(p){
+  const sel=window.getSelection();
+  if(!sel || sel.isCollapsed) return;
+  if(!p.contains(sel.anchorNode) || !p.contains(sel.focusNode)) return;
+  const phrase=sel.toString();
+  addAmbiguitySelection(p.dataset.abstractId,phrase);
+  sel.removeAllRanges();
+}
+function wireAmbiguityCollector(root=document){
+  ensureAmbiguityPanel();
+  root.querySelectorAll(".selectable-abstract").forEach(p=>{
+    if(p.dataset.ambiguityWired)return;
+    p.dataset.ambiguityWired="1";
+    p.addEventListener("mouseup",()=>setTimeout(()=>captureAbstractSelection(p),0));
+    p.addEventListener("dblclick",()=>setTimeout(()=>captureAbstractSelection(p),0));
+  });
+}
+function emailAmbiguitySelections(){
+  if(!ambiguitySelections.length){alert("Select at least one word or phrase from an abstract first.");return;}
+  const discipline=$("#ambiguityDiscipline").value.trim();
+  if(!discipline){alert("Please enter your discipline.");$("#ambiguityDiscipline").focus();return;}
+  const comment=$("#ambiguityComment").value.trim();
+  const body=[
+    "Terminology suggestions from the MLW Research Terminology Explorer","",
+    "Selected (abstract, word/phrase) tuples:",
+    ...ambiguitySelections.map(x=>`(${x.article}, ${x.word})`),"",
+    "Discipline: "+discipline,"",
+    "Comment: "+(comment||"(none)")
+  ].join("\n");
+  window.location.href=`mailto:ataylor@mlw.mw?subject=${encodeURIComponent("MLW terminology suggestions")}&body=${encodeURIComponent(body)}`;
 }
 
 let dashCategory="all";
