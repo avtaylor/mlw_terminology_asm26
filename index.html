@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MLW Research Terminology Explorer</title><meta name="description" content="Search and explore technical terminology derived from MLW Annual Scientific Meeting abstracts.">
+<link rel="stylesheet" href="styles.css"></head><body>
+<header class="top"><div class="top-inner"><h1>MLW Research Terminology Explorer</h1><p>This is an LLM-generated dictionary of terminology found in abstracts presented at the MLW ASM in Mangochi, 4–7 October 2026. (@DSCM Unit)</p><p class="global-method-note">It explores specialist language that may require explanation across disciplinary boundaries. The disciplinary-accessibility classifications are LLM-generated hypotheses, not measurements of individual researchers’ knowledge.</p></div></header>
+<main class="wrap">
+<nav class="tabs" aria-label="Views"><button class="tab active" data-view="domains">Domains</button><button class="tab" data-view="dictionary">Dictionary</button><button class="tab" data-view="dashboard">Discipline Dashboard</button><button class="tab" data-view="network">Network</button><button class="tab" data-view="abstracts">Abstracts</button></nav>
+<section id="dictionary" class="view" hidden>
+<div class="controls"><input id="q" type="search" placeholder="Search terms, definitions, abstracts…" aria-label="Search dictionary"><select id="domain" aria-label="Filter by domain"></select><select id="varies" aria-label="Filter by interpretation variation"><option value="">All interpretations</option><option value="yes">Interpretation varies</option><option value="no">Stable interpretation</option></select></div>
+<div class="stats"><span id="count"></span><span id="meta"></span></div>
+<div class="grid"><div id="results" class="panel results"></div><aside id="detail" class="panel detail" aria-live="polite"></aside></div>
+</section>
+<section id="domains" class="view">
+<div class="level-switch" aria-label="Domain level"><button id="domainL1" class="active" type="button">Level 1: broad domains</button><button id="domainL2" type="button">Level 2: specific domains</button></div>
+<p id="domainNote" class="network-note">Level 1 merges related specialist domains. Select a domain to open the dictionary filtered to it.</p><div id="domainGrid" class="domain-grid"></div></section>
+<section id="dashboard" class="view" hidden>
+<div class="dashboard-intro"><h2>Understanding terms across disciplines</h2></div>
+<div class="dash-controls panel"><label>Discipline A<select id="discA"></select></label><span class="versus">↔</span><label>Discipline B<select id="discB"></select></label></div>
+<div id="dashMethod" class="method-note"></div>
+<div id="dashSummary" class="dash-summary"></div>
+<div class="dash-layout"><div class="panel"><div id="dashBar" class="bar-chart" aria-label="Distribution of terminology accessibility"></div></div>
+<div class="panel dash-terms"><div class="dash-filter-row" id="dashLegend"></div><div id="dashTermList"></div></div></div>
+</section>
+<section id="network" class="view" hidden><div class="network-wrap">
+<div class="level-switch" aria-label="Network domain level"><button id="networkL1" class="active" type="button">Level 1 domains</button><button id="networkL2" type="button">Level 2 domains</button></div>
+<p class="network-note">Click a domain, term or abstract to highlight that node and all directly connected nodes. Click the background to clear the selection. The graph shows terms used in multiple abstracts or whose interpretation varies.</p>
+<div class="network-legend"><span><i class="legend-dot" style="background:#dfe7f1"></i>Domain</span><span><i class="legend-dot" style="background:#d9e9ed"></i>Term</span><span><i class="legend-dot" style="background:#f4ead4"></i>Abstract</span></div>
+<div id="networkStatus" class="network-status" aria-live="polite">No node selected.</div>
+<svg id="networkSvg" class="network" viewBox="0 0 1000 620" role="img" aria-label="Clickable network linking research domains, technical terms and abstracts"></svg></div></section>
+<section id="abstracts" class="view" hidden><div id="abstractList" class="abstract-list"></div></section>
+<p class="footer">Definitions and interpretations are reconstructed only from the supplied abstracts. Blank or explicitly unavailable definitions indicate that the source text did not support a reliable reconstruction.</p>
+</main><div id="termTooltip" class="term-tooltip" role="tooltip" hidden></div><script src="app.js"></script></body></html>

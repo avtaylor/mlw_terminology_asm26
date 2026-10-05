@@ -1,0 +1,214 @@
+
+let DATA, filtered=[], selected=null, domainLevel=1, networkLevel=1;
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+let termMatchers=[];
+function buildTermMatchers(){
+  const candidates=[];
+  DATA.terms.forEach(t=>{
+    candidates.push({text:t.term,term:t});
+    if(t.abbr && String(t.abbr).trim().length>1) candidates.push({text:String(t.abbr).trim(),term:t});
+  });
+  const seen=new Set();
+  termMatchers=candidates
+    .filter(x=>x.text && !seen.has(x.text.toLowerCase()) && seen.add(x.text.toLowerCase()))
+    .sort((a,b)=>b.text.length-a.text.length);
+}
+function termLinkHTML(text,currentAbstractId=""){
+  if(!text) return "";
+  const s=String(text), lower=s.toLowerCase(), hits=[];
+  for(const m of termMatchers){
+    const needle=m.text.toLowerCase();
+    let pos=0;
+    while((pos=lower.indexOf(needle,pos))!==-1){
+      const before=pos===0?"":s[pos-1], after=pos+needle.length>=s.length?"":s[pos+needle.length];
+      const leftOK=!/[A-Za-z0-9]/.test(before), rightOK=!/[A-Za-z0-9]/.test(after);
+      if(leftOK&&rightOK && !hits.some(h=>pos<h.end && pos+needle.length>h.start)){
+        hits.push({start:pos,end:pos+needle.length,term:m.term}); pos+=needle.length;
+      } else pos+=Math.max(1,needle.length);
+    }
+  }
+  hits.sort((a,b)=>a.start-b.start);
+  let out="",cursor=0;
+  for(const h of hits){
+    out+=esc(s.slice(cursor,h.start));
+    const t=h.term;
+    const occ=currentAbstractId?t.occurrences.find(o=>String(o.abstractId)===String(currentAbstractId).padStart(2,"0")):null;
+    const current=occ?.interpretation||"";
+    const tip=`${t.term}${t.abbr?" ("+t.abbr+")":""}\n${t.domain}\n\n${current&&current!==t.definition?"In this abstract: "+current+"\n\n":""}${t.definition||"Definition not reconstructable from the supplied abstract text."}`;
+    out+=`<button type="button" class="dict-link" data-term-id="${t.id}" data-tip="${esc(tip)}">${esc(s.slice(h.start,h.end))}</button>`;
+    cursor=h.end;
+  }
+  out+=esc(s.slice(cursor));
+  return out;
+}
+function wireDictionaryLinks(root=document){
+  root.querySelectorAll(".dict-link").forEach(b=>{
+    if(b.dataset.wired) return; b.dataset.wired="1";
+    b.addEventListener("mouseenter",showTermTip); b.addEventListener("focus",showTermTip);
+    b.addEventListener("mouseleave",hideTermTip); b.addEventListener("blur",hideTermTip);
+    b.addEventListener("click",e=>{
+      e.stopPropagation(); hideTermTip();
+      const id=+b.dataset.termId;
+      switchView("dictionary"); $("#q").value=""; $("#domain").value=""; $("#varies").value="";
+      renderDictionary(); selectTerm(id);
+      const row=document.querySelector(`#results .term-row[data-id="${id}"]`);
+      if(row) row.scrollIntoView({behavior:"smooth",block:"center"});
+    });
+  });
+}
+function showTermTip(e){
+  const b=e.currentTarget, tip=$("#termTooltip");
+  tip.innerHTML=esc(b.dataset.tip).replace(/\n/g,"<br>");
+  const r=b.getBoundingClientRect();
+  tip.style.left=Math.max(8,Math.min(window.innerWidth-328,r.left))+"px";
+  tip.style.top=(r.bottom+8+window.scrollY)+"px"; tip.hidden=false;
+}
+function hideTermTip(){const t=$("#termTooltip"); if(t)t.hidden=true}
+async function init(){
+  DATA=await fetch("data.json").then(r=>r.json());
+  buildTermMatchers();
+  $("#meta").textContent=`${DATA.meta.terms} terms · ${DATA.meta.abstracts} detailed abstracts · ${DATA.meta.sourcePages} PDF pages`;
+  const domains=[...new Set(DATA.terms.map(t=>t.domain))].sort();
+  $("#domain").innerHTML='<option value="">All domains</option>'+domains.map(d=>`<option>${esc(d)}</option>`).join("");
+  ["q","domain","varies"].forEach(id=>$("#"+id).addEventListener(id==="q"?"input":"change",renderDictionary));
+  $$(".tab").forEach(b=>b.addEventListener("click",()=>switchView(b.dataset.view)));
+  $("#domainL1").addEventListener("click",()=>{domainLevel=1; setLevelButtons("domain",1); renderDomains()});
+  $("#domainL2").addEventListener("click",()=>{domainLevel=2; setLevelButtons("domain",2); renderDomains()});
+  $("#networkL1").addEventListener("click",()=>{networkLevel=1; setLevelButtons("network",1); renderNetwork()});
+  $("#networkL2").addEventListener("click",()=>{networkLevel=2; setLevelButtons("network",2); renderNetwork()});
+  initDashboard(); renderDictionary(); renderDomains(); renderAbstracts();
+}
+function switchView(v){
+  $$(".tab").forEach(x=>x.classList.toggle("active",x.dataset.view===v));
+  $$(".view").forEach(x=>x.hidden=x.id!==v);
+  if(v==="network") renderNetwork();
+  if(v==="dashboard") renderDashboard();
+}
+function renderDictionary(){
+  const q=$("#q").value.trim().toLowerCase(), dom=$("#domain").value, vv=$("#varies").value;
+  filtered=DATA.terms.filter(t=>{
+    const hay=[t.term,t.abbr,t.domain,t.definition,t.sources,...t.occurrences.flatMap(o=>[o.title,o.interpretation,o.context])].join(" ").toLowerCase();
+    return (!q||hay.includes(q))&&(!dom||t.domain===dom)&&(!vv||(vv==="yes"?t.varies:!t.varies));
+  }).sort((a,b)=>a.term.localeCompare(b.term));
+  $("#count").textContent=`${filtered.length} matching terms`;
+  $("#results").innerHTML=filtered.length?filtered.map(t=>`<div class="term-row" data-id="${t.id}" tabindex="0"><div class="term-head"><div><span class="term-name">${esc(t.term)}</span>${t.abbr?` <span class="abbr">(${esc(t.abbr)})</span>`:""}</div><span class="pill">${esc(t.domain)}</span></div><div class="snippet">${esc(t.definition||"Definition not reconstructable from the supplied abstract text.")}</div><div><span class="pill">${t.count} abstract${t.count===1?"":"s"}</span>${t.varies?'<span class="pill varies">interpretation varies</span>':""}</div></div>`).join(""):'<div class="empty">No terms match these filters.</div>';
+  $$("#results .term-row").forEach(el=>{const go=()=>selectTerm(+el.dataset.id);el.addEventListener("click",go);el.addEventListener("keydown",e=>{if(e.key==="Enter")go()})});
+  if(filtered.length && (!selected || !filtered.some(t=>t.id===selected.id))) selectTerm(filtered[0].id); else if(!filtered.length) $("#detail").innerHTML='<div class="empty">Select a term to inspect its sources.</div>';
+}
+function selectTerm(id){
+  selected=DATA.terms.find(t=>t.id===id);
+  $$("#results .term-row").forEach(x=>x.classList.toggle("active",+x.dataset.id===id));
+  const t=selected;
+  $("#detail").innerHTML=`<h2>${esc(t.term)} ${t.abbr?`<span class="abbr">(${esc(t.abbr)})</span>`:""}</h2><div><span class="pill">${esc(t.domain)}</span>${t.varies?'<span class="pill varies">interpretation varies</span>':""}</div><h3>Canonical definition</h3><p>${esc(t.definition||"Not reconstructable from the supplied abstract text.")}</p><h3>Use across abstracts</h3>${t.occurrences.map(o=>`<div class="occ"><div class="occ-title">Abstract ${esc(o.abstractId)} — ${esc(o.title)}</div><div class="occ-meta">${esc(o.section)} · PDF page ${esc(o.page)}</div><p class="linked-text">${termLinkHTML(o.interpretation||"No separate interpretation could be reconstructed.",o.abstractId)}</p><details><summary>Context</summary><p class="snippet linked-text">${termLinkHTML(o.context,o.abstractId)}</p></details></div>`).join("")}`;
+  wireDictionaryLinks($("#detail"));
+}
+function setLevelButtons(prefix,level){
+  $("#"+prefix+"L1").classList.toggle("active",level===1); $("#"+prefix+"L2").classList.toggle("active",level===2);
+}
+function renderDomains(){
+  const field=domainLevel===1?"domainLevel1":"domain", counts={};
+  DATA.terms.forEach(t=>counts[t[field]]=(counts[t[field]]||0)+1);
+  $("#domainNote").textContent=domainLevel===1?"Level 1 merges related specialist domains. Select one to see all terms beneath it.":"Level 2 preserves the original specialist domain labels. Select one to filter the dictionary.";
+  $("#domainGrid").innerHTML=Object.entries(counts).sort((a,b)=>b[1]-a[1]).map(([d,n])=>`<button class="domain-card" data-domain="${esc(d)}"><strong>${esc(d)}</strong><span>${n} term${n===1?"":"s"}</span></button>`).join("");
+  $$("#domainGrid .domain-card").forEach(b=>b.addEventListener("click",()=>{
+    switchView("dictionary");
+    if(domainLevel===2){$("#domain").value=b.dataset.domain; renderDictionary()}
+    else{
+      $("#domain").value=""; const wanted=b.dataset.domain;
+      filtered=DATA.terms.filter(t=>t.domainLevel1===wanted).sort((a,b)=>a.term.localeCompare(b.term));
+      $("#q").value=""; $("#varies").value="";
+      renderResultSet(`${filtered.length} terms in ${wanted}`);
+    }
+  }));
+}
+function renderResultSet(label){
+  $("#count").textContent=label;
+  $("#results").innerHTML=filtered.map(t=>`<div class="term-row" data-id="${t.id}" tabindex="0"><div class="term-head"><div><span class="term-name">${esc(t.term)}</span>${t.abbr?` <span class="abbr">(${esc(t.abbr)})</span>`:""}</div><span class="pill">${esc(t.domain)}</span></div><div class="snippet">${esc(t.definition||"Definition not reconstructable from the supplied abstract text.")}</div><div><span class="pill">${t.count} abstract${t.count===1?"":"s"}</span>${t.varies?'<span class="pill varies">interpretation varies</span>':""}</div></div>`).join("");
+  $$("#results .term-row").forEach(el=>{const go=()=>selectTerm(+el.dataset.id);el.addEventListener("click",go);el.addEventListener("keydown",e=>{if(e.key==="Enter")go()})});
+  if(filtered.length) selectTerm(filtered[0].id);
+}
+function renderAbstracts(){
+  $("#abstractList").innerHTML=DATA.abstracts.map(a=>{
+    const aid=String(a["Abstract ID"]).padStart(2,"0");
+    const abstractHTML=termLinkHTML(a.actualAbstract||"Abstract text was not recovered from the supplied PDF.",aid)
+      .replace(/\b(KEYWORDS|INTRODUCTION|BACKGROUND|AIM|OBJECTIVE|METHODS|RESULTS|DISCUSSION|CONCLUSION)\b/g,'<strong class="section-label">$1</strong>');
+    return `<article class="abstract-card full-abstract"><b>Abstract ${esc(aid)}: ${esc(a["Abstract title"])}</b><small>${esc(a["Section"])} · PDF page ${esc(a["PDF page"])}</small>
+      <details class="summary-group">
+        <summary>Plain-language summaries and policy implication</summary>
+        <div class="summary-group-body">
+          <div class="community-summary"><span>For a lay person / member of the community</span><p class="linked-text">${termLinkHTML(a.communitySummary||"",aid)}</p></div>
+          <div class="grandmother-summary"><span>Explain it to your grandmother</span><p>${esc(a.grandmotherSummary||"")}</p></div>
+          <div class="child-summary"><span>Explain it to a child</span><p>${esc(a.childSummary||"")}</p></div>
+          <div class="policy-summary"><span>Possible policy implication for Malawi / other countries</span><p class="linked-text">${termLinkHTML(a.policyImplication||"",aid)}</p><small>LLM-inferred from the abstract; this is not necessarily a recommendation made by the study authors.</small></div>
+        </div>
+      </details>
+      <div class="actual-abstract"><h3>Abstract</h3><p class="linked-text">${abstractHTML}</p></div></article>`;
+  }).join("");
+  wireDictionaryLinks($("#abstractList"));
+}
+
+let dashCategory="all";
+function initDashboard(){
+  const ds=DATA.meta.disciplineDashboard.disciplines;
+  $("#discA").innerHTML=ds.map(d=>`<option>${esc(d)}</option>`).join("");
+  $("#discB").innerHTML=ds.map(d=>`<option>${esc(d)}</option>`).join("");
+  $("#discA").value="Data Scientist / Statistician"; $("#discB").value="Epidemiologist";
+  $("#discA").addEventListener("change",renderDashboard); $("#discB").addEventListener("change",renderDashboard);
+  $("#dashMethod").textContent="Exploratory classification: "+DATA.meta.disciplineDashboard.method;
+  renderDashboard();
+}
+function classifyForPair(t,a,b){
+  const fa=t.disciplineFamiliarity?.[a]||1, fb=t.disciplineFamiliarity?.[b]||1;
+  // Corpus-level meaning variation takes priority because familiar words can still be semantically risky.
+  if(t.semanticAmbiguity && fa>=2 && fb>=2) return "amb";
+  if(fa>=2 && fb>=2) return "shared";
+  if(fa<2 && fb>=2) return "a";
+  if(fa>=2 && fb<2) return "b";
+  return "amb";
+}
+function renderDashboard(){
+  const a=$("#discA").value,b=$("#discB").value;
+  const cats={shared:[],a:[],b:[],amb:[]};
+  DATA.terms.forEach(t=>cats[classifyForPair(t,a,b)].push(t));
+  const labels={shared:"Shared",a:`May need explanation for ${a}`,b:`May need explanation for ${b}`,amb:"Potentially ambiguous to both"};
+  const cls={shared:"cat-shared",a:"cat-a",b:"cat-b",amb:"cat-amb"};
+  $("#dashSummary").innerHTML=`<button class="metric metric-button ${dashCategory==="all"?"selected":""}" data-cat="all"><b>${DATA.terms.length}</b><span>All terms</span></button>`+Object.keys(cats).map(k=>`<button class="metric metric-button ${cls[k]} ${dashCategory===k?"selected":""}" data-cat="${k}"><b>${cats[k].length}</b><span>${esc(labels[k])}</span></button>`).join("");
+  $$("#dashSummary .metric-button").forEach(x=>x.addEventListener("click",()=>{dashCategory=x.dataset.cat;renderDashboard()}));
+  $("#dashBar").innerHTML=Object.keys(cats).map(k=>{const pct=Math.round(cats[k].length/DATA.terms.length*100);return `<div class="bar-row"><div class="bar-label"><span>${esc(labels[k])}</span><b>${pct}%</b></div><div class="bar-track"><div class="bar-fill ${cls[k]}" style="width:${pct}%"></div></div></div>`}).join("");
+  $("#dashLegend").innerHTML=`<div class="selected-category"><b>${dashCategory==="all"?"All terms":esc(labels[dashCategory])}</b><span>${dashCategory==="all"?DATA.terms.length:cats[dashCategory].length} terms</span></div>`;
+  const shown=dashCategory==="all"?[...DATA.terms]:[...cats[dashCategory]];
+  $("#dashTermList").innerHTML=shown.sort((x,y)=>x.term.localeCompare(y.term)).map(t=>`<button class="term-chip" data-id="${t.id}">${esc(t.term)}</button>`).join("");
+  $$("#dashTermList .term-chip").forEach(x=>x.addEventListener("click",()=>{const id=+x.dataset.id;switchView("dictionary");$("#q").value="";$("#domain").value="";$("#varies").value="";renderDictionary();selectTerm(id);document.querySelector(`#results .term-row[data-id="${id}"]`)?.scrollIntoView({behavior:"smooth",block:"center"})}));
+}
+function renderNetwork(){
+  const svg=$("#networkSvg"); svg.innerHTML="";
+  const terms=DATA.terms.filter(t=>t.count>1||t.varies).slice(0,70);
+  const field=networkLevel===1?"domainLevel1":"domain";
+  const domains=[...new Set(terms.map(t=>t[field]))];
+  const abstracts=[...new Set(terms.flatMap(t=>t.occurrences.map(o=>o.abstractId)))];
+  const nodes=[];
+  domains.forEach((d,i)=>nodes.push({id:"d"+i,label:d,type:"domain",x:150,y:50+i*(520/Math.max(1,domains.length-1))}));
+  abstracts.forEach((a,i)=>nodes.push({id:"a"+a,label:"A"+a,type:"abstract",x:870,y:45+i*(530/Math.max(1,abstracts.length-1))}));
+  terms.forEach((t,i)=>nodes.push({id:"t"+t.id,label:t.term,type:"term",termId:t.id,x:500+(i%3-1)*75,y:35+i*(550/Math.max(1,terms.length-1))}));
+  const byId=Object.fromEntries(nodes.map(n=>[n.id,n])), dId=Object.fromEntries(domains.map((d,i)=>[d,"d"+i]));
+  const edges=[]; terms.forEach(t=>{edges.push([dId[t[field]],"t"+t.id]);t.occurrences.forEach(o=>edges.push(["t"+t.id,"a"+o.abstractId]))});
+  const NS="http://www.w3.org/2000/svg", edgeEls=[], nodeEls=[];
+  edges.forEach(([a,b])=>{if(!byId[a]||!byId[b])return;let l=document.createElementNS(NS,"line");l.setAttribute("x1",byId[a].x);l.setAttribute("y1",byId[a].y);l.setAttribute("x2",byId[b].x);l.setAttribute("y2",byId[b].y);l.setAttribute("class","edge");l.dataset.a=a;l.dataset.b=b;svg.appendChild(l);edgeEls.push(l)});
+  nodes.forEach(n=>{
+    let g=document.createElementNS(NS,"g");g.setAttribute("class","node");g.dataset.id=n.id;g.setAttribute("tabindex","0");g.setAttribute("role","button");g.setAttribute("aria-label",n.type+" "+n.label);
+    let c=document.createElementNS(NS,"circle");c.setAttribute("cx",n.x);c.setAttribute("cy",n.y);c.setAttribute("r",n.type==="domain"?9:n.type==="term"?6:4);c.setAttribute("class","node-"+n.type);g.appendChild(c);
+    let tx=document.createElementNS(NS,"text");tx.setAttribute("x",n.x+(n.type==="abstract"?7:10));tx.setAttribute("y",n.y+3);tx.setAttribute("class","label");tx.textContent=n.label.length>34?n.label.slice(0,32)+"…":n.label;g.appendChild(tx);svg.appendChild(g);nodeEls.push(g);
+    const pick=()=>highlight(n); g.addEventListener("click",e=>{e.stopPropagation();pick()});g.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();pick()}});
+  });
+  function highlight(n){
+    const connected=new Set([n.id]); edgeEls.forEach(e=>{if(e.dataset.a===n.id)connected.add(e.dataset.b);if(e.dataset.b===n.id)connected.add(e.dataset.a)});
+    edgeEls.forEach(e=>{const hit=e.dataset.a===n.id||e.dataset.b===n.id;e.classList.toggle("hit",hit);e.classList.toggle("dim",!hit)});
+    nodeEls.forEach(g=>{const hit=connected.has(g.dataset.id);g.classList.toggle("hit",hit);g.classList.toggle("dim",!hit);const lab=g.querySelector(".label");if(lab){lab.classList.toggle("hit",hit);lab.classList.toggle("dim",!hit)}});
+    const connectedNodes=[...connected].filter(x=>x!==n.id).map(x=>byId[x]?.label).filter(Boolean);
+    $("#networkStatus").textContent=`Selected ${n.type}: ${n.label}. ${connectedNodes.length} direct connection${connectedNodes.length===1?"":"s"} highlighted.`;
+    if(n.type==="term"&&n.termId){selected=DATA.terms.find(t=>t.id===n.termId)}
+  }
+  svg.addEventListener("click",()=>{edgeEls.forEach(e=>e.classList.remove("hit","dim"));nodeEls.forEach(g=>{g.classList.remove("hit","dim");const lab=g.querySelector(".label");if(lab)lab.classList.remove("hit","dim")});$("#networkStatus").textContent="No node selected."});
+}
+init().catch(e=>{document.body.innerHTML="<p style='padding:20px'>Could not load the terminology data. If opening locally, serve this folder with a small HTTP server (see README).</p>"});
