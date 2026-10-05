@@ -57,7 +57,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=human%20in%20the%20loop",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 2,
@@ -114,7 +121,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=dihydroartemisinin-piperaquine",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 3,
@@ -155,7 +169,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=sulfadoxine-pyrimethamine%20plus%20amodiaquine",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 4,
@@ -188,7 +209,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=antimicrobial%20use",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 5,
@@ -221,7 +249,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=generative%20artificial%20intelligence",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 6,
@@ -254,7 +289,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=large%20language%20model",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 7,
@@ -287,7 +329,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=knowledge%2C%20attitudes%20and%20practices",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 8,
@@ -320,7 +369,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=rabies-safe%20practices",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 9,
@@ -353,7 +409,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=Gene%20Set%20Enrichment%20Analysis",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 10,
@@ -386,7 +449,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=unsupervised%20clustering",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 11,
@@ -419,7 +489,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=bias-corrected%20bootstrap",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 12,
@@ -460,7 +537,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=chi-square%20test",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 13,
@@ -573,7 +657,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=confidence%20interval",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 14,
@@ -606,7 +697,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=Fisher%27s%20exact%20test",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 15,
@@ -655,7 +753,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=generalised%20additive%20model",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 16,
@@ -688,7 +793,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=LOESS",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 17,
@@ -721,7 +833,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=modified%20Poisson%20regression",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 18,
@@ -754,7 +873,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=multivariable%20linear%20regression",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 19,
@@ -795,7 +921,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=multivariable%20logistic%20regression",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 20,
@@ -836,7 +969,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=Spearman%20correlation",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 21,
@@ -869,7 +1009,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=bootstrapped%20mediation%20analysis",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 22,
@@ -902,7 +1049,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=mediation%20analysis",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 23,
@@ -935,7 +1089,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=functioning",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 24,
@@ -968,7 +1129,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=neurodevelopmental%20disorder",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 25,
@@ -1001,7 +1169,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=anthropogenic%20climate%20change",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 26,
@@ -1034,7 +1209,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=attributable%20burden",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 27,
@@ -1067,7 +1249,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=retinopathy",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 28,
@@ -1108,7 +1297,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=acute%20respiratory%20infection",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 29,
@@ -1141,7 +1337,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=bronchiolitis",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 30,
@@ -1174,7 +1377,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=community-acquired%20pneumonia",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 31,
@@ -1215,7 +1425,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=antimicrobial%20susceptibility%20testing",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 32,
@@ -1248,7 +1465,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=disc%20diffusion",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 33,
@@ -1305,7 +1529,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=nasopharyngeal%20swab",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 34,
@@ -1338,7 +1569,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=pan-sensitive",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 35,
@@ -1371,7 +1609,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=clinical%20prediction%20model",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 36,
@@ -1404,7 +1649,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=Phase%201/2a%20trial",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 37,
@@ -1437,7 +1689,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=Phase%203%20trial",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 38,
@@ -1494,7 +1753,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=randomised%20controlled%20trial",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 39,
@@ -1527,7 +1793,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=single-blind%20placebo-controlled%20trial",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 40,
@@ -1568,7 +1841,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=cluster-randomised%20trial",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 41,
@@ -1601,7 +1881,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=Autodock",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 42,
@@ -1634,7 +1921,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=molecular%20docking",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 43,
@@ -1667,7 +1961,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=image%20segmentation",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 44,
@@ -1700,7 +2001,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=intersection%20over%20union",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 45,
@@ -1733,7 +2041,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=U-Net",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 46,
@@ -1766,7 +2081,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=structural%20validation",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 47,
@@ -1799,7 +2121,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=composite%20reference%20standard",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 48,
@@ -1832,7 +2161,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=microbiological%20reference%20standard",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 49,
@@ -1865,7 +2201,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=teleradiology",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 50,
@@ -1898,7 +2241,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=optical%20character%20recognition",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 51,
@@ -1931,7 +2281,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=environmental%20enteric%20dysfunction",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 52,
@@ -1964,7 +2321,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=Campylobacter-associated%20diarrhoea",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 53,
@@ -1997,7 +2361,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=dysentery",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 54,
@@ -2030,7 +2401,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=Shigella-attributed%20diarrhoea",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 55,
@@ -2063,7 +2441,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=case-crossover%20study",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 56,
@@ -2096,7 +2481,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=disease%20exposure%20modelling",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 57,
@@ -2129,7 +2521,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=exposure%20metric",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 58,
@@ -2162,7 +2561,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=temperature%20interaction",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 59,
@@ -2195,7 +2601,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=PM2.5",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 60,
@@ -2228,7 +2641,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=river%20surveillance",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 61,
@@ -2261,7 +2681,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=wastewater%20surveillance",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 62,
@@ -2294,7 +2721,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=care-seeking%20adjustment",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 63,
@@ -2327,7 +2761,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=case-control%20study",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 64,
@@ -2360,7 +2801,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=child-year",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 65,
@@ -2401,7 +2849,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=cohort%20study",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 66,
@@ -2434,7 +2889,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=confounder",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 67,
@@ -2499,7 +2961,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=cross-sectional%20survey",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 68,
@@ -2572,7 +3041,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=incidence",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 69,
@@ -2605,7 +3081,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=observational%20cohort%20study",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 70,
@@ -2638,7 +3121,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=person-month",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 71,
@@ -2767,7 +3257,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=prevalence",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 72,
@@ -2808,7 +3305,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=adjusted%20incidence%20rate%20ratio",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 73,
@@ -2857,7 +3361,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=adjusted%20odds%20ratio",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 74,
@@ -2890,7 +3401,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=adjusted%20prevalence%20ratio",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 75,
@@ -2923,7 +3441,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=adjusted%20risk%20ratio",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 76,
@@ -2956,7 +3481,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=sero-surveillance",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 77,
@@ -2989,7 +3521,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=Lot%20Quality%20Assurance%20Sampling",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 78,
@@ -3022,7 +3561,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=epigenetic%20reprogramming",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 79,
@@ -3063,7 +3609,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=scoping%20review",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 80,
@@ -3096,7 +3649,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=gene%20perturbation",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 81,
@@ -3129,7 +3689,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=genomic%20surveillance",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 82,
@@ -3162,7 +3729,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=Illumina%20sequencing",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 83,
@@ -3219,7 +3793,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=whole-genome%20sequencing",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 84,
@@ -3260,7 +3841,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=phylogenetic%20analysis",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 85,
@@ -3301,7 +3889,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=geolocation",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 86,
@@ -3334,7 +3929,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=Euclidean%20distance",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 87,
@@ -3367,7 +3969,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=river%20network%20topology",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 88,
@@ -3400,7 +4009,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=remote%20sensing",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 89,
@@ -3449,7 +4065,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=anaemia",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 90,
@@ -3490,7 +4113,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=haemoglobin",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 91,
@@ -3523,7 +4153,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=cost-effectiveness%20analysis",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 92,
@@ -3556,7 +4193,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=disability-adjusted%20life%20year",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 93,
@@ -3589,7 +4233,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=incremental%20cost-effectiveness%20ratio",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 94,
@@ -3622,7 +4273,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=spatial%20inequality",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 95,
@@ -3655,7 +4313,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=interoperability",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 96,
@@ -3688,7 +4353,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=Open%20Data%20Kit",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 97,
@@ -3721,7 +4393,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=XLSForm",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 98,
@@ -3754,7 +4433,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=dashboard",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 99,
@@ -3787,7 +4473,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=health%20systems%20resilience",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 100,
@@ -3820,7 +4513,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=antimicrobial%20stewardship",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 101,
@@ -3861,7 +4561,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=implementation%20science",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 102,
@@ -3894,7 +4601,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=infection%20prevention%20and%20control",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 103,
@@ -3927,7 +4641,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=System%20Usability%20Scale",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 104,
@@ -3960,7 +4681,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=mitogen%20response",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 105,
@@ -3993,7 +4721,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=antibody%20isotype",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 106,
@@ -4034,7 +4769,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=antibody%20subclass",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 107,
@@ -4075,7 +4817,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=antigen-specific%20response",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 108,
@@ -4108,7 +4857,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=bactericidal%20activity",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 109,
@@ -4141,7 +4897,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=complement%20binding",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 110,
@@ -4174,7 +4937,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=complement%20fixation",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 111,
@@ -4215,7 +4985,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=Fc%20receptor",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 112,
@@ -4248,7 +5025,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=humoral%20immunity",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 113,
@@ -4281,7 +5065,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=IgG1",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 114,
@@ -4314,7 +5105,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=IgG2",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 115,
@@ -4347,7 +5145,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=IgM",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 116,
@@ -4380,7 +5185,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=immune%20priming",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 117,
@@ -4413,7 +5225,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=phagocytosis",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 118,
@@ -4446,7 +5265,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=polyclonal%20activation",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 119,
@@ -4487,7 +5313,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=systems%20serology",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 120,
@@ -4520,7 +5353,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=monoclonal%20antibodies",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 121,
@@ -4553,7 +5393,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=anti-Vi%20IgG",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 122,
@@ -4610,7 +5457,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=serology",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 123,
@@ -4643,7 +5497,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=Vi-specific%20IgG",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 124,
@@ -4676,7 +5537,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=immunomodulatory%20activity",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 125,
@@ -4717,7 +5585,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=stakeholder%20engagement",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 126,
@@ -4750,7 +5625,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=multimodal%20IPC%20strategy",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 127,
@@ -4783,7 +5665,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=healthcare-associated%20infection",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 128,
@@ -4824,7 +5713,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=invasive%20non-typhoidal%20Salmonella",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 129,
@@ -4865,7 +5761,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=household%20transmission",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 130,
@@ -4898,7 +5801,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=role-based%20access",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 131,
@@ -4931,7 +5841,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=version%20history",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 132,
@@ -4964,7 +5881,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=knowledge%20translation",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 133,
@@ -4997,7 +5921,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=policy%20uptake",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 134,
@@ -5046,7 +5977,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=ELISA",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 135,
@@ -5087,7 +6025,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=machine%20learning",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 136,
@@ -5120,7 +6065,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=random%20forest",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 137,
@@ -5153,7 +6105,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=supervised%20machine%20learning",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 138,
@@ -5186,7 +6145,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=support%20vector%20machine",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 139,
@@ -5219,7 +6185,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=elastic%20net%20logistic%20regression",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 140,
@@ -5276,7 +6249,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=classification%20accuracy",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 141,
@@ -5309,7 +6289,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=F1-score",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 142,
@@ -5358,7 +6345,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=cerebral%20malaria",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 143,
@@ -5391,7 +6385,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=chloroquine%20resistance",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 144,
@@ -5424,7 +6425,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=drug%20withdrawal",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 145,
@@ -5457,7 +6465,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=malaria%20rapid%20diagnostic%20test",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 146,
@@ -5514,7 +6529,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=malarial%20parasitaemia",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 147,
@@ -5555,7 +6577,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=PfHRP2",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 148,
@@ -5588,7 +6617,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=PfEMP1",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 149,
@@ -5645,7 +6681,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=malaria%20chemoprevention",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 150,
@@ -5678,7 +6721,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=perennial%20malaria%20chemoprevention",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 151,
@@ -5719,7 +6769,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=seasonal%20malaria%20chemoprevention",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 152,
@@ -5752,7 +6809,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=preterm%20birth",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 153,
@@ -5793,7 +6857,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=antenatal%20care",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 154,
@@ -5826,7 +6897,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=mathematical%20modelling",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 155,
@@ -5859,7 +6937,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=transmission%20modelling",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 156,
@@ -5892,7 +6977,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=simulation%20modelling",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 157,
@@ -5925,7 +7017,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=metagenomic%20sequencing",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 158,
@@ -5974,7 +7073,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=bacterial%20lineage",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 159,
@@ -6007,7 +7113,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=capsular%20locus",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 160,
@@ -6040,7 +7153,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=resistance%20determinant",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 161,
@@ -6073,7 +7193,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=Vi%20capsule",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 162,
@@ -6106,7 +7233,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=viaB%20locus",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 163,
@@ -6171,7 +7305,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=serotype",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 164,
@@ -6276,7 +7417,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=antimicrobial%20resistance",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 165,
@@ -6317,7 +7465,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=ESBL-producing%20E.%20coli",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 166,
@@ -6358,7 +7513,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=extended-spectrum%20beta-lactamase",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 167,
@@ -6391,7 +7553,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=MRSA",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 168,
@@ -6440,7 +7609,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=multidrug%20resistance",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 169,
@@ -6473,7 +7649,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=bacterial%20carriage",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 170,
@@ -6522,7 +7705,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=nasopharyngeal%20carriage",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 171,
@@ -6571,7 +7761,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=pneumococcal%20carriage",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 172,
@@ -6604,7 +7801,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=triangulation",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 173,
@@ -6637,7 +7841,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=antisense%20oligonucleotide",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 174,
@@ -6694,7 +7905,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=quantitative%20PCR",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 175,
@@ -6727,7 +7945,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=RT-qPCR",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 176,
@@ -6760,7 +7985,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=multiple%20micronutrient%20supplementation",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 177,
@@ -6793,7 +8025,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=pathogen%20reservoir",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 178,
@@ -6826,7 +8065,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=dog-mediated%20rabies",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 179,
@@ -6859,7 +8105,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=photovoice",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 180,
@@ -6900,7 +8153,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=co-design",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 181,
@@ -6933,7 +8193,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=co-creation",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 182,
@@ -6966,7 +8233,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=24-plex%20serotype-specific%20urine%20antigen%20detection%20assay",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 183,
@@ -6999,7 +8273,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=urinary%20antigen%20shedding",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 184,
@@ -7032,7 +8313,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=vaccine-type%20carriage",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 185,
@@ -7065,7 +8353,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=sentinel%20surveillance",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 186,
@@ -7114,7 +8409,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=thematic%20analysis",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 187,
@@ -7147,7 +8449,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=Zero%20by%2030",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 188,
@@ -7180,7 +8489,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=drone%20imagery",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 189,
@@ -7237,7 +8553,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=mixed-methods",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 190,
@@ -7270,7 +8593,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=H58%20lineage",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 191,
@@ -7303,7 +8633,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=Augur",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 192,
@@ -7352,7 +8689,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=hotspot%20mapping",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 193,
@@ -7385,7 +8729,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=spatial%20GAM",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 194,
@@ -7418,7 +8769,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=spatial%20heterogeneity",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 195,
@@ -7451,7 +8809,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=spatial%20dependence",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 196,
@@ -7484,7 +8849,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=pyxform",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 197,
@@ -7517,7 +8889,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=skip%20logic",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 198,
@@ -7550,7 +8929,14 @@
         "Molecular / Genomics Scientist": 2,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=XPath",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 199,
@@ -7591,7 +8977,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=interferon-gamma%20release%20assay",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 200,
@@ -7624,7 +9017,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=QuantiFERON-TB%20Gold%20Plus",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 201,
@@ -7657,7 +9057,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=Xpert%20MTB/RIF%20Ultra",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 202,
@@ -7690,7 +9097,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=single-cell%20RNA%20sequencing",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 203,
@@ -7723,7 +9137,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=single-cell%20transcriptomics",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 204,
@@ -7756,7 +9177,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=transcriptome",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 205,
@@ -7789,7 +9217,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=Mtb-macrophage%20co-culture",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 206,
@@ -7822,7 +9257,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=antimycobacterial%20activity",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 207,
@@ -7855,7 +9297,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=host-directed%20therapy",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 208,
@@ -7888,7 +9337,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 3
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=immune%20interference",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 209,
@@ -7921,7 +9377,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=maternal%20vaccination",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 210,
@@ -7970,7 +9433,14 @@
         "Molecular / Genomics Scientist": 3,
         "Social / Implementation Scientist": 2
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=Typhoid%20conjugate%20vaccine",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 211,
@@ -8011,7 +9481,14 @@
         "Molecular / Genomics Scientist": 1,
         "Social / Implementation Scientist": 1
       },
-      "semanticAmbiguity": true
+      "semanticAmbiguity": true,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=immunogenicity",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 212,
@@ -8109,7 +9586,14 @@
         "Molecular / Genomics Scientist": 0.35,
         "Social / Implementation Scientist": 0.35
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=carriage",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 213,
@@ -8144,7 +9628,14 @@
         "Molecular / Genomics Scientist": 0.35,
         "Social / Implementation Scientist": 0.35
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=bystander%20pathogen",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 214,
@@ -8168,7 +9659,14 @@
         "Molecular / Genomics Scientist": 0.35,
         "Social / Implementation Scientist": 0.35
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=cross-sectional%20surveys",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 215,
@@ -8248,7 +9746,14 @@
         "Molecular / Genomics Scientist": 0.35,
         "Social / Implementation Scientist": 0.35
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=clusters",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 216,
@@ -8310,7 +9815,14 @@
         "Molecular / Genomics Scientist": 0.9,
         "Social / Implementation Scientist": 0.35
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=genome%20sequencing",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 217,
@@ -8363,7 +9875,14 @@
         "Molecular / Genomics Scientist": 0.35,
         "Social / Implementation Scientist": 0.8
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=cluster-randomised%20evaluation",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 218,
@@ -8416,7 +9935,14 @@
         "Molecular / Genomics Scientist": 0.65,
         "Social / Implementation Scientist": 0.35
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=RTS",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 219,
@@ -8469,7 +9995,14 @@
         "Molecular / Genomics Scientist": 0.65,
         "Social / Implementation Scientist": 0.35
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=S/AS01",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 220,
@@ -8522,7 +10055,14 @@
         "Molecular / Genomics Scientist": 0.9,
         "Social / Implementation Scientist": 0.35
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=lineage",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 221,
@@ -8593,7 +10133,14 @@
         "Molecular / Genomics Scientist": 0.9,
         "Social / Implementation Scientist": 0.35
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=isolates",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 222,
@@ -8628,7 +10175,14 @@
         "Molecular / Genomics Scientist": 0.9,
         "Social / Implementation Scientist": 0.35
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=Quinolone%20resistance-associated%20mutations",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 223,
@@ -8663,7 +10217,14 @@
         "Molecular / Genomics Scientist": 0.65,
         "Social / Implementation Scientist": 0.35
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=humoral%20immune%20response",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 224,
@@ -8707,7 +10268,14 @@
         "Molecular / Genomics Scientist": 0.65,
         "Social / Implementation Scientist": 0.35
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=Fc-gamma-R%20receptor",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 225,
@@ -8742,7 +10310,14 @@
         "Molecular / Genomics Scientist": 0.65,
         "Social / Implementation Scientist": 0.35
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=Antibody%20isotypes",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 226,
@@ -8777,7 +10352,14 @@
         "Molecular / Genomics Scientist": 0.35,
         "Social / Implementation Scientist": 0.35
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=Respiratory%20syncytial%20virus%20%28RSV%29",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 227,
@@ -8812,7 +10394,14 @@
         "Molecular / Genomics Scientist": 0.35,
         "Social / Implementation Scientist": 0.35
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=additive%20models",
+          "type": "search"
+        }
+      ]
     },
     {
       "id": 228,
@@ -8847,7 +10436,14 @@
         "Molecular / Genomics Scientist": 0.35,
         "Social / Implementation Scientist": 0.35
       },
-      "semanticAmbiguity": false
+      "semanticAmbiguity": false,
+      "externalReferences": [
+        {
+          "label": "Search MeSH",
+          "url": "https://meshb.nlm.nih.gov/search?searchInField=allTerms&sort=&size=20&searchType=anyWord&searchMethod=FullWord&q=scatterplot%20smoothing",
+          "type": "search"
+        }
+      ]
     }
   ],
   "abstracts": [

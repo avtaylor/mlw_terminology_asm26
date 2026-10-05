@@ -1,3 +1,7 @@
+function externalRefsHTML(refs){
+  if(!refs || !refs.length) return '<span class="muted">No external reference added.</span>';
+  return refs.map(r=>`<a class="external-ref" href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.label)} ↗</a>`).join(" ");
+}
 
 let DATA, filtered=[], selected=null, domainLevel=1, networkLevel=1;
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
@@ -100,7 +104,7 @@ function selectTerm(id){
   selected=DATA.terms.find(t=>t.id===id);
   $$("#results .term-row").forEach(x=>x.classList.toggle("active",+x.dataset.id===id));
   const t=selected;
-  $("#detail").innerHTML=`<h2>${esc(t.term)} ${t.abbr?`<span class="abbr">(${esc(t.abbr)})</span>`:""}</h2><div><span class="pill">${esc(t.domain)}</span>${t.varies?'<span class="pill varies">interpretation varies</span>':""}</div><h3>Canonical definition</h3><p>${esc(t.definition||"Not reconstructable from the supplied abstract text.")}</p><h3>Use across abstracts</h3>${t.occurrences.map(o=>`<div class="occ"><div class="occ-title">Abstract ${esc(o.abstractId)} — ${esc(o.title)}</div><div class="occ-meta">${esc(o.section)} · PDF page ${esc(o.page)}</div><p class="linked-text">${termLinkHTML(o.interpretation||"No separate interpretation could be reconstructed.",o.abstractId)}</p><details><summary>Context</summary><p class="snippet linked-text">${termLinkHTML(o.context,o.abstractId)}</p></details></div>`).join("")}`;
+  $("#detail").innerHTML=`<h2>${esc(t.term)} ${t.abbr?`<span class="abbr">(${esc(t.abbr)})</span>`:""}</h2><div><span class="pill">${esc(t.domain)}</span>${t.varies?'<span class="pill varies">interpretation varies</span>':""}</div><h3>Canonical definition</h3><p>${esc(t.definition||"Not reconstructable from the supplied abstract text.")}</p><h3>External references</h3><div class="external-references">${externalRefsHTML(t.externalReferences)}</div><small class="external-note">Searches MeSH using any word in the term.</small><h3>Use across abstracts</h3>${t.occurrences.map(o=>`<div class="occ"><div class="occ-title">Abstract ${esc(o.abstractId)} — ${esc(o.title)}</div><div class="occ-meta">${esc(o.section)} · PDF page ${esc(o.page)}</div><p class="linked-text">${termLinkHTML(o.interpretation||"No separate interpretation could be reconstructed.",o.abstractId)}</p><details><summary>Context</summary><p class="snippet linked-text">${termLinkHTML(o.context,o.abstractId)}</p></details></div>`).join("")}`;
   wireDictionaryLinks($("#detail"));
 }
 function setLevelButtons(prefix,level){
