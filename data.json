@@ -22,7 +22,8 @@
         "Needs explanation for B",
         "Potentially ambiguous to both"
       ]
-    }
+    },
+    "termCount": 228
   },
   "terms": [
     {
@@ -8011,6 +8012,842 @@
         "Social / Implementation Scientist": 1
       },
       "semanticAmbiguity": true
+    },
+    {
+      "id": 212,
+      "slug": "carriage",
+      "term": "carriage",
+      "abbr": "",
+      "domain": "Microbiology / infectious disease epidemiology",
+      "definition": "The presence of a microorganism in or on a person without necessarily causing symptomatic disease.",
+      "definitionStatus": "Inferred from corpus terminology; user-requested addition",
+      "varies": false,
+      "sources": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "count": 8,
+      "pages": [],
+      "occurrences": [
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "CROSS-SECTIONAL HEALTH CENTRE AND COMMUNITY-BASED EVALUATION OF THE IMPACT OF THE MALARIA RTS,S/AS01 VACCINE ON PNEUMOCOCCAL ANTIMICROBIAL RESISTANCE IN MALAWIAN CHILDREN",
+          "page": "",
+          "interpretation": "The presence of a microorganism in or on a person without necessarily causing symptomatic disease.",
+          "context": ""
+        },
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "THE IMPACT OF MALARIA RTS,S/AS01 VACCINE AND PCV-13 ON EXTENDED-SPECTRUM BETA-LACTAMASE (ESBL)- PRODUCING ESCHERICHIA COLI CARRIAGE AND ANTIMICROBIAL RESISTANCE IN MALAWIAN CHILDREN",
+          "page": "",
+          "interpretation": "The presence of a microorganism in or on a person without necessarily causing symptomatic disease.",
+          "context": ""
+        },
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "EVALUATING A SEROTYPE-SPECIFIC URINE ANTIGEN DETECTION ASSAY IN HOSPITALISED MALAWIAN CHILDREN WITH ACUTE RESPIRATORY INFECTION AND HIGH ANTIBIOTIC EXPOSURE",
+          "page": "",
+          "interpretation": "The presence of a microorganism in or on a person without necessarily causing symptomatic disease.",
+          "context": ""
+        },
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "HOUSEHOLD TRANSMISSION DRIVES CAMPYLOBACTER- ASSOCIATED DIARRHOEA IN YOUNG CHILDREN IN URBAN MALAWI: FINDINGS FROM THE CHICK CASE-CONTROL STUDY Burdon Bailey J.L.; Menyere A.; Williams N.; Pinchbeck G.; Cunliffe N.; Cornick J.",
+          "page": "",
+          "interpretation": "The presence of a microorganism in or on a person without necessarily causing symptomatic disease.",
+          "context": ""
+        },
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "IMPLICATIONS OF PNEUMOCOCCAL CARRIAGE, SHEDDING, ANTIMICROBIAL RESISTANCE PATTERNS, AND POTENTIAL WITHIN-HOUSEHOLD TRANSMISSION IN MALAWI",
+          "page": "",
+          "interpretation": "The presence of a microorganism in or on a person without necessarily causing symptomatic disease.",
+          "context": ""
+        },
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "LINEAGE AND CAPSULAR LOCUS DIVERSIFICATION OF PERSISTENTLY CARRIED PNEUMOCOCCAL SEROTYPES 3 AND 19F AMONG ADULTS IN MALAWI",
+          "page": "",
+          "interpretation": "The presence of a microorganism in or on a person without necessarily causing symptomatic disease.",
+          "context": ""
+        },
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "THE IMPACT OF PRE-HEALTHCARE ANTIBIOTIC USE ON NASOPHARYNGEAL CARRIAGE OF ANTIMICROBIAL RESISTANCE IN PAEDIATRIC COMMUNITY-ACQUIRED PNEUMONIA IN BLANTYRE, MALAWI",
+          "page": "",
+          "interpretation": "The presence of a microorganism in or on a person without necessarily causing symptomatic disease.",
+          "context": ""
+        },
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "LOT QUALITY ASSURANCE SAMPLING AS A TOOL FOR ANTIMICROBIAL RESISTANCE SURVEILLANCE IN MALAWI",
+          "page": "",
+          "interpretation": "The presence of a microorganism in or on a person without necessarily causing symptomatic disease.",
+          "context": ""
+        }
+      ],
+      "domainLevel1": "Epidemiology, statistics & modelling",
+      "disciplineFamiliarity": {
+        "Data Scientist / Statistician": 0.35,
+        "Epidemiologist": 0.9,
+        "Clinician": 0.65,
+        "Laboratory / Microbiology Scientist": 0.9,
+        "Molecular / Genomics Scientist": 0.35,
+        "Social / Implementation Scientist": 0.35
+      },
+      "semanticAmbiguity": false
+    },
+    {
+      "id": 213,
+      "slug": "bystander-pathogen",
+      "term": "bystander pathogen",
+      "abbr": "",
+      "domain": "Microbiology / infectious disease epidemiology",
+      "definition": "A pathogen detected alongside the organism or condition of primary interest, but not necessarily responsible for the illness being studied.",
+      "definitionStatus": "Inferred from corpus terminology; user-requested addition",
+      "varies": false,
+      "sources": [
+        ""
+      ],
+      "count": 1,
+      "pages": [],
+      "occurrences": [
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "CROSS-SECTIONAL HEALTH CENTRE AND COMMUNITY-BASED EVALUATION OF THE IMPACT OF THE MALARIA RTS,S/AS01 VACCINE ON PNEUMOCOCCAL ANTIMICROBIAL RESISTANCE IN MALAWIAN CHILDREN",
+          "page": "",
+          "interpretation": "A pathogen detected alongside the organism or condition of primary interest, but not necessarily responsible for the illness being studied.",
+          "context": ""
+        }
+      ],
+      "domainLevel1": "Epidemiology, statistics & modelling",
+      "disciplineFamiliarity": {
+        "Data Scientist / Statistician": 0.35,
+        "Epidemiologist": 0.9,
+        "Clinician": 0.65,
+        "Laboratory / Microbiology Scientist": 0.9,
+        "Molecular / Genomics Scientist": 0.35,
+        "Social / Implementation Scientist": 0.35
+      },
+      "semanticAmbiguity": false
+    },
+    {
+      "id": 214,
+      "slug": "cross-sectional-surveys",
+      "term": "cross-sectional surveys",
+      "abbr": "",
+      "domain": "Epidemiology / study design",
+      "definition": "Surveys that measure characteristics, exposures or outcomes in a population at a particular point or period in time.",
+      "definitionStatus": "Inferred from corpus terminology; user-requested addition",
+      "varies": false,
+      "sources": [],
+      "count": 0,
+      "pages": [],
+      "occurrences": [],
+      "domainLevel1": "Epidemiology, statistics & modelling",
+      "disciplineFamiliarity": {
+        "Data Scientist / Statistician": 0.35,
+        "Epidemiologist": 0.9,
+        "Clinician": 0.35,
+        "Laboratory / Microbiology Scientist": 0.35,
+        "Molecular / Genomics Scientist": 0.35,
+        "Social / Implementation Scientist": 0.35
+      },
+      "semanticAmbiguity": false
+    },
+    {
+      "id": 215,
+      "slug": "clusters",
+      "term": "clusters",
+      "abbr": "",
+      "domain": "Epidemiology / statistics",
+      "definition": "Groups of participants, communities, facilities or observations treated as related units in a study or analysis.",
+      "definitionStatus": "Inferred from corpus terminology; user-requested addition",
+      "varies": false,
+      "sources": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "count": 6,
+      "pages": [],
+      "occurrences": [
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "CROSS-SECTIONAL HEALTH CENTRE AND COMMUNITY-BASED EVALUATION OF THE IMPACT OF THE MALARIA RTS,S/AS01 VACCINE ON PNEUMOCOCCAL ANTIMICROBIAL RESISTANCE IN MALAWIAN CHILDREN",
+          "page": "",
+          "interpretation": "Groups of participants, communities, facilities or observations treated as related units in a study or analysis.",
+          "context": ""
+        },
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "THE IMPACT OF MALARIA RTS,S/AS01 VACCINE AND PCV-13 ON EXTENDED-SPECTRUM BETA-LACTAMASE (ESBL)- PRODUCING ESCHERICHIA COLI CARRIAGE AND ANTIMICROBIAL RESISTANCE IN MALAWIAN CHILDREN",
+          "page": "",
+          "interpretation": "Groups of participants, communities, facilities or observations treated as related units in a study or analysis.",
+          "context": ""
+        },
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "SINGLE-CELL TRANSCRIPTOMICS AND IN-VITRO GENE PERTURBATION EXPERIMENTS REVEAL CANRENONE AS A POTENTIAL HOST-DIRECTED THERAPEUTIC AGENT FOR TUBERCULOSIS",
+          "page": "",
+          "interpretation": "Groups of participants, communities, facilities or observations treated as related units in a study or analysis.",
+          "context": ""
+        },
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "REDUCTIONS IN MYCOBACTERIUM TUBERCULOSIS INFECTION IN URBAN BLANTYRE, MALAWI: PRELIMINARY RESULTS FROM THE ZAMSA-TB STUDY",
+          "page": "",
+          "interpretation": "Groups of participants, communities, facilities or observations treated as related units in a study or analysis.",
+          "context": ""
+        },
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "SHARED AND SITE-SPECIFIC IMMUNE ARCHITECTURE ACROSS HUMAN NASAL AND FEMALE GENITAL TRACT MUCOSA 1 1 1 1 1 Ndaru Jambo , Edwin Lisimba , Alice Kusakala , Chisomo Kafamau , Bridget Ibbu , George",
+          "page": "",
+          "interpretation": "Groups of participants, communities, facilities or observations treated as related units in a study or analysis.",
+          "context": ""
+        },
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "MAPPING INTERVENTIONS ADDRESSING HIV CARE ENGAGEMENT AMONG MOBILE POPULATIONS IN SUB-SAHARAN AFRICA: A SCOPING REVIEW",
+          "page": "",
+          "interpretation": "Groups of participants, communities, facilities or observations treated as related units in a study or analysis.",
+          "context": ""
+        }
+      ],
+      "domainLevel1": "Epidemiology, statistics & modelling",
+      "disciplineFamiliarity": {
+        "Data Scientist / Statistician": 0.9,
+        "Epidemiologist": 0.9,
+        "Clinician": 0.35,
+        "Laboratory / Microbiology Scientist": 0.35,
+        "Molecular / Genomics Scientist": 0.35,
+        "Social / Implementation Scientist": 0.35
+      },
+      "semanticAmbiguity": false
+    },
+    {
+      "id": 216,
+      "slug": "genome-sequencing",
+      "term": "genome sequencing",
+      "abbr": "",
+      "domain": "Genomics / pathogen genomics",
+      "definition": "Determining the nucleotide sequence of an organism's genome to characterise genetic variation, relatedness or other genomic features.",
+      "definitionStatus": "Inferred from corpus terminology; user-requested addition",
+      "varies": false,
+      "sources": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "count": 4,
+      "pages": [],
+      "occurrences": [
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "CROSS-SECTIONAL HEALTH CENTRE AND COMMUNITY-BASED EVALUATION OF THE IMPACT OF THE MALARIA RTS,S/AS01 VACCINE ON PNEUMOCOCCAL ANTIMICROBIAL RESISTANCE IN MALAWIAN CHILDREN",
+          "page": "",
+          "interpretation": "Determining the nucleotide sequence of an organism's genome to characterise genetic variation, relatedness or other genomic features.",
+          "context": ""
+        },
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "GENOMIC SURVEILLANCE OF SALMONELLA TYPHI BEFORE AND AFTER TYPHOID CONJUGATE VACCINE ROLLOUT IN MALAWI",
+          "page": "",
+          "interpretation": "Determining the nucleotide sequence of an organism's genome to characterise genetic variation, relatedness or other genomic features.",
+          "context": ""
+        },
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "THE IMPACT OF MALARIA RTS,S/AS01 VACCINE AND PCV-13 ON EXTENDED-SPECTRUM BETA-LACTAMASE (ESBL)- PRODUCING ESCHERICHIA COLI CARRIAGE AND ANTIMICROBIAL RESISTANCE IN MALAWIAN CHILDREN",
+          "page": "",
+          "interpretation": "Determining the nucleotide sequence of an organism's genome to characterise genetic variation, relatedness or other genomic features.",
+          "context": ""
+        },
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "LINEAGE AND CAPSULAR LOCUS DIVERSIFICATION OF PERSISTENTLY CARRIED PNEUMOCOCCAL SEROTYPES 3 AND 19F AMONG ADULTS IN MALAWI",
+          "page": "",
+          "interpretation": "Determining the nucleotide sequence of an organism's genome to characterise genetic variation, relatedness or other genomic features.",
+          "context": ""
+        }
+      ],
+      "domainLevel1": "Microbiology, AMR & pathogen genomics",
+      "disciplineFamiliarity": {
+        "Data Scientist / Statistician": 0.35,
+        "Epidemiologist": 0.35,
+        "Clinician": 0.35,
+        "Laboratory / Microbiology Scientist": 0.75,
+        "Molecular / Genomics Scientist": 0.9,
+        "Social / Implementation Scientist": 0.35
+      },
+      "semanticAmbiguity": false
+    },
+    {
+      "id": 217,
+      "slug": "cluster-randomised-evaluation",
+      "term": "cluster-randomised evaluation",
+      "abbr": "",
+      "domain": "Clinical trials / implementation research",
+      "definition": "An evaluation in which groups such as communities or facilities, rather than individual participants, are assigned to comparison groups.",
+      "definitionStatus": "Inferred from corpus terminology; user-requested addition",
+      "varies": false,
+      "sources": [
+        "",
+        "",
+        ""
+      ],
+      "count": 3,
+      "pages": [],
+      "occurrences": [
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "CROSS-SECTIONAL HEALTH CENTRE AND COMMUNITY-BASED EVALUATION OF THE IMPACT OF THE MALARIA RTS,S/AS01 VACCINE ON PNEUMOCOCCAL ANTIMICROBIAL RESISTANCE IN MALAWIAN CHILDREN",
+          "page": "",
+          "interpretation": "An evaluation in which groups such as communities or facilities, rather than individual participants, are assigned to comparison groups.",
+          "context": ""
+        },
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "THE IMPACT OF MALARIA RTS,S/AS01 VACCINE AND PCV-13 ON EXTENDED-SPECTRUM BETA-LACTAMASE (ESBL)- PRODUCING ESCHERICHIA COLI CARRIAGE AND ANTIMICROBIAL RESISTANCE IN MALAWIAN CHILDREN",
+          "page": "",
+          "interpretation": "An evaluation in which groups such as communities or facilities, rather than individual participants, are assigned to comparison groups.",
+          "context": ""
+        },
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "MAPPING INTERVENTIONS ADDRESSING HIV CARE ENGAGEMENT AMONG MOBILE POPULATIONS IN SUB-SAHARAN AFRICA: A SCOPING REVIEW",
+          "page": "",
+          "interpretation": "An evaluation in which groups such as communities or facilities, rather than individual participants, are assigned to comparison groups.",
+          "context": ""
+        }
+      ],
+      "domainLevel1": "Clinical trials & therapeutics",
+      "disciplineFamiliarity": {
+        "Data Scientist / Statistician": 0.35,
+        "Epidemiologist": 0.75,
+        "Clinician": 0.35,
+        "Laboratory / Microbiology Scientist": 0.35,
+        "Molecular / Genomics Scientist": 0.35,
+        "Social / Implementation Scientist": 0.8
+      },
+      "semanticAmbiguity": false
+    },
+    {
+      "id": 218,
+      "slug": "rts",
+      "term": "RTS",
+      "abbr": "",
+      "domain": "Malaria / vaccinology",
+      "definition": "Part of the name of the RTS,S malaria vaccine construct; it refers to components derived from the Plasmodium falciparum circumsporozoite protein and hepatitis B surface antigen.",
+      "definitionStatus": "Inferred from corpus terminology; user-requested addition",
+      "varies": false,
+      "sources": [
+        "",
+        "",
+        ""
+      ],
+      "count": 3,
+      "pages": [],
+      "occurrences": [
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "CROSS-SECTIONAL HEALTH CENTRE AND COMMUNITY-BASED EVALUATION OF THE IMPACT OF THE MALARIA RTS,S/AS01 VACCINE ON PNEUMOCOCCAL ANTIMICROBIAL RESISTANCE IN MALAWIAN CHILDREN",
+          "page": "",
+          "interpretation": "Part of the name of the RTS,S malaria vaccine construct; it refers to components derived from the Plasmodium falciparum circumsporozoite protein and hepatitis B surface antigen.",
+          "context": ""
+        },
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "THE IMPACT OF MALARIA RTS,S/AS01 VACCINE AND PCV-13 ON EXTENDED-SPECTRUM BETA-LACTAMASE (ESBL)- PRODUCING ESCHERICHIA COLI CARRIAGE AND ANTIMICROBIAL RESISTANCE IN MALAWIAN CHILDREN",
+          "page": "",
+          "interpretation": "Part of the name of the RTS,S malaria vaccine construct; it refers to components derived from the Plasmodium falciparum circumsporozoite protein and hepatitis B surface antigen.",
+          "context": ""
+        },
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "EFFICACY AND SAFETY OF DIHYDROARTEMISININ-PIPERAQUINE FOR PERENNIAL MALARIA CHEMOPREVENTION ALIGNED WITH ROUTINE INFANT HEALTH VISITS IN MALAWI",
+          "page": "",
+          "interpretation": "Part of the name of the RTS,S malaria vaccine construct; it refers to components derived from the Plasmodium falciparum circumsporozoite protein and hepatitis B surface antigen.",
+          "context": ""
+        }
+      ],
+      "domainLevel1": "Immunology & vaccinology",
+      "disciplineFamiliarity": {
+        "Data Scientist / Statistician": 0.35,
+        "Epidemiologist": 0.35,
+        "Clinician": 0.65,
+        "Laboratory / Microbiology Scientist": 0.8,
+        "Molecular / Genomics Scientist": 0.65,
+        "Social / Implementation Scientist": 0.35
+      },
+      "semanticAmbiguity": false
+    },
+    {
+      "id": 219,
+      "slug": "s-as01",
+      "term": "S/AS01",
+      "abbr": "",
+      "domain": "Malaria / vaccinology",
+      "definition": "The S/AS01 component of the RTS,S/AS01 malaria vaccine name, referring to the vaccine antigen formulation with the AS01 adjuvant system.",
+      "definitionStatus": "Inferred from corpus terminology; user-requested addition",
+      "varies": false,
+      "sources": [
+        "",
+        "",
+        ""
+      ],
+      "count": 3,
+      "pages": [],
+      "occurrences": [
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "CROSS-SECTIONAL HEALTH CENTRE AND COMMUNITY-BASED EVALUATION OF THE IMPACT OF THE MALARIA RTS,S/AS01 VACCINE ON PNEUMOCOCCAL ANTIMICROBIAL RESISTANCE IN MALAWIAN CHILDREN",
+          "page": "",
+          "interpretation": "The S/AS01 component of the RTS,S/AS01 malaria vaccine name, referring to the vaccine antigen formulation with the AS01 adjuvant system.",
+          "context": ""
+        },
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "THE IMPACT OF MALARIA RTS,S/AS01 VACCINE AND PCV-13 ON EXTENDED-SPECTRUM BETA-LACTAMASE (ESBL)- PRODUCING ESCHERICHIA COLI CARRIAGE AND ANTIMICROBIAL RESISTANCE IN MALAWIAN CHILDREN",
+          "page": "",
+          "interpretation": "The S/AS01 component of the RTS,S/AS01 malaria vaccine name, referring to the vaccine antigen formulation with the AS01 adjuvant system.",
+          "context": ""
+        },
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "EFFICACY AND SAFETY OF DIHYDROARTEMISININ-PIPERAQUINE FOR PERENNIAL MALARIA CHEMOPREVENTION ALIGNED WITH ROUTINE INFANT HEALTH VISITS IN MALAWI",
+          "page": "",
+          "interpretation": "The S/AS01 component of the RTS,S/AS01 malaria vaccine name, referring to the vaccine antigen formulation with the AS01 adjuvant system.",
+          "context": ""
+        }
+      ],
+      "domainLevel1": "Immunology & vaccinology",
+      "disciplineFamiliarity": {
+        "Data Scientist / Statistician": 0.35,
+        "Epidemiologist": 0.35,
+        "Clinician": 0.65,
+        "Laboratory / Microbiology Scientist": 0.8,
+        "Molecular / Genomics Scientist": 0.65,
+        "Social / Implementation Scientist": 0.35
+      },
+      "semanticAmbiguity": false
+    },
+    {
+      "id": 220,
+      "slug": "lineage",
+      "term": "lineage",
+      "abbr": "",
+      "domain": "Genomics / pathogen genomics",
+      "definition": "A genetically related group of organisms that share ancestry and can be distinguished from other groups using genomic or molecular data.",
+      "definitionStatus": "Inferred from corpus terminology; user-requested addition",
+      "varies": false,
+      "sources": [
+        "",
+        "",
+        ""
+      ],
+      "count": 3,
+      "pages": [],
+      "occurrences": [
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "GENOMIC SURVEILLANCE OF SALMONELLA TYPHI BEFORE AND AFTER TYPHOID CONJUGATE VACCINE ROLLOUT IN MALAWI",
+          "page": "",
+          "interpretation": "A genetically related group of organisms that share ancestry and can be distinguished from other groups using genomic or molecular data.",
+          "context": ""
+        },
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "THE IMPACT OF MALARIA RTS,S/AS01 VACCINE AND PCV-13 ON EXTENDED-SPECTRUM BETA-LACTAMASE (ESBL)- PRODUCING ESCHERICHIA COLI CARRIAGE AND ANTIMICROBIAL RESISTANCE IN MALAWIAN CHILDREN",
+          "page": "",
+          "interpretation": "A genetically related group of organisms that share ancestry and can be distinguished from other groups using genomic or molecular data.",
+          "context": ""
+        },
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "LINEAGE AND CAPSULAR LOCUS DIVERSIFICATION OF PERSISTENTLY CARRIED PNEUMOCOCCAL SEROTYPES 3 AND 19F AMONG ADULTS IN MALAWI",
+          "page": "",
+          "interpretation": "A genetically related group of organisms that share ancestry and can be distinguished from other groups using genomic or molecular data.",
+          "context": ""
+        }
+      ],
+      "domainLevel1": "Microbiology, AMR & pathogen genomics",
+      "disciplineFamiliarity": {
+        "Data Scientist / Statistician": 0.35,
+        "Epidemiologist": 0.35,
+        "Clinician": 0.35,
+        "Laboratory / Microbiology Scientist": 0.75,
+        "Molecular / Genomics Scientist": 0.9,
+        "Social / Implementation Scientist": 0.35
+      },
+      "semanticAmbiguity": false
+    },
+    {
+      "id": 221,
+      "slug": "isolates",
+      "term": "isolates",
+      "abbr": "",
+      "domain": "Microbiology / pathogen genomics",
+      "definition": "Samples or strains of a microorganism obtained from individual specimens and studied separately.",
+      "definitionStatus": "Inferred from corpus terminology; user-requested addition",
+      "varies": false,
+      "sources": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "count": 5,
+      "pages": [],
+      "occurrences": [
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "CROSS-SECTIONAL HEALTH CENTRE AND COMMUNITY-BASED EVALUATION OF THE IMPACT OF THE MALARIA RTS,S/AS01 VACCINE ON PNEUMOCOCCAL ANTIMICROBIAL RESISTANCE IN MALAWIAN CHILDREN",
+          "page": "",
+          "interpretation": "Samples or strains of a microorganism obtained from individual specimens and studied separately.",
+          "context": ""
+        },
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "GENOMIC SURVEILLANCE OF SALMONELLA TYPHI BEFORE AND AFTER TYPHOID CONJUGATE VACCINE ROLLOUT IN MALAWI",
+          "page": "",
+          "interpretation": "Samples or strains of a microorganism obtained from individual specimens and studied separately.",
+          "context": ""
+        },
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "IMPLICATIONS OF PNEUMOCOCCAL CARRIAGE, SHEDDING, ANTIMICROBIAL RESISTANCE PATTERNS, AND POTENTIAL WITHIN-HOUSEHOLD TRANSMISSION IN MALAWI",
+          "page": "",
+          "interpretation": "Samples or strains of a microorganism obtained from individual specimens and studied separately.",
+          "context": ""
+        },
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "UNDERSTANDING SEVERE MATERNAL INFECTIONS AND IMPACTING HEALTH OUTCOMES IN MALAWI: A MIXED-METHODS IMPLEMENTATION SCIENCE STUDY",
+          "page": "",
+          "interpretation": "Samples or strains of a microorganism obtained from individual specimens and studied separately.",
+          "context": ""
+        },
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "LOT QUALITY ASSURANCE SAMPLING AS A TOOL FOR ANTIMICROBIAL RESISTANCE SURVEILLANCE IN MALAWI",
+          "page": "",
+          "interpretation": "Samples or strains of a microorganism obtained from individual specimens and studied separately.",
+          "context": ""
+        }
+      ],
+      "domainLevel1": "Microbiology, AMR & pathogen genomics",
+      "disciplineFamiliarity": {
+        "Data Scientist / Statistician": 0.35,
+        "Epidemiologist": 0.35,
+        "Clinician": 0.65,
+        "Laboratory / Microbiology Scientist": 0.75,
+        "Molecular / Genomics Scientist": 0.9,
+        "Social / Implementation Scientist": 0.35
+      },
+      "semanticAmbiguity": false
+    },
+    {
+      "id": 222,
+      "slug": "quinolone-resistance-associated-mutations",
+      "term": "Quinolone resistance-associated mutations",
+      "abbr": "",
+      "domain": "Antimicrobial resistance / pathogen genomics",
+      "definition": "Genetic mutations associated with reduced susceptibility or resistance to quinolone antibiotics.",
+      "definitionStatus": "Inferred from corpus terminology; user-requested addition",
+      "varies": false,
+      "sources": [
+        ""
+      ],
+      "count": 1,
+      "pages": [],
+      "occurrences": [
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "GENOMIC SURVEILLANCE OF SALMONELLA TYPHI BEFORE AND AFTER TYPHOID CONJUGATE VACCINE ROLLOUT IN MALAWI",
+          "page": "",
+          "interpretation": "Genetic mutations associated with reduced susceptibility or resistance to quinolone antibiotics.",
+          "context": ""
+        }
+      ],
+      "domainLevel1": "Microbiology, AMR & pathogen genomics",
+      "disciplineFamiliarity": {
+        "Data Scientist / Statistician": 0.35,
+        "Epidemiologist": 0.35,
+        "Clinician": 0.65,
+        "Laboratory / Microbiology Scientist": 0.75,
+        "Molecular / Genomics Scientist": 0.9,
+        "Social / Implementation Scientist": 0.35
+      },
+      "semanticAmbiguity": false
+    },
+    {
+      "id": 223,
+      "slug": "humoral-immune-response",
+      "term": "humoral immune response",
+      "abbr": "",
+      "domain": "Immunology / vaccinology",
+      "definition": "The antibody-mediated part of the immune response, involving antibodies produced in response to infection or vaccination.",
+      "definitionStatus": "Inferred from corpus terminology; user-requested addition",
+      "varies": false,
+      "sources": [
+        ""
+      ],
+      "count": 1,
+      "pages": [],
+      "occurrences": [
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "PROFILING HUMORAL IMMUNITY AGAINST INVASIVE NON- TYPHOIDAL SALMONELLA (iNTS) USING SYSTEMS SEROLOGY",
+          "page": "",
+          "interpretation": "The antibody-mediated part of the immune response, involving antibodies produced in response to infection or vaccination.",
+          "context": ""
+        }
+      ],
+      "domainLevel1": "Immunology & vaccinology",
+      "disciplineFamiliarity": {
+        "Data Scientist / Statistician": 0.35,
+        "Epidemiologist": 0.35,
+        "Clinician": 0.65,
+        "Laboratory / Microbiology Scientist": 0.8,
+        "Molecular / Genomics Scientist": 0.65,
+        "Social / Implementation Scientist": 0.35
+      },
+      "semanticAmbiguity": false
+    },
+    {
+      "id": 224,
+      "slug": "fc-gamma-r-receptor",
+      "term": "Fc-gamma-R receptor",
+      "abbr": "",
+      "domain": "Immunology / systems serology",
+      "definition": "A receptor that binds the Fc portion of IgG antibodies and helps immune cells translate antibody binding into cellular functions.",
+      "definitionStatus": "Inferred from corpus terminology; user-requested addition",
+      "varies": false,
+      "sources": [
+        "",
+        ""
+      ],
+      "count": 2,
+      "pages": [],
+      "occurrences": [
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "PROFILING HUMORAL IMMUNITY AGAINST INVASIVE NON- TYPHOIDAL SALMONELLA (iNTS) USING SYSTEMS SEROLOGY",
+          "page": "",
+          "interpretation": "A receptor that binds the Fc portion of IgG antibodies and helps immune cells translate antibody binding into cellular functions.",
+          "context": ""
+        },
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "ANTIGEN-SPECIFIC AND FUNCTIONAL DETERMINANTS OF ANTIBODY RESPONSES TO PfEMP1 IN YOUNG MALAWIAN CHILDREN WITH MALARIA OF VARYING SEVERITY: A SYSTEMS SEROLOGY STUDY",
+          "page": "",
+          "interpretation": "A receptor that binds the Fc portion of IgG antibodies and helps immune cells translate antibody binding into cellular functions.",
+          "context": ""
+        }
+      ],
+      "domainLevel1": "Immunology & vaccinology",
+      "disciplineFamiliarity": {
+        "Data Scientist / Statistician": 0.35,
+        "Epidemiologist": 0.35,
+        "Clinician": 0.65,
+        "Laboratory / Microbiology Scientist": 0.8,
+        "Molecular / Genomics Scientist": 0.65,
+        "Social / Implementation Scientist": 0.35
+      },
+      "semanticAmbiguity": false
+    },
+    {
+      "id": 225,
+      "slug": "antibody-isotypes",
+      "term": "Antibody isotypes",
+      "abbr": "",
+      "domain": "Immunology / systems serology",
+      "definition": "Classes of antibodies, such as IgG or IgM, distinguished by their constant-region structure and immune function.",
+      "definitionStatus": "Inferred from corpus terminology; user-requested addition",
+      "varies": false,
+      "sources": [
+        ""
+      ],
+      "count": 1,
+      "pages": [],
+      "occurrences": [
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "PROFILING HUMORAL IMMUNITY AGAINST INVASIVE NON- TYPHOIDAL SALMONELLA (iNTS) USING SYSTEMS SEROLOGY",
+          "page": "",
+          "interpretation": "Classes of antibodies, such as IgG or IgM, distinguished by their constant-region structure and immune function.",
+          "context": ""
+        }
+      ],
+      "domainLevel1": "Immunology & vaccinology",
+      "disciplineFamiliarity": {
+        "Data Scientist / Statistician": 0.35,
+        "Epidemiologist": 0.35,
+        "Clinician": 0.65,
+        "Laboratory / Microbiology Scientist": 0.8,
+        "Molecular / Genomics Scientist": 0.65,
+        "Social / Implementation Scientist": 0.35
+      },
+      "semanticAmbiguity": false
+    },
+    {
+      "id": 226,
+      "slug": "respiratory-syncytial-virus-rsv",
+      "term": "Respiratory syncytial virus (RSV)",
+      "abbr": "",
+      "domain": "Virology / respiratory infections",
+      "definition": "A respiratory virus that can cause infection of the airways, with particularly important disease burden in infants and young children.",
+      "definitionStatus": "Inferred from corpus terminology; user-requested addition",
+      "varies": false,
+      "sources": [
+        ""
+      ],
+      "count": 1,
+      "pages": [],
+      "occurrences": [
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "RESPIRATORY SYNCYTIAL VIRUS INFECTION AND AGE-SPECIFIC SEROLOGY IN YOUNG CHILDREN IN BLANTYRE, MALAWI",
+          "page": "",
+          "interpretation": "A respiratory virus that can cause infection of the airways, with particularly important disease burden in infants and young children.",
+          "context": ""
+        }
+      ],
+      "domainLevel1": "Microbiology, AMR & pathogen genomics",
+      "disciplineFamiliarity": {
+        "Data Scientist / Statistician": 0.35,
+        "Epidemiologist": 0.35,
+        "Clinician": 0.65,
+        "Laboratory / Microbiology Scientist": 0.9,
+        "Molecular / Genomics Scientist": 0.35,
+        "Social / Implementation Scientist": 0.35
+      },
+      "semanticAmbiguity": false
+    },
+    {
+      "id": 227,
+      "slug": "additive-models",
+      "term": "additive models",
+      "abbr": "",
+      "domain": "Statistics / modelling",
+      "definition": "Regression models in which predictor effects are combined additively and may include flexible smooth functions rather than only straight-line relationships.",
+      "definitionStatus": "Inferred from corpus terminology; user-requested addition",
+      "varies": false,
+      "sources": [
+        ""
+      ],
+      "count": 1,
+      "pages": [],
+      "occurrences": [
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "",
+          "page": "",
+          "interpretation": "Regression models in which predictor effects are combined additively and may include flexible smooth functions rather than only straight-line relationships.",
+          "context": ""
+        }
+      ],
+      "domainLevel1": "Epidemiology, statistics & modelling",
+      "disciplineFamiliarity": {
+        "Data Scientist / Statistician": 0.9,
+        "Epidemiologist": 0.75,
+        "Clinician": 0.35,
+        "Laboratory / Microbiology Scientist": 0.35,
+        "Molecular / Genomics Scientist": 0.35,
+        "Social / Implementation Scientist": 0.35
+      },
+      "semanticAmbiguity": false
+    },
+    {
+      "id": 228,
+      "slug": "scatterplot-smoothing",
+      "term": "scatterplot smoothing",
+      "abbr": "",
+      "domain": "Statistics / data visualisation",
+      "definition": "A method for adding a smooth trend to a scatterplot to show the underlying relationship between variables without requiring a simple straight-line fit.",
+      "definitionStatus": "Inferred from corpus terminology; user-requested addition",
+      "varies": false,
+      "sources": [
+        ""
+      ],
+      "count": 1,
+      "pages": [],
+      "occurrences": [
+        {
+          "abstractId": "",
+          "section": "",
+          "title": "RESPIRATORY SYNCYTIAL VIRUS INFECTION AND AGE-SPECIFIC SEROLOGY IN YOUNG CHILDREN IN BLANTYRE, MALAWI",
+          "page": "",
+          "interpretation": "A method for adding a smooth trend to a scatterplot to show the underlying relationship between variables without requiring a simple straight-line fit.",
+          "context": ""
+        }
+      ],
+      "domainLevel1": "Epidemiology, statistics & modelling",
+      "disciplineFamiliarity": {
+        "Data Scientist / Statistician": 0.9,
+        "Epidemiologist": 0.75,
+        "Clinician": 0.35,
+        "Laboratory / Microbiology Scientist": 0.35,
+        "Molecular / Genomics Scientist": 0.35,
+        "Social / Implementation Scientist": 0.35
+      },
+      "semanticAmbiguity": false
     }
   ],
   "abstracts": [
