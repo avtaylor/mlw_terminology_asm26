@@ -2,7 +2,16 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>MLW Research Terminology Explorer</title><meta name="description" content="Search and explore technical terminology derived from MLW Annual Scientific Meeting abstracts.">
 <link rel="stylesheet" href="styles.css"></head><body>
-<header class="top"><div class="top-inner"><h1>MLW Research Terminology Explorer</h1><p>This is an LLM-generated dictionary of terminology found in abstracts presented at the MLW ASM in Mangochi, 4–7 October 2026. (@DSCM Unit)</p><p class="global-method-note">It explores specialist language that may require explanation across disciplinary boundaries. The disciplinary-accessibility classifications are LLM-generated hypotheses, not measurements of individual researchers’ knowledge.</p></div></header>
+<header class="top"><div class="top-inner"><h1>MLW Research Terminology Explorer</h1>
+  <p>This is an LLM-generated dictionary of terminology found in abstracts presented at the MLW ASM in Mangochi, 4–7 October 2026. (@DSCM Unit)</p><p class="global-method-note">It explores specialist language that may require explanation across disciplinary boundaries. The disciplinary-accessibility classifications are LLM-generated hypotheses, not measurements of individual researchers’ knowledge.</p>
+  <p>A <b>technical term</b> is defined as a lexical item or multi-word expression whose interpretation in the abstract depends materially on specialised disciplinary, methodological, scientific or professional knowledge.</p>
+  <p>As terms are extracted by GPT, the “rules” used for their extraction are not transparent and did not leverage existing terminology lexicons to identify terms.  LLMs rely on transformer-based contextual representations to understand the domain of a term. This is an interesting area but out of scope for this discussion.</p>
+  <p>The extraction is likely based on the use of words in context and on what is called “semantic specificity”. This can be problematic because we do not have a standardised procedure in building the lexicon, but at the same time it opens opportunities for learning because some terms or term associations may be new or not contained in standardised termonlogy databases.</p>
+  <p><b>Linguistic specificity</b> is one type of semantic specificity. It relies on the semantic feature of noun phrases to distinguishes whether an entity is unique or uniquely intended by a speaker in a given context, independent of whether the entity actually exists.</p>
+  <p>As this process is LLM driven, we added, on the Abstract dashboard, the possibility for users to select and submit for review and addition terms that may be unfamiliar to their own disciplines. To keep this process simple and transparent, the submitted terms are catalogued in a google spreadsheet. A separate process would then enrich the lexicon with these new terms. </p>
+</p>
+</div>
+</header>
 <main class="wrap">
 <nav class="tabs" aria-label="Views"><button class="tab active" data-view="domains">Domains</button><button class="tab" data-view="dictionary">Dictionary</button><button class="tab" data-view="dashboard">Discipline Dashboard</button><button class="tab" data-view="network">Network</button><button class="tab" data-view="abstracts">Abstracts</button></nav>
 <section id="dictionary" class="view" hidden>
