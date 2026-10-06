@@ -46,33 +46,41 @@ function termLinkHTML(text,currentAbstractId=""){
   out+=esc(s.slice(cursor));
   return out;
 }
-let termReturnOrigin=null;
+let termReturnOrigins=[];
 function currentViewName(){
   const active=document.querySelector(".tab.active");
   return active?.dataset.view || "domains";
 }
-function captureTermOrigin(el){
+function viewLabel(view){
+  return ({domains:"Domains",dictionary:"previous term",dashboard:"Understanding terms across disciplines",network:"Network",abstracts:"Abstracts"})[view] || "previous view";
+}
+function captureTermOrigin(el=null){
   const view=currentViewName();
-  termReturnOrigin={
+  termReturnOrigins.push({
     view,
     scrollY:window.scrollY,
-    abstractId:el.dataset.abstractId || el.closest("[data-abstract-id]")?.dataset.abstractId || "",
-    termId:el.dataset.termId || "",
-    text:(el.textContent||"").trim()
-  };
+    abstractId:el?.dataset?.abstractId || el?.closest?.("[data-abstract-id]")?.dataset.abstractId || "",
+    termId:el?.dataset?.termId || "",
+    text:(el?.textContent||"").trim(),
+    selectedTermId:view==="dictionary"&&selected?selected.id:null
+  });
+  if(termReturnOrigins.length>20) termReturnOrigins.shift();
 }
 function restoreTermOrigin(){
-  if(!termReturnOrigin) return;
-  const origin=termReturnOrigin;
-  termReturnOrigin=null;
+  if(!termReturnOrigins.length) return;
+  const origin=termReturnOrigins.pop();
   switchView(origin.view);
+  if(origin.view==="dictionary" && origin.selectedTermId){
+    $("#q").value=""; $("#domain").value=""; $("#varies").value="";
+    renderDictionary(); selectTerm(origin.selectedTermId);
+  }
   requestAnimationFrame(()=>requestAnimationFrame(()=>{
     window.scrollTo({top:origin.scrollY,left:0,behavior:"auto"});
     let target=null;
     if(origin.abstractId){
       target=document.querySelector(`[data-abstract-id="${CSS.escape(origin.abstractId)}"] .dict-link[data-term-id="${CSS.escape(String(origin.termId))}"]`);
     }
-    if(!target){
+    if(!target && origin.view!=="dictionary"){
       target=[...document.querySelectorAll(`#${CSS.escape(origin.view)} .dict-link[data-term-id="${CSS.escape(String(origin.termId))}"]`)]
         .find(x=>(x.textContent||"").trim()===origin.text) || null;
     }
@@ -92,7 +100,7 @@ function wireDictionaryLinks(root=document){
     b.addEventListener("click",e=>{
       e.stopPropagation(); hideTermTip();
       const id=+b.dataset.termId;
-      if(currentViewName()!=="dictionary") captureTermOrigin(b);
+      captureTermOrigin(b);
       switchView("dictionary"); $("#q").value=""; $("#domain").value=""; $("#varies").value="";
       renderDictionary(); selectTerm(id);
       const row=document.querySelector(`#results .term-row[data-id="${id}"]`);
@@ -143,7 +151,7 @@ function selectTerm(id){
   selected=DATA.terms.find(t=>t.id===id);
   $$("#results .term-row").forEach(x=>x.classList.toggle("active",+x.dataset.id===id));
   const t=selected;
-  $("#detail").innerHTML=`${termReturnOrigin?'<button type="button" class="return-origin" id="returnOrigin">← Back to where you came from</button>':""}<h2>${esc(t.term)} ${t.abbr?`<span class="abbr">(${esc(t.abbr)})</span>`:""}</h2><div><span class="pill">${esc(t.domain)}</span>${t.varies?'<span class="pill varies">interpretation varies</span>':""}</div><h3>Canonical definition</h3><p>${esc(t.definition||"Not reconstructable from the supplied abstract text.")}</p><h3>External references</h3><div class="external-references">${externalRefsHTML(t.externalReferences)}</div><small class="external-note">Searches MeSH using any word in the term.</small><h3>Use across abstracts</h3>${t.occurrences.map(o=>`<div class="occ"><div class="occ-title">Abstract ${esc(o.abstractId)} — ${esc(o.title)}</div><div class="occ-meta">${esc(o.section)} · PDF page ${esc(o.page)}</div><p class="linked-text">${termLinkHTML(o.interpretation||"No separate interpretation could be reconstructed.",o.abstractId)}</p><details><summary>Context</summary><p class="snippet linked-text">${termLinkHTML(o.context,o.abstractId)}</p></details></div>`).join("")}`;
+  $("#detail").innerHTML=`${termReturnOrigins.length?`<button type="button" class="return-origin" id="returnOrigin">← Go back to ${esc(viewLabel(termReturnOrigins[termReturnOrigins.length-1].view))}</button>`:""}<h2>${esc(t.term)} ${t.abbr?`<span class="abbr">(${esc(t.abbr)})</span>`:""}</h2><div><span class="pill">${esc(t.domain)}</span>${t.varies?'<span class="pill varies">interpretation varies</span>':""}</div><h3>Canonical definition</h3><p>${esc(t.definition||"Not reconstructable from the supplied abstract text.")}</p><h3>External references</h3><div class="external-references">${externalRefsHTML(t.externalReferences)}</div><small class="external-note">Searches MeSH using any word in the term.</small><h3>Use across abstracts</h3>${t.occurrences.map(o=>`<div class="occ"><div class="occ-title">Abstract ${esc(o.abstractId)} — ${esc(o.title)}</div><div class="occ-meta">${esc(o.section)} · PDF page ${esc(o.page)}</div><p class="linked-text">${termLinkHTML(o.interpretation||"No separate interpretation could be reconstructed.",o.abstractId)}</p><details><summary>Context</summary><p class="snippet linked-text">${termLinkHTML(o.context,o.abstractId)}</p></details></div>`).join("")}`;
   wireDictionaryLinks($("#detail"));
   const back=$("#returnOrigin");
   if(back) back.addEventListener("click",restoreTermOrigin);
@@ -326,7 +334,7 @@ function renderDashboard(){
   $("#dashLegend").innerHTML=`<div class="selected-category"><b>${dashCategory==="all"?"All terms":esc(labels[dashCategory])}</b><span>${dashCategory==="all"?DATA.terms.length:cats[dashCategory].length} terms</span></div>`;
   const shown=dashCategory==="all"?[...DATA.terms]:[...cats[dashCategory]];
   $("#dashTermList").innerHTML=shown.sort((x,y)=>x.term.localeCompare(y.term)).map(t=>`<button class="term-chip" data-id="${t.id}">${esc(t.term)}</button>`).join("");
-  $$("#dashTermList .term-chip").forEach(x=>x.addEventListener("click",()=>{const id=+x.dataset.id;switchView("dictionary");$("#q").value="";$("#domain").value="";$("#varies").value="";renderDictionary();selectTerm(id);document.querySelector(`#results .term-row[data-id="${id}"]`)?.scrollIntoView({behavior:"smooth",block:"center"})}));
+  $$("#dashTermList .term-chip").forEach(x=>x.addEventListener("click",()=>{const id=+x.dataset.id;captureTermOrigin(x);switchView("dictionary");$("#q").value="";$("#domain").value="";$("#varies").value="";renderDictionary();selectTerm(id);document.querySelector(`#results .term-row[data-id="${id}"]`)?.scrollIntoView({behavior:"smooth",block:"center"})}));
 }
 function renderNetwork(){
   const svg=$("#networkSvg"); svg.innerHTML="";
