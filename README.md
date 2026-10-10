@@ -1,4 +1,4 @@
-# MLW Research Landscape Explorer
+# MLW Research Terminology Explorer
 
 Static site generated from the supplied technical-terms workbook.
 
@@ -23,3 +23,7 @@ No database, server-side code, API key, or build step is required.
 The browser posts terminology suggestions to the same-origin `/api/feedback` Vercel Function. That function forwards the JSON payload server-to-server to the configured Google Apps Script web app, which writes to the Google Sheet. This avoids browser CORS restrictions.
 
 For local testing, use `vercel dev` rather than a simple static server such as `python -m http.server`, because `/api/feedback` is a Vercel Function and does not exist on a plain static localhost server.
+
+
+## Expertise & Datasets page
+Added an ASM-grounded planning page with eight expertise areas and eight dataset opportunities, clickable abstract previews, initial discussion contacts, and confirmation requirements. Accessible from the starting chooser and the relevant navigation menus.

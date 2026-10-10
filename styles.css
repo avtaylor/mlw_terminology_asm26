@@ -161,3 +161,16 @@ a{color:inherit}.top{background:#123a49;color:#fff;padding:28px 24px}.top-inner{
 .stream-dialog-head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 22px;border-bottom:1px solid var(--border,#ddd);position:sticky;top:0;background:inherit;z-index:2}
 .stream-dialog-head h2{font-size:1.08rem;margin:0}.stream-dialog-close{font-size:1.7rem;line-height:1;padding:5px 12px;cursor:pointer}
 .stream-dialog-content{padding:20px 24px 28px;overflow-wrap:anywhere}.stream-dialog-content h3{margin-top:0;line-height:1.4}.stream-dialog-meta{color:var(--muted,#637081);font-size:.9rem}.stream-dialog-authors{font-size:.9rem;line-height:1.55}.stream-dialog-content .actual-abstract{margin-top:18px;line-height:1.7}
+
+/* Expertise and dataset planning page */
+.opportunity-note{background:#eef7f4;border-left:4px solid #318574;padding:18px 22px;border-radius:8px;margin:24px 0;line-height:1.6}
+.opportunity-note p:last-child{margin-bottom:0}
+.opportunity-table-wrap{overflow-x:auto;margin:18px 0 36px;border:1px solid #dce4eb;border-radius:12px}
+.opportunity-table{width:100%;min-width:960px;border-collapse:collapse;font-size:14px;line-height:1.6}
+.opportunity-table th,.opportunity-table td{padding:16px;vertical-align:top;text-align:left;border-bottom:1px solid #dce4eb}
+.opportunity-table thead th{background:#eaf2f6;color:#173349;font-weight:700}
+.opportunity-table tbody th{width:17%;font-weight:650}
+.opportunity-table tbody tr:nth-child(even){background:#f7fafb}
+.opportunity-table td:nth-child(2){min-width:112px}
+.opportunity-table .stream-abstract-link{margin:0 3px 6px 0}
+.opportunity-table tr:last-child td,.opportunity-table tr:last-child th{border-bottom:0}

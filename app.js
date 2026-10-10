@@ -52,7 +52,7 @@ function currentViewName(){
   return active?.dataset.view || "domains";
 }
 function viewLabel(view){
-  return ({domains:"Domains",dictionary:"previous term",dashboard:"Understanding terms across disciplines",network:"Domain-Term-Abstract Network",abstracts:"Abstracts"})[view] || "previous view";
+  return ({domains:"Domains",dictionary:"previous term",dashboard:"Understanding terms across disciplines",network:"Domain-Term-Abstract Network",abstracts:"Abstracts",opportunities:"Expertise & datasets"})[view] || "previous view";
 }
 function captureTermOrigin(el=null){
   const view=currentViewName();
@@ -147,10 +147,12 @@ function showAnalysisChooser(){
 function switchView(v){
   // Context-sensitive navigation: research streams and abstracts have focused menus.
   const visibleViews = v === "streams"
-    ? new Set(["streams", "abstracts"])
+    ? new Set(["streams", "opportunities", "abstracts"])
+    : v === "opportunities"
+      ? new Set(["streams", "opportunities", "abstracts"])
     : v === "abstracts"
-      ? new Set(["network", "streams", "abstracts"])
-      : new Set(["domains", "dictionary", "dashboard", "network", "abstracts"]);
+      ? new Set(["network", "streams", "opportunities", "abstracts"])
+      : new Set(["domains", "dictionary", "dashboard", "network", "opportunities", "abstracts"]);
   $$(".tab").forEach(x=>{x.hidden=!visibleViews.has(x.dataset.view)});
   $$(".tab").forEach(x=>x.classList.toggle("active",x.dataset.view===v));
   $$(".view").forEach(x=>x.hidden=x.id!==v);
