@@ -232,9 +232,13 @@ function renderAbstracts(){
     const aid=String(a["Abstract ID"]).padStart(2,"0");
     const abstractHTML=termLinkHTML(a.actualAbstract||"Abstract text was not recovered from the supplied PDF.",aid)
       .replace(/\b(KEYWORDS|INTRODUCTION|BACKGROUND|AIM|OBJECTIVE|METHODS|RESULTS|DISCUSSION|CONCLUSION)\b/g,'<strong class="section-label">$1</strong>');
-    return `<article class="abstract-card full-abstract"><b>Abstract ${esc(aid)}: ${esc(a["Abstract title"])}</b><small>${esc(a["Section"])} · PDF page ${esc(a["PDF page"])}</small>
+    return `<article class="abstract-card full-abstract" data-article-id="${esc(aid)}">
+      <details class="abstract-collapse">
+        <summary class="abstract-heading"><span class="abstract-title">Abstract ${esc(aid)}: ${esc(a["Abstract title"])}</span><small>${esc(a["Section"])} · PDF page ${esc(a["PDF page"])} · Click to read abstract</small></summary>
+        <div class="actual-abstract"><h3>Abstract</h3><p class="linked-text selectable-abstract" data-abstract-id="${esc(aid)}">${abstractHTML}</p></div>
+      </details>
       <button type="button" class="return-origin network-article-back" hidden>← Back to Domain-Term-Abstract Network</button>
-      <div class="actual-abstract"><h3>Abstract</h3><p class="linked-text selectable-abstract" data-abstract-id="${esc(aid)}">${abstractHTML}</p></div></article>`;
+    </article>`;
   }).join("");
   wireDictionaryLinks($("#abstractList"));
   wireAmbiguityCollector($("#abstractList"));
@@ -292,7 +296,7 @@ function filterAbstracts(){
   $$("#abstractList .abstract-card").forEach((card,i)=>{
     const a=DATA.abstracts[i];
     const matchesDomain=!abstractDomainSelection || abstractDomainFor(a,abstractDomainLevel)===abstractDomainSelection;
-    const match=matchesDomain && (!q || card.textContent.toLowerCase().includes(q));
+    const match=matchesDomain && (!q || [a["Abstract title"],a.actualAbstract,a["Section"],a["Abstract ID"]].join(" ").toLowerCase().includes(q));
     card.hidden=!match;
     if(match) shown++;
   });
@@ -417,9 +421,11 @@ function openNetworkAbstract(abstractId){
   filterAbstracts();
   switchView("abstracts");
   const cards=$$("#abstractList .abstract-card");
-  const target=cards.find(card=>card.querySelector("b")?.textContent?.startsWith("Abstract "+abstractId+":"));
+  const target=cards.find(card=>card.dataset.articleId===String(abstractId).padStart(2,"0"));
   if(target){
     target.hidden=false;
+    const details=target.querySelector(".abstract-collapse");
+    if(details) details.open=true;
     const back=target.querySelector(".network-article-back");
     if(back) back.hidden=false;
     requestAnimationFrame(()=>target.scrollIntoView({behavior:"smooth",block:"start"}));
@@ -432,7 +438,9 @@ function renderNetwork(){
   const terms=DATA.terms.filter(t=>t.count>1||t.varies).slice(0,70);
   const field=networkLevel===1?"domainLevel1":"domain";
   const domains=[...new Set(terms.map(t=>t[field]))];
-  const abstracts=[...new Set(terms.flatMap(t=>t.occurrences.map(o=>o.abstractId)))];
+  // Ignore unlinked terminology records: a blank abstractId previously created a spurious "A" node.
+  const validAbstractIds=new Set(DATA.abstracts.map(a=>String(a["Abstract ID"]).padStart(2,"0")));
+  const abstracts=[...new Set(terms.flatMap(t=>t.occurrences.map(o=>String(o.abstractId||"").padStart(2,"0"))).filter(id=>validAbstractIds.has(id)))];
   // Scale vertical space to the number of nodes rather than squeezing all nodes into 620px.
   const height=Math.max(1100,domains.length*74+140,abstracts.length*48+140,networkShowTerms?Math.ceil(terms.length/3)*86+140:0);
   svg.setAttribute("viewBox",`0 0 ${networkShowTerms?1250:920} ${height}`);
@@ -447,8 +455,8 @@ function renderNetwork(){
   const edges=[], edgeKeys=new Set();
   const addEdge=(a,b)=>{const key=a+"|"+b;if(!edgeKeys.has(key)){edgeKeys.add(key);edges.push([a,b]);}};
   terms.forEach(t=>{
-    if(networkShowTerms){addEdge(dId[t[field]],"t"+t.id);t.occurrences.forEach(o=>addEdge("t"+t.id,"a"+o.abstractId));}
-    else t.occurrences.forEach(o=>addEdge(dId[t[field]],"a"+o.abstractId));
+    if(networkShowTerms){addEdge(dId[t[field]],"t"+t.id);t.occurrences.forEach(o=>{const aid=String(o.abstractId||"").padStart(2,"0");if(validAbstractIds.has(aid))addEdge("t"+t.id,"a"+aid);});}
+    else t.occurrences.forEach(o=>{const aid=String(o.abstractId||"").padStart(2,"0");if(validAbstractIds.has(aid))addEdge(dId[t[field]],"a"+aid);});
   });
   const NS="http://www.w3.org/2000/svg", edgeEls=[], nodeEls=[];
   edges.forEach(([a,b])=>{if(!byId[a]||!byId[b])return;let l=document.createElementNS(NS,"line");l.setAttribute("x1",byId[a].x);l.setAttribute("y1",byId[a].y);l.setAttribute("x2",byId[b].x);l.setAttribute("y2",byId[b].y);l.setAttribute("class","edge");l.dataset.a=a;l.dataset.b=b;svg.appendChild(l);edgeEls.push(l)});
