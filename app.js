@@ -128,7 +128,21 @@ async function init(){
   $("#domainL2").addEventListener("click",()=>{domainLevel=2; setLevelButtons("domain",2); renderDomains()});
   $("#networkL1").addEventListener("click",()=>{networkLevel=1; setLevelButtons("network",1); renderNetwork()});
   $("#networkL2").addEventListener("click",()=>{networkLevel=2; setLevelButtons("network",2); renderNetwork()});
+  $$("[data-start-view]").forEach(b=>b.addEventListener("click",()=>chooseAnalysis(b.dataset.startView)));
+  $("#changeAnalysis").addEventListener("click",showAnalysisChooser);
   initDashboard(); renderDictionary(); renderDomains(); renderAbstracts();
+}
+function chooseAnalysis(view){
+  $("#start").hidden=true;
+  $("#workspace").hidden=false;
+  switchView(view);
+  window.scrollTo({top:0,behavior:"auto"});
+}
+function showAnalysisChooser(){
+  $("#workspace").hidden=true;
+  $("#start").hidden=false;
+  hideTermTip();
+  window.scrollTo({top:0,behavior:"auto"});
 }
 function switchView(v){
   $$(".tab").forEach(x=>x.classList.toggle("active",x.dataset.view===v));

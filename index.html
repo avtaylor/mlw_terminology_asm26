@@ -19,6 +19,15 @@
 </div>
 </header>
 <main class="wrap">
+<section id="start" class="start-page" aria-labelledby="startTitle">
+<h2 id="startTitle">Choose how to explore the research</h2>
+<p>Select the starting point for your analysis. You can change views at any time or return here to choose a different approach.</p>
+<div class="start-options">
+<button type="button" class="start-choice" data-start-view="domains"><strong>TERMINOLOGY</strong><span>Explore domains, then examine terms and their meanings in the dictionary.</span><small>Opens Domains →</small></button>
+<button type="button" class="start-choice" data-start-view="network"><strong>NETWORKS</strong><span>Explore relationships between research domains, abstracts and optional technical terms.</span><small>Opens Domain-Term-Abstract Network →</small></button>
+<button type="button" class="start-choice" data-start-view="abstracts"><strong>ABSTRACTS</strong><span>Browse, search and filter the abstracts, with terminology annotations and summaries.</span><small>Opens Abstracts →</small></button>
+</div></section>
+<div id="workspace" hidden><div class="workspace-heading"><button type="button" id="changeAnalysis" class="change-analysis">← Change analysis</button></div>
 <nav class="tabs" aria-label="Views"><button class="tab active" data-view="domains" style="background:#FFA500">DOMAINS</button><button class="tab" data-view="dictionary" style="background:#B8E5B8">DICTIONARY</button><button class="tab" data-view="dashboard" style="background:#DEA193">DISCIPLINES</button><button class="tab" data-view="network" style="background:#FFA500">NETWORKS</button><button class="tab" data-view="abstracts" style="background:#FFD6D1">ABSTRACTS</button></nav>
 <section id="dictionary" class="view" hidden>
 <div class="controls"><input id="q" type="search" placeholder="Search terms, definitions, abstracts…" aria-label="Search dictionary"><select id="domain" aria-label="Filter by domain"></select><select id="varies" aria-label="Filter by interpretation variation"><option value="">All interpretations</option><option value="yes">Interpretation varies</option><option value="no">Stable interpretation</option></select></div>
@@ -49,4 +58,4 @@
 <div id="abstractDomainGrid" class="abstract-domain-grid"></div></div>
 <div id="abstractList" class="abstract-list"></div></section>
 <p class="footer">Definitions and interpretations are reconstructed only from the supplied abstracts. Blank or explicitly unavailable definitions indicate that the source text did not support a reliable reconstruction.</p>
-</main><div id="termTooltip" class="term-tooltip" role="tooltip" hidden></div><script src="app.js"></script></body></html>
+</div></main><div id="termTooltip" class="term-tooltip" role="tooltip" hidden></div><script src="app.js"></script></body></html>
