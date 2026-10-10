@@ -145,6 +145,13 @@ function showAnalysisChooser(){
   window.scrollTo({top:0,behavior:"auto"});
 }
 function switchView(v){
+  // Context-sensitive navigation: research streams and abstracts have focused menus.
+  const visibleViews = v === "streams"
+    ? new Set(["streams", "abstracts"])
+    : v === "abstracts"
+      ? new Set(["network", "streams", "abstracts"])
+      : new Set(["domains", "dictionary", "dashboard", "network", "abstracts"]);
+  $$(".tab").forEach(x=>{x.hidden=!visibleViews.has(x.dataset.view)});
   $$(".tab").forEach(x=>x.classList.toggle("active",x.dataset.view===v));
   $$(".view").forEach(x=>x.hidden=x.id!==v);
   if(v==="network") renderNetwork();

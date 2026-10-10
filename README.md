@@ -1,4 +1,4 @@
-# MLW Research Terminology Explorer
+# MLW Research Landscape Explorer
 
 Static site generated from the supplied technical-terms workbook.
 
