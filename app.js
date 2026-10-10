@@ -52,7 +52,7 @@ function currentViewName(){
   return active?.dataset.view || "domains";
 }
 function viewLabel(view){
-  return ({domains:"Domains",dictionary:"previous term",dashboard:"Understanding terms across disciplines",network:"Network",abstracts:"Abstracts"})[view] || "previous view";
+  return ({domains:"Domains",dictionary:"previous term",dashboard:"Understanding terms across disciplines",network:"Domain-Term-Abstract Network",abstracts:"Abstracts"})[view] || "previous view";
 }
 function captureTermOrigin(el=null){
   const view=currentViewName();
@@ -193,6 +193,7 @@ function renderAbstracts(){
     const abstractHTML=termLinkHTML(a.actualAbstract||"Abstract text was not recovered from the supplied PDF.",aid)
       .replace(/\b(KEYWORDS|INTRODUCTION|BACKGROUND|AIM|OBJECTIVE|METHODS|RESULTS|DISCUSSION|CONCLUSION)\b/g,'<strong class="section-label">$1</strong>');
     return `<article class="abstract-card full-abstract"><b>Abstract ${esc(aid)}: ${esc(a["Abstract title"])}</b><small>${esc(a["Section"])} · PDF page ${esc(a["PDF page"])}</small>
+      <button type="button" class="return-origin network-article-back" hidden>← Back to Domain-Term-Abstract Network</button>
       <details class="summary-group">
         <summary>Plain-language summaries and policy implication</summary>
         <div class="summary-group-body">
@@ -364,34 +365,67 @@ function renderDashboard(){
   $("#dashTermList").innerHTML=shown.sort((x,y)=>x.term.localeCompare(y.term)).map(t=>`<button class="term-chip" data-id="${t.id}">${esc(t.term)}</button>`).join("");
   $$("#dashTermList .term-chip").forEach(x=>x.addEventListener("click",()=>{const id=+x.dataset.id;captureTermOrigin(x);switchView("dictionary");$("#q").value="";$("#domain").value="";$("#varies").value="";renderDictionary();selectTerm(id);document.querySelector(`#results .term-row[data-id="${id}"]`)?.scrollIntoView({behavior:"smooth",block:"center"})}));
 }
+let networkReturnPosition=null;
+function returnToNetwork(){
+  switchView("network");
+  if(networkReturnPosition!==null) requestAnimationFrame(()=>window.scrollTo({top:networkReturnPosition,behavior:"auto"}));
+  $("#networkBackButton").hidden=true;
+  $$("#abstractList .network-article-back").forEach(b=>b.hidden=true);
+}
+function openNetworkAbstract(abstractId){
+  networkReturnPosition=window.scrollY;
+  $("#networkBackButton").hidden=true;
+  $$("#abstractList .network-article-back").forEach(b=>b.hidden=true);
+  // Clear the Abstracts keyword filter so the destination cannot remain hidden.
+  const search=$("#abstractKeywordFilter");
+  if(search){search.value="";filterAbstracts();}
+  switchView("abstracts");
+  const cards=$$("#abstractList .abstract-card");
+  const target=cards.find(card=>card.querySelector("b")?.textContent?.startsWith("Abstract "+abstractId+":"));
+  if(target){
+    target.hidden=false;
+    const back=target.querySelector(".network-article-back");
+    if(back) back.hidden=false;
+    requestAnimationFrame(()=>target.scrollIntoView({behavior:"smooth",block:"start"}));
+  }
+}
 function renderNetwork(){
   const svg=$("#networkSvg"); svg.innerHTML="";
   const terms=DATA.terms.filter(t=>t.count>1||t.varies).slice(0,70);
   const field=networkLevel===1?"domainLevel1":"domain";
   const domains=[...new Set(terms.map(t=>t[field]))];
   const abstracts=[...new Set(terms.flatMap(t=>t.occurrences.map(o=>o.abstractId)))];
+  // Scale vertical space to the number of nodes rather than squeezing all nodes into 620px.
+  const height=Math.max(1300,domains.length*74+140,abstracts.length*48+140,Math.ceil(terms.length/3)*86+140);
+  svg.setAttribute("viewBox",`0 0 1250 ${height}`);
+  svg.style.height=height+"px";
+  const distribute=(i,n,margin=65)=>margin+(n<=1?(height-2*margin)/2:i*(height-2*margin)/(n-1));
   const nodes=[];
-  domains.forEach((d,i)=>nodes.push({id:"d"+i,label:d,type:"domain",x:150,y:50+i*(520/Math.max(1,domains.length-1))}));
-  abstracts.forEach((a,i)=>nodes.push({id:"a"+a,label:"A"+a,type:"abstract",x:870,y:45+i*(530/Math.max(1,abstracts.length-1))}));
-  terms.forEach((t,i)=>nodes.push({id:"t"+t.id,label:t.term,type:"term",termId:t.id,x:500+(i%3-1)*75,y:35+i*(550/Math.max(1,terms.length-1))}));
+  domains.forEach((d,i)=>nodes.push({id:"d"+i,label:d,type:"domain",x:245,y:distribute(i,domains.length)}));
+  abstracts.forEach((a,i)=>nodes.push({id:"a"+a,label:"A"+a,abstractId:String(a).padStart(2,"0"),type:"abstract",x:1120,y:distribute(i,abstracts.length)}));
+  terms.forEach((t,i)=>nodes.push({id:"t"+t.id,label:t.term,type:"term",termId:t.id,x:515+(i%3)*125,y:distribute(Math.floor(i/3),Math.ceil(terms.length/3))}));
   const byId=Object.fromEntries(nodes.map(n=>[n.id,n])), dId=Object.fromEntries(domains.map((d,i)=>[d,"d"+i]));
   const edges=[]; terms.forEach(t=>{edges.push([dId[t[field]],"t"+t.id]);t.occurrences.forEach(o=>edges.push(["t"+t.id,"a"+o.abstractId]))});
   const NS="http://www.w3.org/2000/svg", edgeEls=[], nodeEls=[];
   edges.forEach(([a,b])=>{if(!byId[a]||!byId[b])return;let l=document.createElementNS(NS,"line");l.setAttribute("x1",byId[a].x);l.setAttribute("y1",byId[a].y);l.setAttribute("x2",byId[b].x);l.setAttribute("y2",byId[b].y);l.setAttribute("class","edge");l.dataset.a=a;l.dataset.b=b;svg.appendChild(l);edgeEls.push(l)});
   nodes.forEach(n=>{
-    let g=document.createElementNS(NS,"g");g.setAttribute("class","node");g.dataset.id=n.id;g.setAttribute("tabindex","0");g.setAttribute("role","button");g.setAttribute("aria-label",n.type+" "+n.label);
-    let c=document.createElementNS(NS,"circle");c.setAttribute("cx",n.x);c.setAttribute("cy",n.y);c.setAttribute("r",n.type==="domain"?9:n.type==="term"?6:4);c.setAttribute("class","node-"+n.type);g.appendChild(c);
-    let tx=document.createElementNS(NS,"text");tx.setAttribute("x",n.x+(n.type==="abstract"?7:10));tx.setAttribute("y",n.y+3);tx.setAttribute("class","label");tx.textContent=n.label.length>34?n.label.slice(0,32)+"…":n.label;g.appendChild(tx);svg.appendChild(g);nodeEls.push(g);
-    const pick=()=>highlight(n); g.addEventListener("click",e=>{e.stopPropagation();pick()});g.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();pick()}});
+    let g=document.createElementNS(NS,"g");g.setAttribute("class","node");g.dataset.id=n.id;g.setAttribute("tabindex","0");g.setAttribute("role",n.type==="abstract"?"link":"button");g.setAttribute("aria-label",n.type==="abstract"?"Open Abstract "+n.abstractId:n.type+" "+n.label);
+    let c=document.createElementNS(NS,"circle");c.setAttribute("cx",n.x);c.setAttribute("cy",n.y);c.setAttribute("r",n.type==="domain"?9:n.type==="term"?6:7);c.setAttribute("class","node-"+n.type);g.appendChild(c);
+    let tx=document.createElementNS(NS,"text");tx.setAttribute("x",n.x+(n.type==="domain"?-16:16));tx.setAttribute("text-anchor",n.type==="domain"?"end":"start");tx.setAttribute("y",n.y-12);tx.setAttribute("class","label");tx.textContent=n.label.length>34?n.label.slice(0,32)+"…":n.label;g.appendChild(tx);if(n.type==="abstract")g.classList.add("abstract-link-node");svg.appendChild(g);nodeEls.push(g);
+    const pick=()=>n.type==="abstract"?openNetworkAbstract(n.abstractId):highlight(n);
+    g.addEventListener("click",e=>{e.stopPropagation();pick()});
+    g.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();pick()}});
   });
   function highlight(n){
     const connected=new Set([n.id]); edgeEls.forEach(e=>{if(e.dataset.a===n.id)connected.add(e.dataset.b);if(e.dataset.b===n.id)connected.add(e.dataset.a)});
     edgeEls.forEach(e=>{const hit=e.dataset.a===n.id||e.dataset.b===n.id;e.classList.toggle("hit",hit);e.classList.toggle("dim",!hit)});
-    nodeEls.forEach(g=>{const hit=connected.has(g.dataset.id);g.classList.toggle("hit",hit);g.classList.toggle("dim",!hit);const lab=g.querySelector(".label");if(lab){lab.classList.toggle("hit",hit);lab.classList.toggle("dim",!hit)}});
+    nodeEls.forEach(g=>{const hit=connected.has(g.dataset.id);g.classList.toggle("hit",hit);g.classList.toggle("dim",false);g.classList.toggle("selected-node",g.dataset.id===n.id);const lab=g.querySelector(".label");if(lab){lab.classList.toggle("hit",hit);lab.classList.toggle("dim",false)}});
     const connectedNodes=[...connected].filter(x=>x!==n.id).map(x=>byId[x]?.label).filter(Boolean);
     $("#networkStatus").textContent=`Selected ${n.type}: ${n.label}. ${connectedNodes.length} direct connection${connectedNodes.length===1?"":"s"} highlighted.`;
     if(n.type==="term"&&n.termId){selected=DATA.terms.find(t=>t.id===n.termId)}
   }
-  svg.addEventListener("click",()=>{edgeEls.forEach(e=>e.classList.remove("hit","dim"));nodeEls.forEach(g=>{g.classList.remove("hit","dim");const lab=g.querySelector(".label");if(lab)lab.classList.remove("hit","dim")});$("#networkStatus").textContent="No node selected."});
+  svg.addEventListener("click",()=>{edgeEls.forEach(e=>e.classList.remove("hit","dim"));nodeEls.forEach(g=>{g.classList.remove("hit","dim","selected-node");const lab=g.querySelector(".label");if(lab)lab.classList.remove("hit","dim")});$("#networkStatus").textContent="No node selected."});
 }
+$("#networkBackButton").addEventListener("click",returnToNetwork);
+document.addEventListener("click",e=>{if(e.target.closest(".network-article-back")) returnToNetwork();});
 init().catch(e=>{document.body.innerHTML="<p style='padding:20px'>Could not load the terminology data. If opening locally, serve this folder with a small HTTP server (see README).</p>"});

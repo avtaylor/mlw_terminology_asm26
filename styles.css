@@ -56,3 +56,28 @@ a{color:inherit}.top{background:#123a49;color:#fff;padding:28px 24px}.top-inner{
 .submission-status{margin-top:9px;min-height:1.2em;font-size:.92rem}.submission-status.success{font-weight:600}.submission-status.error{font-weight:600}.ambiguity-panel>button:disabled{opacity:.65;cursor:wait}
 
 .abstract-filter{padding-bottom:14px;margin-bottom:16px;border-bottom:1px solid var(--line)}.abstract-filter h3{margin:0 0 8px}.abstract-filter-status{margin-top:7px;font-size:.86rem;color:var(--muted)}
+
+/* Network dashboard: spacious, scrollable graph and navigable abstract IDs */
+#network .network{min-width:1200px;width:100%;max-width:none;}
+#network .node-abstract{stroke-width:1.8;}
+#network .node:has(.node-abstract) .label{font-size:14px;font-weight:700;fill:#785000;}
+#network .node:has(.node-abstract):hover .label{text-decoration:underline;}
+#network .label{font-size:12px;}
+
+/* Network readability: opaque label backing, selected labels bold, other nodes legible. */
+#network .network{min-width:1500px;}
+#network .label{paint-order:stroke fill;stroke:#fff;stroke-width:7px;stroke-linejoin:round;font-size:13px;fill:#263445;}
+#network .node:has(.node-abstract) .label{stroke:#fff;stroke-width:7px;}
+#network .node.dim,#network .label.dim{opacity:1;}
+#network .edge.dim{opacity:.12;}
+#network .node.selected-node .label{font-weight:900;font-size:16px;fill:#075e70;}
+#network .node.selected-node circle{stroke:#075e70;stroke-width:3.5;}
+#networkBackButton{display:inline-block;margin-bottom:14px;}
+#networkBackButton[hidden]{display:none;}
+
+/* Abstract ID and circle are one interactive navigation target. */
+#network .abstract-link-node{cursor:pointer;pointer-events:all;}
+#network .abstract-link-node circle,#network .abstract-link-node text{pointer-events:all;}
+#network .abstract-link-node:hover .label,#network .abstract-link-node:focus .label{text-decoration:underline;fill:#075e70;}
+#network .abstract-link-node:focus{outline:none;}
+#network .abstract-link-node:focus circle{stroke:#075e70;stroke-width:3;}

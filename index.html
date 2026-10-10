@@ -36,12 +36,12 @@
 <div class="dash-layout"><div class="panel"><div id="dashBar" class="bar-chart" aria-label="Distribution of terminology accessibility"></div></div>
 <div class="panel dash-terms"><div class="dash-filter-row" id="dashLegend"></div><div id="dashTermList"></div></div></div>
 </section>
-<section id="network" class="view" hidden><div class="network-wrap">
+<section id="network" class="view" hidden><div class="network-wrap"><h2>Domain-Term-Abstract Network</h2>
 <div class="level-switch" aria-label="Network domain level"><button id="networkL1" class="active" type="button">Level 1 domains</button><button id="networkL2" type="button">Level 2 domains</button></div>
-<p class="network-note">Click a domain, term or abstract to highlight that node and all directly connected nodes. Click the background to clear the selection. The graph shows terms used in multiple abstracts or whose interpretation varies.</p>
+<p class="network-note">Click a domain or term to highlight its direct connections. Click an abstract ID to open that abstract. Click the background to clear the selection. The graph shows terms used in multiple abstracts or whose interpretation varies.</p>
 <div class="network-legend"><span><i class="legend-dot" style="background:#dfe7f1"></i>Domain</span><span><i class="legend-dot" style="background:#d9e9ed"></i>Term</span><span><i class="legend-dot" style="background:#f4ead4"></i>Abstract</span></div>
 <div id="networkStatus" class="network-status" aria-live="polite">No node selected.</div>
 <svg id="networkSvg" class="network" viewBox="0 0 1000 620" role="img" aria-label="Clickable network linking research domains, technical terms and abstracts"></svg></div></section>
-<section id="abstracts" class="view" hidden><div id="abstractList" class="abstract-list"></div></section>
+<section id="abstracts" class="view" hidden><button type="button" id="networkBackButton" class="return-origin" hidden>← Back to Domain-Term-Abstract Network</button><div id="abstractList" class="abstract-list"></div></section>
 <p class="footer">Definitions and interpretations are reconstructed only from the supplied abstracts. Blank or explicitly unavailable definitions indicate that the source text did not support a reliable reconstruction.</p>
 </main><div id="termTooltip" class="term-tooltip" role="tooltip" hidden></div><script src="app.js"></script></body></html>
