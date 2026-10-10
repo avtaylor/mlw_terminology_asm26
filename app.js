@@ -195,7 +195,7 @@ function renderResultSet(label){
   $$("#results .term-row").forEach(el=>{const go=()=>selectTerm(+el.dataset.id);el.addEventListener("click",go);el.addEventListener("keydown",e=>{if(e.key==="Enter")go()})});
   if(filtered.length) selectTerm(filtered[0].id);
 }
-let abstractDomainLevel=1, abstractDomainSelection="";
+let abstractDomainLevel=1, abstractDomainSelection="", streamAbstractSelection=null;
 function abstractDomainFor(a, level){
   if(level===2) return a["Section"] || "Unclassified";
   const aid=String(a["Abstract ID"]).padStart(2,"0");
@@ -220,6 +220,7 @@ function renderAbstractDomainFilter(){
     Object.entries(counts).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])).map(([d,n])=>
       `<button type="button" class="abstract-domain-card ${abstractDomainSelection===d?"active":""}" data-domain="${esc(d)}"><strong>${esc(d)}</strong><span>${n} abstract${n===1?"":"s"}</span></button>`).join("");
   box.querySelectorAll(".abstract-domain-card").forEach(b=>b.addEventListener("click",()=>{
+    streamAbstractSelection=null;
     abstractDomainSelection=b.dataset.domain;
     renderAbstractDomainFilter();
     filterAbstracts();
@@ -245,12 +246,14 @@ function renderAbstracts(){
   wireAmbiguityCollector($("#abstractList"));
   // Initialise domain cards and their level controls after the abstracts exist.
   $("#abstractDomainL1").addEventListener("click",()=>{
+    streamAbstractSelection=null;
     abstractDomainLevel=1;
     abstractDomainSelection="";
     renderAbstractDomainFilter();
     filterAbstracts();
   });
   $("#abstractDomainL2").addEventListener("click",()=>{
+    streamAbstractSelection=null;
     abstractDomainLevel=2;
     abstractDomainSelection="";
     renderAbstractDomainFilter();
@@ -312,7 +315,7 @@ function filterAbstracts(){
   $$("#abstractList .abstract-card").forEach((card,i)=>{
     const a=DATA.abstracts[i];
     const matchesDomain=!abstractDomainSelection || abstractDomainFor(a,abstractDomainLevel)===abstractDomainSelection;
-    const match=matchesDomain && (!q || [a["Abstract title"],a.actualAbstract,a["Section"],a["Abstract ID"]].join(" ").toLowerCase().includes(q));
+    const match=matchesDomain && (!streamAbstractSelection || streamAbstractSelection.has(String(a["Abstract ID"]).padStart(2,"0"))) && (!q || [a["Abstract title"],a.actualAbstract,a["Section"],a["Abstract ID"]].join(" ").toLowerCase().includes(q));
     card.hidden=!match;
     if(match) shown++;
   });
@@ -433,6 +436,7 @@ function openNetworkAbstract(abstractId){
   const search=$("#abstractKeywordFilter");
   if(search)search.value="";
   abstractDomainSelection="";
+  streamAbstractSelection=null;
   renderAbstractDomainFilter();
   filterAbstracts();
   switchView("abstracts");
@@ -498,3 +502,44 @@ $("#networkShowTerms").addEventListener("change",e=>{networkShowTerms=e.target.c
 $("#networkBackButton").addEventListener("click",returnToNetwork);
 document.addEventListener("click",e=>{if(e.target.closest(".network-article-back")) returnToNetwork();});
 init().catch(e=>{document.body.innerHTML="<p style='padding:20px'>Could not load the terminology data. If opening locally, serve this folder with a small HTTP server (see README).</p>"});
+
+// Research Streams navigation: handbook sections and interpretative groups remain distinct.
+const STREAM_GROUP_IDS=[[3,17,22,24,26,27,44,45,46],[1,2,3,4,5,6,7,8,21,23,25],[9,12,14,15,16,18,19,20,21,30],[32,33,34,35,36,37,38,39],[11,29,30,31,32]];
+function openStreamSection(section){
+  streamAbstractSelection=null;
+  abstractDomainLevel=2;
+  abstractDomainSelection=section;
+  const search=document.querySelector("#abstractKeywordFilter");if(search)search.value="";
+  renderAbstractDomainFilter();filterAbstracts();switchView("abstracts");
+  document.querySelector("#abstractDomainGrid")?.scrollIntoView({block:"start"});
+}
+function openStreamGroup(group){
+  const ids=STREAM_GROUP_IDS[group];if(!ids)return;
+  abstractDomainSelection="";
+  streamAbstractSelection=new Set(ids.map(id=>String(id).padStart(2,"0")));
+  const search=document.querySelector("#abstractKeywordFilter");if(search)search.value="";
+  renderAbstractDomainFilter();filterAbstracts();switchView("abstracts");
+  document.querySelector("#abstractList")?.scrollIntoView({block:"start"});
+}
+function openStreamAbstract(id){
+  const aid=String(id).padStart(2,"0");
+  const a=DATA?.abstracts?.find(item=>String(item["Abstract ID"]).padStart(2,"0")===aid);
+  if(!a)return;
+  const dialog=document.querySelector("#streamAbstractDialog");
+  const content=document.querySelector("#streamDialogContent");
+  if(!dialog||!content)return;
+  const abstractHTML=termLinkHTML(a.actualAbstract||"Abstract text was not recovered from the supplied PDF.",aid)
+    .replace(/\b(KEYWORDS|INTRODUCTION|BACKGROUND|AIM|OBJECTIVE|METHODS|RESULTS|DISCUSSION|CONCLUSION)\b/g,'<strong class="section-label">$1</strong>');
+  content.innerHTML=`<h3>Abstract ${esc(aid)}: ${esc(a["Abstract title"])}</h3>
+    <p class="stream-dialog-meta">${esc(a["Section"])} · PDF page ${esc(a["PDF page"])}</p>
+    <p class="stream-dialog-authors">${a.authors?`<strong>Authors:</strong> ${esc(a.authors)}`:`<strong>Presenting author:</strong> ${esc(a.presentingAuthor||"Not available")}`}</p>
+    <div class="actual-abstract"><h4>Abstract</h4><p class="linked-text">${abstractHTML}</p></div>`;
+  wireDictionaryLinks(content);
+  if(!dialog.open)dialog.showModal();
+  dialog.querySelector("#closeStreamDialog")?.focus();
+}
+document.querySelector("#closeStreamDialog")?.addEventListener("click",()=>document.querySelector("#streamAbstractDialog")?.close());
+document.querySelector("#streamAbstractDialog")?.addEventListener("click",e=>{if(e.target===e.currentTarget)e.currentTarget.close();});
+document.querySelectorAll("[data-stream-section]").forEach(el=>el.addEventListener("click",()=>openStreamSection(el.dataset.streamSection)));
+document.querySelectorAll("[data-stream-group]").forEach(el=>el.addEventListener("click",()=>openStreamGroup(Number(el.dataset.streamGroup))));
+document.querySelectorAll("[data-stream-abstract]").forEach(el=>el.addEventListener("click",()=>openStreamAbstract(el.dataset.streamAbstract)));

@@ -121,3 +121,43 @@ a{color:inherit}.top{background:#123a49;color:#fff;padding:28px 24px}.top-inner{
 
 .abstract-heading .abstract-authors{display:block;margin-top:6px;font-size:.88rem;line-height:1.5;font-weight:400;color:var(--muted,#58616c)}
 .abstract-heading .abstract-authors strong{font-weight:600}
+
+/* Research streams summary */
+.start-options{grid-template-columns:repeat(2,minmax(0,1fr))}
+.stream-page{max-width:1080px;margin:0 auto;padding:18px 0 44px;color:#25374b}
+.stream-eyebrow{text-transform:uppercase;letter-spacing:.09em;font-weight:700;font-size:.77rem;color:#0d6577}
+.stream-page>h2{font-size:2rem;margin:10px 0}.stream-lead{font-size:1.07rem;line-height:1.7;max-width:850px}
+.stream-page>h3{margin:35px 0 10px;font-size:1.3rem}.stream-muted{color:#566779;line-height:1.6}
+.stream-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:26px 0}
+.stream-kpis>div{background:#eef5f8;border:1px solid #d7e6ec;border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:7px}
+.stream-kpis strong{font-size:1.75rem;color:#0b6073}.stream-kpis span{font-size:.87rem;color:#4b5d6b}
+.stream-bars{background:white;border:1px solid #dce4ec;border-radius:14px;padding:20px;display:grid;gap:13px}
+.stream-bar-row{display:grid;grid-template-columns:minmax(200px,2.3fr) minmax(90px,2fr) 25px;align-items:center;gap:12px;font-size:.9rem}
+.stream-bar-track{height:17px;border-radius:5px;background:#edf1f5;overflow:hidden}.stream-bar-fill{height:100%;background:#247c91;border-radius:5px}
+.stream-bar-row strong{text-align:right}.stream-cards{display:grid;gap:12px}
+.stream-card{display:flex;gap:17px;padding:19px;background:#fff;border:1px solid #dce4ec;border-radius:12px}
+.stream-rank{display:grid;place-items:center;flex:0 0 36px;height:36px;border-radius:9px;background:#e5f1f4;color:#0b6073;font-weight:800}
+.stream-card h3{margin:0 0 7px;font-size:1.1rem}.stream-card p{margin:0 0 8px;line-height:1.55}.stream-card small{color:#617081}
+.stream-capabilities{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.stream-capabilities article{border:1px solid #dce4ec;background:#fff;padding:17px;border-radius:12px}
+.stream-capabilities h4{margin:0 0 8px}.stream-capabilities p,.stream-insights p{line-height:1.6}
+.stream-insights{border-left:4px solid #247c91;padding:1px 20px;background:#f5f9fb;border-radius:0 9px 9px 0}
+.stream-caveat{margin-top:28px;padding:18px 20px;background:#f7f7f7;border:1px solid #e1e3e6;border-radius:10px}
+.stream-caveat h3{margin:0 0 8px}.stream-caveat p{line-height:1.6;margin:0}
+@media(max-width:750px){.start-options,.stream-kpis,.stream-capabilities{grid-template-columns:1fr}.stream-bar-row{grid-template-columns:minmax(110px,1.5fr) minmax(50px,1fr) 22px;font-size:.78rem;gap:7px}}
+
+.stream-bar-button{width:100%;border:0;background:transparent;color:inherit;font:inherit;text-align:left;cursor:pointer;border-radius:7px;padding:5px}
+.stream-bar-button:hover,.stream-bar-button:focus-visible{background:#e8f2fa;outline:2px solid #7aabd1;outline-offset:1px}
+.stream-bar-button .stream-bar-fill{transition:filter .15s}.stream-bar-button:hover .stream-bar-fill{filter:brightness(.87)}
+.stream-refs{margin-top:12px;line-height:2}.stream-refs span{font-size:.87rem;color:#58616c;margin-right:5px}
+.stream-abstract-link{display:inline-block;margin:2px 3px;padding:2px 6px;border:1px solid #9bbbd4;background:#f0f7fc;border-radius:5px;color:#194f78;font:inherit;font-size:.85rem;cursor:pointer}
+.stream-abstract-link:hover,.stream-abstract-link:focus-visible{background:#cce5f8;text-decoration:underline}
+.stream-view-all{display:block;margin-top:9px;padding:6px 0;border:0;background:transparent;color:#175d8b;font:inherit;font-weight:600;cursor:pointer;text-align:left}
+.stream-view-all:hover{text-decoration:underline}
+
+/* Research-stream abstract preview */
+.stream-abstract-dialog{width:min(900px,calc(100vw - 28px));max-height:min(86vh,950px);padding:0;border:1px solid var(--border,#cdd4dc);border-radius:14px;background:var(--surface,#fff);color:var(--text,#202a35);box-shadow:0 20px 65px #0005}
+.stream-abstract-dialog::backdrop{background:rgba(16,27,42,.62)}
+.stream-dialog-head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 22px;border-bottom:1px solid var(--border,#ddd);position:sticky;top:0;background:inherit;z-index:2}
+.stream-dialog-head h2{font-size:1.08rem;margin:0}.stream-dialog-close{font-size:1.7rem;line-height:1;padding:5px 12px;cursor:pointer}
+.stream-dialog-content{padding:20px 24px 28px;overflow-wrap:anywhere}.stream-dialog-content h3{margin-top:0;line-height:1.4}.stream-dialog-meta{color:var(--muted,#637081);font-size:.9rem}.stream-dialog-authors{font-size:.9rem;line-height:1.55}.stream-dialog-content .actual-abstract{margin-top:18px;line-height:1.7}
