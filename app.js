@@ -181,6 +181,38 @@ function renderResultSet(label){
   $$("#results .term-row").forEach(el=>{const go=()=>selectTerm(+el.dataset.id);el.addEventListener("click",go);el.addEventListener("keydown",e=>{if(e.key==="Enter")go()})});
   if(filtered.length) selectTerm(filtered[0].id);
 }
+let abstractDomainLevel=1, abstractDomainSelection="";
+function abstractDomainFor(a, level){
+  if(level===2) return a["Section"] || "Unclassified";
+  const aid=String(a["Abstract ID"]).padStart(2,"0");
+  const counts={};
+  DATA.terms.forEach(t=>{
+    if(t.occurrences?.some(o=>String(o.abstractId).padStart(2,"0")===aid)){
+      const d=t.domainLevel1||"Other biomedical & public health methods";
+      counts[d]=(counts[d]||0)+1;
+    }
+  });
+  return Object.entries(counts).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0]))[0]?.[0]||"Unclassified";
+}
+function renderAbstractDomainFilter(){
+  const box=$("#abstractDomainGrid");
+  if(!box)return;
+  const counts={};
+  DATA.abstracts.forEach(a=>{
+    const d=abstractDomainFor(a,abstractDomainLevel);
+    counts[d]=(counts[d]||0)+1;
+  });
+  box.innerHTML=`<button type="button" class="abstract-domain-card ${!abstractDomainSelection?"active":""}" data-domain=""><strong>All domains</strong><span>${DATA.abstracts.length} abstracts</span></button>`+
+    Object.entries(counts).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])).map(([d,n])=>
+      `<button type="button" class="abstract-domain-card ${abstractDomainSelection===d?"active":""}" data-domain="${esc(d)}"><strong>${esc(d)}</strong><span>${n} abstract${n===1?"":"s"}</span></button>`).join("");
+  box.querySelectorAll(".abstract-domain-card").forEach(b=>b.addEventListener("click",()=>{
+    abstractDomainSelection=b.dataset.domain;
+    renderAbstractDomainFilter();
+    filterAbstracts();
+  }));
+  $("#abstractDomainL1")?.classList.toggle("active",abstractDomainLevel===1);
+  $("#abstractDomainL2")?.classList.toggle("active",abstractDomainLevel===2);
+}
 function renderAbstracts(){
   $("#abstractList").innerHTML=`
     <div class="abstracts-intro">
@@ -258,8 +290,10 @@ function filterAbstracts(){
   if(!input) return;
   const q=input.value.trim().toLowerCase();
   let shown=0;
-  $$("#abstractList .abstract-card").forEach(card=>{
-    const match=!q || card.textContent.toLowerCase().includes(q);
+  $$("#abstractList .abstract-card").forEach((card,i)=>{
+    const a=DATA.abstracts[i];
+    const matchesDomain=!abstractDomainSelection || abstractDomainFor(a,abstractDomainLevel)===abstractDomainSelection;
+    const match=matchesDomain && (!q || card.textContent.toLowerCase().includes(q));
     card.hidden=!match;
     if(match) shown++;
   });
@@ -378,7 +412,10 @@ function openNetworkAbstract(abstractId){
   $$("#abstractList .network-article-back").forEach(b=>b.hidden=true);
   // Clear the Abstracts keyword filter so the destination cannot remain hidden.
   const search=$("#abstractKeywordFilter");
-  if(search){search.value="";filterAbstracts();}
+  if(search)search.value="";
+  abstractDomainSelection="";
+  renderAbstractDomainFilter();
+  filterAbstracts();
   switchView("abstracts");
   const cards=$$("#abstractList .abstract-card");
   const target=cards.find(card=>card.querySelector("b")?.textContent?.startsWith("Abstract "+abstractId+":"));
@@ -389,23 +426,31 @@ function openNetworkAbstract(abstractId){
     requestAnimationFrame(()=>target.scrollIntoView({behavior:"smooth",block:"start"}));
   }
 }
+let networkShowTerms=false;
 function renderNetwork(){
   const svg=$("#networkSvg"); svg.innerHTML="";
+  $("#networkShowTerms").checked=networkShowTerms;
   const terms=DATA.terms.filter(t=>t.count>1||t.varies).slice(0,70);
   const field=networkLevel===1?"domainLevel1":"domain";
   const domains=[...new Set(terms.map(t=>t[field]))];
   const abstracts=[...new Set(terms.flatMap(t=>t.occurrences.map(o=>o.abstractId)))];
   // Scale vertical space to the number of nodes rather than squeezing all nodes into 620px.
-  const height=Math.max(1300,domains.length*74+140,abstracts.length*48+140,Math.ceil(terms.length/3)*86+140);
-  svg.setAttribute("viewBox",`0 0 1250 ${height}`);
+  const height=Math.max(1100,domains.length*74+140,abstracts.length*48+140,networkShowTerms?Math.ceil(terms.length/3)*86+140:0);
+  svg.setAttribute("viewBox",`0 0 ${networkShowTerms?1250:920} ${height}`);
   svg.style.height=height+"px";
+  svg.style.minWidth=networkShowTerms?"1500px":"1000px";
   const distribute=(i,n,margin=65)=>margin+(n<=1?(height-2*margin)/2:i*(height-2*margin)/(n-1));
   const nodes=[];
   domains.forEach((d,i)=>nodes.push({id:"d"+i,label:d,type:"domain",x:245,y:distribute(i,domains.length)}));
-  abstracts.forEach((a,i)=>nodes.push({id:"a"+a,label:"A"+a,abstractId:String(a).padStart(2,"0"),type:"abstract",x:1120,y:distribute(i,abstracts.length)}));
-  terms.forEach((t,i)=>nodes.push({id:"t"+t.id,label:t.term,type:"term",termId:t.id,x:515+(i%3)*125,y:distribute(Math.floor(i/3),Math.ceil(terms.length/3))}));
+  abstracts.forEach((a,i)=>nodes.push({id:"a"+a,label:"A"+a,abstractId:String(a).padStart(2,"0"),type:"abstract",x:networkShowTerms?1120:780,y:distribute(i,abstracts.length)}));
+  if(networkShowTerms) terms.forEach((t,i)=>nodes.push({id:"t"+t.id,label:t.term,type:"term",termId:t.id,x:515+(i%3)*125,y:distribute(Math.floor(i/3),Math.ceil(terms.length/3))}));
   const byId=Object.fromEntries(nodes.map(n=>[n.id,n])), dId=Object.fromEntries(domains.map((d,i)=>[d,"d"+i]));
-  const edges=[]; terms.forEach(t=>{edges.push([dId[t[field]],"t"+t.id]);t.occurrences.forEach(o=>edges.push(["t"+t.id,"a"+o.abstractId]))});
+  const edges=[], edgeKeys=new Set();
+  const addEdge=(a,b)=>{const key=a+"|"+b;if(!edgeKeys.has(key)){edgeKeys.add(key);edges.push([a,b]);}};
+  terms.forEach(t=>{
+    if(networkShowTerms){addEdge(dId[t[field]],"t"+t.id);t.occurrences.forEach(o=>addEdge("t"+t.id,"a"+o.abstractId));}
+    else t.occurrences.forEach(o=>addEdge(dId[t[field]],"a"+o.abstractId));
+  });
   const NS="http://www.w3.org/2000/svg", edgeEls=[], nodeEls=[];
   edges.forEach(([a,b])=>{if(!byId[a]||!byId[b])return;let l=document.createElementNS(NS,"line");l.setAttribute("x1",byId[a].x);l.setAttribute("y1",byId[a].y);l.setAttribute("x2",byId[b].x);l.setAttribute("y2",byId[b].y);l.setAttribute("class","edge");l.dataset.a=a;l.dataset.b=b;svg.appendChild(l);edgeEls.push(l)});
   nodes.forEach(n=>{
@@ -426,6 +471,7 @@ function renderNetwork(){
   }
   svg.addEventListener("click",()=>{edgeEls.forEach(e=>e.classList.remove("hit","dim"));nodeEls.forEach(g=>{g.classList.remove("hit","dim","selected-node");const lab=g.querySelector(".label");if(lab)lab.classList.remove("hit","dim")});$("#networkStatus").textContent="No node selected."});
 }
+$("#networkShowTerms").addEventListener("change",e=>{networkShowTerms=e.target.checked;renderNetwork();});
 $("#networkBackButton").addEventListener("click",returnToNetwork);
 document.addEventListener("click",e=>{if(e.target.closest(".network-article-back")) returnToNetwork();});
 init().catch(e=>{document.body.innerHTML="<p style='padding:20px'>Could not load the terminology data. If opening locally, serve this folder with a small HTTP server (see README).</p>"});
