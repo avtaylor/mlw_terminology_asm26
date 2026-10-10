@@ -242,6 +242,21 @@ function renderAbstracts(){
   }).join("");
   wireDictionaryLinks($("#abstractList"));
   wireAmbiguityCollector($("#abstractList"));
+  // Initialise domain cards and their level controls after the abstracts exist.
+  $("#abstractDomainL1").addEventListener("click",()=>{
+    abstractDomainLevel=1;
+    abstractDomainSelection="";
+    renderAbstractDomainFilter();
+    filterAbstracts();
+  });
+  $("#abstractDomainL2").addEventListener("click",()=>{
+    abstractDomainLevel=2;
+    abstractDomainSelection="";
+    renderAbstractDomainFilter();
+    filterAbstracts();
+  });
+  renderAbstractDomainFilter();
+  filterAbstracts();
 }
 
 let ambiguitySelections=[];
