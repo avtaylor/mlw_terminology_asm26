@@ -118,3 +118,6 @@ a{color:inherit}.top{background:#123a49;color:#fff;padding:28px 24px}.top-inner{
 .abstract-collapse>summary:hover .abstract-title{text-decoration:underline}
 .abstract-collapse>summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
 .abstract-collapse .actual-abstract{margin-top:12px;border-top:1px solid var(--line);padding-top:6px}
+
+.abstract-heading .abstract-authors{display:block;margin-top:6px;font-size:.88rem;line-height:1.5;font-weight:400;color:var(--muted,#58616c)}
+.abstract-heading .abstract-authors strong{font-weight:600}

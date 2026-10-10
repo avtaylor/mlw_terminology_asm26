@@ -234,7 +234,8 @@ function renderAbstracts(){
       .replace(/\b(KEYWORDS|INTRODUCTION|BACKGROUND|AIM|OBJECTIVE|METHODS|RESULTS|DISCUSSION|CONCLUSION)\b/g,'<strong class="section-label">$1</strong>');
     return `<article class="abstract-card full-abstract" data-article-id="${esc(aid)}">
       <details class="abstract-collapse">
-        <summary class="abstract-heading"><span class="abstract-title">Abstract ${esc(aid)}: ${esc(a["Abstract title"])}</span><small>${esc(a["Section"])} · PDF page ${esc(a["PDF page"])} · Click to read abstract</small></summary>
+        <summary class="abstract-heading"><span class="abstract-title">Abstract ${esc(aid)}: ${esc(a["Abstract title"])}</span><small>${esc(a["Section"])} · PDF page ${esc(a["PDF page"])} · Click to read abstract</small>
+        <span class="abstract-authors">${a.authors?`<strong>Authors:</strong> ${esc(a.authors)}`:`<strong>Presenting author:</strong> ${esc(a.presentingAuthor||"Not available in extracted handbook text")}`}</span></summary>
         <div class="actual-abstract"><h3>Abstract</h3><p class="linked-text selectable-abstract" data-abstract-id="${esc(aid)}">${abstractHTML}</p></div>
       </details>
       <button type="button" class="return-origin network-article-back" hidden>← Back to Domain-Term-Abstract Network</button>

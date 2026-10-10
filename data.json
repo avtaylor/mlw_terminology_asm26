@@ -10464,7 +10464,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, these findings could help inform vaccination policy, programme targeting, monitoring, or decisions about how vaccines are introduced and evaluated.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "These findings show the synergetic potential of machine-learning approaches and serology data as a complementary tool for objective evaluation of vaccine uptake, to help the interpretation of vaccine…"
+      "childSummary": "These findings show the synergetic potential of machine-learning approaches and serology data as a complementary tool for objective evaluation of vaccine uptake, to help the interpretation of vaccine…",
+      "authors": "*James Jafali1,2, *Priyanka D. Patel1,2, Memory Mvula1, Jonathan Mandolo1, Grieves Mang'anda1, Felistas Mwakiseghile1, Richard Wachepa1, Kondwani Jambo1,3, Melita A. Gordon1,4,5, James Meiring1,2 (*Contributed equally)",
+      "presentingAuthor": "PRESENTING AUTHOR  James Jafali"
     },
     {
       "Abstract ID": "02",
@@ -10483,7 +10485,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, these findings could help inform vaccination policy, programme targeting, monitoring, or decisions about how vaccines are introduced and evaluated.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "RTS,S/AS01 vaccination was linked to reduced pneumococcal antimicrobial resistance, suggesting potential indirect benefits beyond malaria prevention."
+      "childSummary": "RTS,S/AS01 vaccination was linked to reduced pneumococcal antimicrobial resistance, suggesting potential indirect benefits beyond malaria prevention.",
+      "authors": "Kang'oma, M.; Kalizang'oma, K.1,2; Cave, R.3; Bonomali, F.1; Nyirenda, R.1; Brown, C.1; Nkhata, C.1; Kalua, L.1; Mwansambo, C.4; Pavon, A.I.5; Cornick, J.5; Swarthout, T.3; Maleta, K.6; Kwambana, B.A.3; Heyderman, R.3; French, N.7",
+      "presentingAuthor": "PRESENTING AUTHOR  Melina Kang'oma"
     },
     {
       "Abstract ID": "03",
@@ -10502,7 +10506,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, these findings could help inform vaccination policy, programme targeting, monitoring, or decisions about how vaccines are introduced and evaluated.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "We generated high-quality genomes for 337 S."
+      "childSummary": "We generated high-quality genomes for 337 S.",
+      "authors": "Belson Kutambe1*, Priyanka Patel1, Kenneth Chizani1, Niza Silungwe1, Christopher Kukacha1, Matthew Laurens2, Melita A. Gordon1,3,4, James Meiring1,3, Megan Carey5,6, Philip M. Ashton1,3,7",
+      "presentingAuthor": "PRESENTING AUTHOR  Belson Kutambe"
     },
     {
       "Abstract ID": "04",
@@ -10521,7 +10527,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, these findings could help inform vaccination policy, programme targeting, monitoring, or decisions about how vaccines are introduced and evaluated.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "Naturally acquired immunity to Salmonella is characterized by agedependent maturation and depends on coordinated IgG-, IgM-, Fc receptor-, and complement-mediated mechanisms."
+      "childSummary": "Naturally acquired immunity to Salmonella is characterized by agedependent maturation and depends on coordinated IgG-, IgM-, Fc receptor-, and complement-mediated mechanisms.",
+      "authors": "Agness Ethel Lakudzala1,2, Mehak Zahoor Khan3, James Jafali1, Remziye Wessel3, Helen Dale1,2, Esmelda Chirwa1,2, Nadege Nzinza3, Laura Fontana3, Ryan McNamara3, Vas Bavro8, Adam Cunningham4, Kondwani Jambo1,5, Tonney Nyirenda6, Boris Juelg3, Galit Alter3, Melita Gordon1,2,7",
+      "presentingAuthor": "PRESENTING AUTHOR  Agness Ethel Lakudzala"
     },
     {
       "Abstract ID": "05",
@@ -10540,7 +10548,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, these findings could help inform vaccination policy, programme targeting, monitoring, or decisions about how vaccines are introduced and evaluated.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "RSV was detected in 37/527 children (7.0%; 95% CI 5.0-9.5%)."
+      "childSummary": "RSV was detected in 37/527 children (7.0%; 95% CI 5.0-9.5%).",
+      "authors": "Emmanuel Mchoma1*, Yankho Thawani1, Comfort Brown1, Herbert Thole1, Martin Mutunga2,4, Arnold W. Lambisia2,4, Arthur Vengesai1,4, Mavis Menyere1, Brigitte Dennis1, Neil French1,3, Robert Heyderman1,4,9, Todd Swarthout1,4,9, Kondwani Jambo1,5,8, Joyce Nyiro2,4, Christopher Moxon1,6,7,8, Brenda Kwambana-Adams1,4,5",
+      "presentingAuthor": "PRESENTING AUTHOR  Emmanuel Mchoma"
     },
     {
       "Abstract ID": "06",
@@ -10559,7 +10569,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, these findings could help inform vaccination policy, programme targeting, monitoring, or decisions about how vaccines are introduced and evaluated.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "RTS,S/AS01 vaccination reduced ESBL-Ec carriage independent of AMU, suggesting a non-antimicrobial pathway."
+      "childSummary": "RTS,S/AS01 vaccination reduced ESBL-Ec carriage independent of AMU, suggesting a non-antimicrobial pathway.",
+      "authors": "Tadala Mzengo1, Kang'oma M.1, Khaki J.1, Brown C.1, Bonomali F.1, Pearse O.2, Kalizang'oma A.1,5, Singleton D.1,3, Swarthout T.D.1,3, Cave R.4, Musicha P.1, Cornick J.E.1,5, French N.1,6, Kwambana-Adams B.4, Heyderman R.S.4",
+      "presentingAuthor": "PRESENTING AUTHOR  Tadala Mzengo"
     },
     {
       "Abstract ID": "07",
@@ -10578,7 +10590,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, the findings support strengthening antimicrobial-resistance surveillance, responsible antibiotic use, and infection-prevention measures where the study identifies important resistance risks.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "24ssUAD detected pneumococcal serotypes in children despite high antibiotic exposure, and adult shedding patterns show serotype-dependent variability."
+      "childSummary": "24ssUAD detected pneumococcal serotypes in children despite high antibiotic exposure, and adult shedding patterns show serotype-dependent variability.",
+      "authors": "Charles B. Nkhata1, Seyi D. Eletu7, Comfort Brown1, Lyona Kalua1, Faith Thole1, Glory Kadzanja1, Arthur Vengesai1, Morrison Kamanga1, Laura Mathews5, Akuzike Kalizang'oma1,2, Tarsizio Chikaonda1, David Litt7, Pui-Ying Iroh-Tam1, Susann Skovbjerg6, Todd D. Swarthout2, Stephen B. Gordon1,3,8, Neil French4, Robert S. Heyderman2, Wei Shen Lim5, Brenda A. Kwambana-Adams1,2,3",
+      "presentingAuthor": "PRESENTING AUTHOR  Charles B. Nkhata"
     },
     {
       "Abstract ID": "08",
@@ -10597,7 +10611,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, these findings could help inform vaccination policy, programme targeting, monitoring, or decisions about how vaccines are introduced and evaluated.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "Most unsolicited adverse events were mild-to-moderate, unrelated to vaccination, and resolved within 7 days."
+      "childSummary": "Most unsolicited adverse events were mild-to-moderate, unrelated to vaccination, and resolved within 7 days.",
+      "authors": "Priyanka D. Patel1,2, Yasir Shitu Isa3, Kanchanamala Withanage4, Beatrice Grossi3, Chiara Fineschi3, Antonio Lorenzo Di Pasquale3, Eray Salt5, Giulia Luna Cilio5, Felistas Mwakiseghile1, Omar Rossi3, Chitsanzo P. Kwawilira1, Grieves D. Mang'anda1, Francesca Mancini3, Marta Benincasa3, Daniele De Simone3, Chiara Crispino3, Rita La Gaetana3, Ilse De Coster4, Valentino Conti3, Rocio Canals3, Ashwani Kumar Arora3, Melita A. Gordon1,2,6",
+      "presentingAuthor": "PRESENTING AUTHOR  Priyanka D. Patel"
     },
     {
       "Abstract ID": "09",
@@ -10616,7 +10632,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and other malaria-endemic countries, the findings could inform how malaria prevention, treatment, surveillance, or chemoprevention programmes are targeted and evaluated.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "Spatial GAMs outperformed non-spatial models, confirming substantial finescale spatial heterogeneity."
+      "childSummary": "Spatial GAMs outperformed non-spatial models, confirming substantial finescale spatial heterogeneity.",
+      "authors": "Blessings Chiepa1,2,*, James Chirombo3,4, Donnie Mategula2,3, Christopher M. Jones1, J. Russell Stothard1, Michelle C. Stanton1,5",
+      "presentingAuthor": "PRESENTING AUTHOR  Blessings Chiepa"
     },
     {
       "Abstract ID": "10",
@@ -10635,7 +10653,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and other high-TB-burden countries, the findings could inform TB prevention, diagnosis, surveillance, or treatment strategies, depending on the intervention examined in this study.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "Unsupervised clustering revealed four macrophage clusters."
+      "childSummary": "Unsupervised clustering revealed four macrophage clusters.",
+      "authors": "Patience Kadzuwa1, Chisomo U. Mthunzi1, Carolyn M. Damson1, Cheusisime Kajanga1, Christine Mandalasi1, Elizabeth T. Chimbayo1, Aaron P. Chirambo1, David V. Mhango1, Kondwani C. Jambo1,2, Steven C. Mitini-nkhoma1, Henry C. Mwandumba1,2",
+      "presentingAuthor": "PRESENTING AUTHOR  Patience Kadzuwa"
     },
     {
       "Abstract ID": "11",
@@ -10654,7 +10674,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, the findings could inform the design of surveillance systems and decisions about which data sources are useful for detecting and responding to health threats.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "This work establishes a reproducible framework linking environmental remote sensing with infectious disease epidemiology, opening new avenues for studying human exposure pathways and evaluating waste management interventions."
+      "childSummary": "This work establishes a reproducible framework linking environmental remote sensing with infectious disease epidemiology, opening new avenues for studying human exposure pathways and evaluating waste management interventions.",
+      "authors": "Patrick K. Kalonde, Kestern Mkoola, Taonga Mwapasa, Richard Quilliam, Kondwani Chidziwisano, Tracy Morse, Nicholas Feasey, Michelle C. Stanton, Peter M. Atkinson, Marc Y. R. Henrion",
+      "presentingAuthor": "PRESENTING AUTHOR  Patrick K. Kalonde"
     },
     {
       "Abstract ID": "12",
@@ -10673,7 +10695,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, these findings could help inform vaccination policy, programme targeting, monitoring, or decisions about how vaccines are introduced and evaluated.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "Visit-aligned DP for PMC was feasible and well tolerated and significantly reduced anaemia, despite low malaria transmission that limited power to detect an effect on how often new…"
+      "childSummary": "Visit-aligned DP for PMC was feasible and well tolerated and significantly reduced anaemia, despite low malaria transmission that limited power to detect an effect on how often new…",
+      "authors": "",
+      "presentingAuthor": "PRESENTING AUTHOR  Mphatso S. Kantonya"
     },
     {
       "Abstract ID": "13",
@@ -10692,7 +10716,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and other high-TB-burden countries, the findings could inform TB prevention, diagnosis, surveillance, or treatment strategies, depending on the intervention examined in this study.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "Preliminary findings suggest that IGRA results are associated with established TB reference standards, while HIV co-infection influences IGRA results in young Malawian children."
+      "childSummary": "Preliminary findings suggest that IGRA results are associated with established TB reference standards, while HIV co-infection influences IGRA results in young Malawian children.",
+      "authors": "Ruth Khofi1, Baleke Munthali1, Nedson Chasweka1, Karen Lombe2, Imran Twabi2, David Mhango1,3, Henry Mwandumba1,3, Bryan Vonasek1,2,4",
+      "presentingAuthor": "PRESENTING AUTHOR  Ruth Khofi"
     },
     {
       "Abstract ID": "14",
@@ -10711,7 +10737,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and other malaria-endemic countries, the findings could inform how malaria prevention, treatment, surveillance, or chemoprevention programmes are targeted and evaluated.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "We recommend using SP+AQ for SMC because DP is the current firstline treatment."
+      "childSummary": "We recommend using SP+AQ for SMC because DP is the current firstline treatment.",
+      "authors": "Maenje A.; Mategula D.; Mkwanda C.",
+      "presentingAuthor": "PRESENTING AUTHOR  Alinafe Maenje"
     },
     {
       "Abstract ID": "15",
@@ -10730,7 +10758,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and other malaria-endemic countries, the findings could inform how malaria prevention, treatment, surveillance, or chemoprevention programmes are targeted and evaluated.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "Translating evidence into policy within multi-country consortiums depends as much on relationships, trust, and institutional partnerships as on the quality of the evidence."
+      "childSummary": "Translating evidence into policy within multi-country consortiums depends as much on relationships, trust, and institutional partnerships as on the quality of the evidence.",
+      "authors": "Olive Mbekwani-Kalata1, Melody Sakala1, Marlen Chawani1, Donnie Mategula1, Rhona Mijumbi-Deve1",
+      "presentingAuthor": "PRESENTING AUTHOR  Olive Mbekwani-Kalata"
     },
     {
       "Abstract ID": "16",
@@ -10749,7 +10779,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and other malaria-endemic countries, the findings could inform how malaria prevention, treatment, surveillance, or chemoprevention programmes are targeted and evaluated.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "SP- and AQ-based chemoprevention may offer significant health and economic benefits in Malawi, supporting geographically targeted strategies that consider local transmission, timing, and mortality in economic evaluations."
+      "childSummary": "SP- and AQ-based chemoprevention may offer significant health and economic benefits in Malawi, supporting geographically targeted strategies that consider local transmission, timing, and mortality in economic evaluations.",
+      "authors": "Chisomo Mkwandah1*, Alinafe Maenje1, Steven Munhalo1, Michael Msukuma2, Laureen Cohee3, Donnie Mategula1,3,4",
+      "presentingAuthor": "PRESENTING AUTHOR  Chisomo Mkwandah"
     },
     {
       "Abstract ID": "17",
@@ -10768,7 +10800,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and other high-TB-burden countries, the findings could inform TB prevention, diagnosis, surveillance, or treatment strategies, depending on the intervention examined in this study.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "Preliminary findings suggest rapidly declining TB transmission in urban Blantyre over four years, likely due to previous scale-up of antiretroviral therapy for HIV, and TB screening, care, and…"
+      "childSummary": "Preliminary findings suggest rapidly declining TB transmission in urban Blantyre over four years, likely due to previous scale-up of antiretroviral therapy for HIV, and TB screening, care, and…",
+      "authors": "Tanaka Mudzengerere1; Chirombo J.1,2; Phulusa J.1; Taylor A.E.3; Rickman H.M.4; Wilkinson R.J.5,6; Diggle P.J.7; Seddon J.R.5,6; Corbett E.L.4; Richards A.R.8; Simwanza S.9; Chabaya W.5; Rangaka M.X.5,10; Shanaube K.9; MacPherson P.8",
+      "presentingAuthor": "PRESENTING AUTHOR  Tanaka Mudzengerere"
     },
     {
       "Abstract ID": "18",
@@ -10787,7 +10821,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, the findings could inform the design of surveillance systems and decisions about which data sources are useful for detecting and responding to health threats.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "The expansion and decline of CQ sensitivity and resistance appear temporally associated with CQ withdrawal."
+      "childSummary": "The expansion and decline of CQ sensitivity and resistance appear temporally associated with CQ withdrawal.",
+      "authors": "Munharo, S1; Phanga, M1; Chima, T1; Mategula, D1,2,3; Chapuma, C1,2,4",
+      "presentingAuthor": "PRESENTING AUTHOR  Steven Munharo"
     },
     {
       "Abstract ID": "19",
@@ -10806,7 +10842,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and other malaria-endemic countries, the findings could inform how malaria prevention, treatment, surveillance, or chemoprevention programmes are targeted and evaluated.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "In Malawi and settings with similar malaria transmission and resistance patterns, SPAQ is a suitable non-artemisinin alternative to DP for intermittent preventive treatment of malaria in school children."
+      "childSummary": "In Malawi and settings with similar malaria transmission and resistance patterns, SPAQ is a suitable non-artemisinin alternative to DP for intermittent preventive treatment of malaria in school children.",
+      "authors": "Wongani Nyangulu1,2,6, Enalla Mzembe1, Ulemu Kawelama1, Alfred Matengeni1, Fred Chinzimu1, Francis Chiumia3, Felix Khuluza3, James Chirombo2, Miriam K. Laufer5, Don P. Mathanga1,4, Lauren M. Cohee2,6",
+      "presentingAuthor": "PRESENTING AUTHOR  Wongani Nyangulu"
     },
     {
       "Abstract ID": "20",
@@ -10825,7 +10863,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and other malaria-endemic countries, the findings could inform how malaria prevention, treatment, surveillance, or chemoprevention programmes are targeted and evaluated.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "Results showed that children with blood group AB had increased odds of presenting with asymptomatic malaria (OR=2.84, p=0.03) and cerebral malaria (OR=3.57, p=0.004) compared to those with blood…"
+      "childSummary": "Results showed that children with blood group AB had increased odds of presenting with asymptomatic malaria (OR=2.84, p=0.03) and cerebral malaria (OR=3.57, p=0.004) compared to those with blood…",
+      "authors": "Priscilla Suleman1,2, Iset Vera3, Dr Kami Kim3, Dr Kwabena Dankwa2, Dr Karl Seydel1,4",
+      "presentingAuthor": "PRESENTING AUTHOR  Priscilla Suleman-Johnstone"
     },
     {
       "Abstract ID": "21",
@@ -10844,7 +10884,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, these findings could help inform vaccination policy, programme targeting, monitoring, or decisions about how vaccines are introduced and evaluated.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "Our findings show that antibodies specific to different PfEMP1 variants distinguish between CM, UM, and AP."
+      "childSummary": "Our findings show that antibodies specific to different PfEMP1 variants distinguish between CM, UM, and AP.",
+      "authors": "Banda J.P.; Walker I1; Hasang W1; Suleman P2; Mathanga D3; Taylor T2,4; Nyirenda T5; Aitken E1; Rogerson S1; Seydel K2,4",
+      "presentingAuthor": "PRESENTING AUTHOR  Josephine Pilirani Banda"
     },
     {
       "Abstract ID": "22",
@@ -10863,7 +10905,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, this study may help inform programme or policy decisions in this area, although the abstract alone is not sufficient to determine whether a specific policy change is warranted.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "Campylobacter-associated diarrhoea in children is strongly linked to adult illness and environmental contamination, implicating person-to-person and environmental transmission within the household."
+      "childSummary": "Campylobacter-associated diarrhoea in children is strongly linked to adult illness and environmental contamination, implicating person-to-person and environmental transmission within the household.",
+      "authors": "Burdon Bailey J.L.; Menyere A.; Williams N.; Pinchbeck G.; Cunliffe N.; Cornick J.",
+      "presentingAuthor": "PRESENTING AUTHOR  Jordana Burdon Bailey"
     },
     {
       "Abstract ID": "23",
@@ -10882,7 +10926,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, this study may help inform programme or policy decisions in this area, although the abstract alone is not sufficient to determine whether a specific policy change is warranted.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "Principal component analysis revealed both shared and site-specific features of mucosal immune architecture."
+      "childSummary": "Principal component analysis revealed both shared and site-specific features of mucosal immune architecture.",
+      "authors": "Ndaru Jambo1, Edwin Lisimba1, Alice Kusakala1, Chisomo Kafamau1, Bridget Ibbu1, George Masungwa1, Linda Likwenu1, Giverson Njoka1, Mackshon Chitseko1, Steve Kateta1,3, Gladys Gadama3, Louis Gadama1,3,4, Henry Mwandumba1,2,4, Robert K. Nyirenda1, Joseph Phiri1, and Kondwani Jambo1,2,4",
+      "presentingAuthor": "PRESENTING AUTHOR  Ndaru Jambo"
     },
     {
       "Abstract ID": "24",
@@ -10901,7 +10947,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, these findings could help inform vaccination policy, programme targeting, monitoring, or decisions about how vaccines are introduced and evaluated.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "Mothers shed pneumococci, often without detectable nasopharyngeal carriage, suggesting that carriage-based surveillance alone may underestimate transmission potential and underscoring the importance of incorporating shedding as a complementary measure…"
+      "childSummary": "Mothers shed pneumococci, often without detectable nasopharyngeal carriage, suggesting that carriage-based surveillance alone may underestimate transmission potential and underscoring the importance of incorporating shedding as a complementary measure…",
+      "authors": "Thokozani Kayembe1; Emmanuel C. Mchoma1; Comfort Brown1; Lyona C. Kalua1; Roseline Nyirenda1; Akuzike Kalizang'oma1,2,3; Grace O. Androga1,4,5; Neil French6; Robert S. Heyderman3,5; Brenda Kwambana-Adams1,3,5,7,8",
+      "presentingAuthor": "PRESENTING AUTHOR  Thokozani Kayembe"
     },
     {
       "Abstract ID": "25",
@@ -10920,7 +10968,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, this study may help inform programme or policy decisions in this area, although the abstract alone is not sufficient to determine whether a specific policy change is warranted.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "& CONCLUSION Across 12 assays, PARP1/2 and HIF inhibitors, along with PKC activators, reduced HIV replication by making AMs less permissive."
+      "childSummary": "& CONCLUSION Across 12 assays, PARP1/2 and HIF inhibitors, along with PKC activators, reduced HIV replication by making AMs less permissive.",
+      "authors": "Christine Mandalasi1,2, Gabrielle Le-Bury3, Ruth Khofi1, Steve Mitini-Nkhoma1,2, Rose Malamba1, Anstead Kankwatira1, David G. Russell3, and Henry Mwandumba1,2",
+      "presentingAuthor": "PRESENTING AUTHOR  Christine Mandalasi"
     },
     {
       "Abstract ID": "26",
@@ -10939,7 +10989,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, these findings could help inform vaccination policy, programme targeting, monitoring, or decisions about how vaccines are introduced and evaluated.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "Data suggests ES reflects population-level Shigella burden, though serotype-level detection requires further validation before ES can be used to guide vaccine introduction."
+      "childSummary": "Data suggests ES reflects population-level Shigella burden, though serotype-level detection requires further validation before ES can be used to guide vaccine introduction.",
+      "authors": "Myra Okumu*1, J. Gauld2, A. Nyirenda1, M. Charles1, J. Rigby1, C. Uzzell3, J. Platt-Mills4, S. Galagan5, K. Barnes1,6, J. Cornick1,7",
+      "presentingAuthor": "PRESENTING AUTHOR  Myra Okumu"
     },
     {
       "Abstract ID": "27",
@@ -10958,7 +11010,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, these findings could help inform vaccination policy, programme targeting, monitoring, or decisions about how vaccines are introduced and evaluated.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "The extensive cps locus diversity observed in serotypes 3 and 19F underscores their strong adaptive capacity in the post-PCV13 era."
+      "childSummary": "The extensive cps locus diversity observed in serotypes 3 and 19F underscores their strong adaptive capacity in the post-PCV13 era.",
+      "authors": "Lusako L. Sibale1,2,3*, Stephanie W. Lo3, Lukerensia Mlongoti1,2, Ndaona Mitole1, Alice Kusakala1, Thoko Kayembe1, Newton Kalata1, Flywell Kawonga1, Stephen D. Bentley3, Chrispin Chaguza3,6,7, Joseph A. Phiri1,2, Tinashe K. Nyazika4, Kondwani C. Jambo1,2,8*",
+      "presentingAuthor": "PRESENTING AUTHOR  Lusako L. Sibale"
     },
     {
       "Abstract ID": "28",
@@ -10977,7 +11031,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, the findings support strengthening antimicrobial-resistance surveillance, responsible antibiotic use, and infection-prevention measures where the study identifies important resistance risks.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "AMRtrack show a practical, open-source, replicable model for near-real-time AMR surveillance in resource-limited settings, addressing the gap between routine microbiology data generation and its use for clinical and…"
+      "childSummary": "AMRtrack show a practical, open-source, replicable model for near-real-time AMR surveillance in resource-limited settings, addressing the gap between routine microbiology data generation and its use for clinical and…",
+      "authors": "*Abel A. Chaonekera1,2, Brigitte Denis1, Alfred Muyaya1, Dickson Tabajjwa4, Morgan Otitta4, Neil French1,5, Henry Mwandumba1,3, Vivien Price1,3, & Patrick Musicha1,3",
+      "presentingAuthor": "PRESENTING AUTHOR  Abel A. Chaonekera"
     },
     {
       "Abstract ID": "29",
@@ -10996,7 +11052,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar settings, the findings suggest that health planning should account for environmental and climate-related risks and strengthen preparedness for populations most likely to be affected.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "The findings from this project aimed to enhance epistemic justice by co-creating working solutions with communities for strengthening resilience to withstand extreme weather events, advocate for policy change…"
+      "childSummary": "The findings from this project aimed to enhance epistemic justice by co-creating working solutions with communities for strengthening resilience to withstand extreme weather events, advocate for policy change…",
+      "authors": "Tracy Chasima1, Lindiwe Mafuleka1, Sharon Nkhwazi1, Luke Manja1, Vincent Mkwinda1, Emmanuel Harawa1, Yamikani Dickson1, Henry Mwandumba1,2, Deborah Nyirenda1,3",
+      "presentingAuthor": "PRESENTING AUTHOR  Tracy Chasima"
     },
     {
       "Abstract ID": "30",
@@ -11015,7 +11073,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and other malaria-endemic countries, the findings could inform how malaria prevention, treatment, surveillance, or chemoprevention programmes are targeted and evaluated.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "Preliminary results indicate that anthropogenic climate change has increased the malaria burden in Malawi, with clear heterogeneity between districts."
+      "childSummary": "Preliminary results indicate that anthropogenic climate change has increased the malaria burden in Malawi, with clear heterogeneity between districts.",
+      "authors": "James Chirombo1,2, Chifuniro Baluwa1, Solomon Gebrechorkos3, Ruper-Stuart Smith3, Rachel Lowe4, Tatiana Marufo5, Sadie Ryan6, Mauricio Santos Vega7, Ania Kawiecki4, TACTIC study",
+      "presentingAuthor": "PRESENTING AUTHOR  James Chirombo"
     },
     {
       "Abstract ID": "31",
@@ -11034,7 +11094,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar settings, the findings suggest that health planning should account for environmental and climate-related risks and strengthen preparedness for populations most likely to be affected.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "Research questions spanned absorptive, adaptive, and transformative health system resilience capacities."
+      "childSummary": "Research questions spanned absorptive, adaptive, and transformative health system resilience capacities.",
+      "authors": "Kumwenda M.K.1,2; Nzinga J.1,3; Watadzaushe C.4; Mbau R.1,3; Suwedi-Kapesa L.1; Sibanda E.1,4; Ruhode N.4; Burton C.1; Turner G.1; Raven J.1; Taegtmeyer M.1; Kok M.1,2",
+      "presentingAuthor": "PRESENTING AUTHOR  Moses Kumwenda"
     },
     {
       "Abstract ID": "32",
@@ -11053,7 +11115,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar settings, the findings suggest that health planning should account for environmental and climate-related risks and strengthen preparedness for populations most likely to be affected.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "Public health frameworks must transition from isolated environmental silos to compound risk models to protect vulnerable maternal populations amidst accelerating climate anomalies."
+      "childSummary": "Public health frameworks must transition from isolated environmental silos to compound risk models to protect vulnerable maternal populations amidst accelerating climate anomalies.",
+      "authors": "Laura Munthali1,2,3,5*, James Chirombo2, Handsome Bongani Nyoni3, Terence Darlington",
+      "presentingAuthor": "PRESENTING AUTHOR  Laura Munthali"
     },
     {
       "Abstract ID": "33",
@@ -11072,7 +11136,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar settings, the study suggests practical ways that health services, digital tools, or implementation processes could be improved, but adoption should be evaluated in the local health-system context.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "Findings suggest that a co-created, multifaceted implementation strategy can improve IPC practices and reduce HAI how common something was in resource-constrained hospitals."
+      "childSummary": "Findings suggest that a co-created, multifaceted implementation strategy can improve IPC practices and reduce HAI how common something was in resource-constrained hospitals.",
+      "authors": "Dorica Ng'ambi1,2, Thomasena O'Byrne1,2, Donald Zgambo1, Wala Kamchedzera1,2, Gabriel Bunduki1,2, Hendrina Chiombeza4, Wilned Hara3, Owen Musopole6, Tara Tancred2, Nicholas Feasey1,2,5",
+      "presentingAuthor": "PRESENTING AUTHOR  Dorica Ng'ambi"
     },
     {
       "Abstract ID": "34",
@@ -11091,7 +11157,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, the findings support strengthening antimicrobial-resistance surveillance, responsible antibiotic use, and infection-prevention measures where the study identifies important resistance risks.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "The systematic review (2,575 women) identified mixed-growth (17%) and E."
+      "childSummary": "The systematic review (2,575 women) identified mixed-growth (17%) and E.",
+      "authors": "Chikondi I. J. Chapuma*1,2, Moses K. Kumwenda+1, Andrew Weeks+1, David Lissauer+1,2",
+      "presentingAuthor": "PRESENTING AUTHOR  Chikondi I. J. Chapuma"
     },
     {
       "Abstract ID": "35",
@@ -11110,7 +11178,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, the findings could help identify where maternal, child, nutrition, or antenatal services need to be strengthened or better targeted.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "Over 70% of women initiate ANC after 12 weeks of gestation."
+      "childSummary": "Over 70% of women initiate ANC after 12 weeks of gestation.",
+      "authors": "Chisomo Chilupsya1, Dr Sophia Kagoye3, Prof A. Muula4, Prof Winfred Dotse-Gborgbortsi2",
+      "presentingAuthor": "PRESENTING AUTHOR  Chisomo Chilupsya"
     },
     {
       "Abstract ID": "36",
@@ -11129,7 +11199,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, the findings could help identify where maternal, child, nutrition, or antenatal services need to be strengthened or better targeted.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "This project could support strengthening school-based nutrition interventions and contribute to national efforts to reduce anaemia among adolescent girls before pregnancy, thereby improving maternal and newborn health outcomes."
+      "childSummary": "This project could support strengthening school-based nutrition interventions and contribute to national efforts to reduce anaemia among adolescent girls before pregnancy, thereby improving maternal and newborn health outcomes.",
+      "authors": "Mayamiko D. Kapulula",
+      "presentingAuthor": "PRESENTING AUTHOR  Mayamiko D. Kapulula"
     },
     {
       "Abstract ID": "37",
@@ -11148,7 +11220,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, the findings could help identify where maternal, child, nutrition, or antenatal services need to be strengthened or better targeted.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "Four themes captured the experiences and needs of women in vulnerable situations across antenatal, intrapartum, and postnatal care."
+      "childSummary": "Four themes captured the experiences and needs of women in vulnerable situations across antenatal, intrapartum, and postnatal care.",
+      "authors": "Mtisunge Joshua Gondwe1, Chifundo Kondoni1, Arnold Hamapa2, Catherine Bamuya3, Annie Kuyere1, Bertha Maseko1, Luis Gadama4, Lily Kumbani5, Effie Chipeta6, Catherine Mkandawire2, Lydia Hangulu2, James Jafali7,8, Elizabeth Chodzaza5, David Lissauer1,9, Alinane Linda Nyondo-Mipando1,9,10",
+      "presentingAuthor": "PRESENTING AUTHOR  Annie Kuyere"
     },
     {
       "Abstract ID": "38",
@@ -11167,7 +11241,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, the findings could help identify where maternal, child, nutrition, or antenatal services need to be strengthened or better targeted.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "A structured co-design and validation process generated a practical, consensus-based maternity feedback tool to improve care delivery in Malawi."
+      "childSummary": "A structured co-design and validation process generated a practical, consensus-based maternity feedback tool to improve care delivery in Malawi.",
+      "authors": "Chifundo Kondoni1, Mtisunge Joshua Gondwe1, Yamikani Chimwaza1, Leonard Mndala1, Annie Kuyere1, Nyadani Chitsulo1, Bertha Maseko1, Catherine Bamuya2, Luis Gadama4, Lily Kumbani5, Effie Chipeta6, James Jafali7,8, Elizabeth Chodzaza5, David Lissauer1,3, Alinane Linda Nyondo-Mipando1,3,9",
+      "presentingAuthor": "PRESENTING AUTHOR  Regina Makuluni"
     },
     {
       "Abstract ID": "39",
@@ -11186,7 +11262,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, the findings could help identify where maternal, child, nutrition, or antenatal services need to be strengthened or better targeted.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "We will provide evidence of the diagnostic accuracy (DA) and predictive validity (PV) of STREAM scores to predict future NDDs and functioning."
+      "childSummary": "We will provide evidence of the diagnostic accuracy (DA) and predictive validity (PV) of STREAM scores to predict future NDDs and functioning.",
+      "authors": "Dr Rebecca Searle*1, Dr Emmie Mbale1,2, Dr Gareth McCray3, Professor Linda Nyondo-Mipando1,4, Professor Bhismadev Chakrabarti5, Richard Nkhata6, Chisomo Namathanga6, Allan Bennie6, Tawonga Foti6, Lumbani Makhaza6, Dr Alex Zumazuma7, Mary Ali6, Professor Melissa Gladstone1",
+      "presentingAuthor": "PRESENTING AUTHOR  Rebecca Searle"
     },
     {
       "Abstract ID": "40",
@@ -11205,7 +11283,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, this study may help inform programme or policy decisions in this area, although the abstract alone is not sufficient to determine whether a specific policy change is warranted.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "Supporting mobile populations across the HIV care cascade requires differentiated service delivery that responds to their unique mobility patterns; however, robust evidence on effective interventions remains limited."
+      "childSummary": "Supporting mobile populations across the HIV care cascade requires differentiated service delivery that responds to their unique mobility patterns; however, robust evidence on effective interventions remains limited.",
+      "authors": "Theodora Khofi1, Kelvin T. Balakasi1,2, Sangwani Salimu1,2, Teddie Chima3, Augustine Choko1,2",
+      "presentingAuthor": "PRESENTING AUTHOR  Theodora Khofi"
     },
     {
       "Abstract ID": "41",
@@ -11224,7 +11304,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, these findings could help inform vaccination policy, programme targeting, monitoring, or decisions about how vaccines are introduced and evaluated.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "Limited awareness of LTBI, stigma, and gender- and age-related barriers may reduce uptake of TB prevention interventions."
+      "childSummary": "Limited awareness of LTBI, stigma, and gender- and age-related barriers may reduce uptake of TB prevention interventions.",
+      "authors": "Helen Mangochi1, Beate Ringwald2, Augustine T. Choko1,2, Mphatso Phiri1, Kerry Millington2, Luke Banda1 and Rachael Thomson2",
+      "presentingAuthor": "PRESENTING AUTHOR  Helen Mangochi"
     },
     {
       "Abstract ID": "42",
@@ -11243,7 +11325,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, the findings could inform the design of surveillance systems and decisions about which data sources are useful for detecting and responding to health threats.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "The findings underscore a critical unmet need for a low-cost, robust, and user-friendly DSK to enable timely diagnosis and effective linkage to care for meningitis in low-resource settings."
+      "childSummary": "The findings underscore a critical unmet need for a low-cost, robust, and user-friendly DSK to enable timely diagnosis and effective linkage to care for meningitis in low-resource settings.",
+      "authors": "Matandika M.L.; Hobus M.C.1; Jones-Phillips B.2; Kalua L.3; Kathyola D.3; Mwenda M.J.4; Mijumbi R.2,3; Fongwen N.5; Nyirenda D.3; Kwambana-Adams B.2,3",
+      "presentingAuthor": "PRESENTING AUTHOR  Limbanazo Mindiera Matandika"
     },
     {
       "Abstract ID": "43",
@@ -11262,7 +11346,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar settings, the study suggests practical ways that health services, digital tools, or implementation processes could be improved, but adoption should be evaluated in the local health-system context.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "The CMRAD platform show high usability across all user groups."
+      "childSummary": "The CMRAD platform show high usability across all user groups.",
+      "authors": "Sibale, K.S.; Marlen Chawani1, Elizabeth Joekes2, Brian Ngwira1, Karen Chetcuti4, Asiyatu Shaffie3, Laura Chillag2, Pemphero Norah Mpamba4",
+      "presentingAuthor": "PRESENTING AUTHOR  Khetwayo Sibale"
     },
     {
       "Abstract ID": "44",
@@ -11281,7 +11367,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, these findings could help inform vaccination policy, programme targeting, monitoring, or decisions about how vaccines are introduced and evaluated.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "Among 9,476 enrolled children, Shigella was detected in 881 (9.3%) by culture and 1,870 (20.0%) by qPCR (of 9,354 tested)."
+      "childSummary": "Among 9,476 enrolled children, Shigella was detected in 881 (9.3%) by culture and 1,870 (20.0%) by qPCR (of 9,354 tested).",
+      "authors": "Cornick J.C.1,2; Jere K.C.1,2,3; Mategula D.2,3,4; Witte D.1,2; Munthali V.Y.2; Ndalama M.2; Ndeketa L.2; Cunliffe N.A.1; on behalf of the EFGH Consortium",
+      "presentingAuthor": "PRESENTING AUTHOR  Jennifer Cornick"
     },
     {
       "Abstract ID": "45",
@@ -11300,7 +11388,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, the findings support strengthening antimicrobial-resistance surveillance, responsible antibiotic use, and infection-prevention measures where the study identifies important resistance risks.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "This study will define nasopharyngeal AMR carriage in Malawian children with CAP, through antimicrobial susceptibility testing and metagenomic sequencing."
+      "childSummary": "This study will define nasopharyngeal AMR carriage in Malawian children with CAP, through antimicrobial susceptibility testing and metagenomic sequencing.",
+      "authors": "O'Connor, L; Nkhata, CB1; Mchoma, E1; Brown, C1; Phanga, M1; Chaguza, C2; French, N3; Heyderman, R4; Kwambana-Adams, B1,5",
+      "presentingAuthor": "PRESENTING AUTHOR  Charles B. Nkhata"
     },
     {
       "Abstract ID": "46",
@@ -11319,7 +11409,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, the findings support strengthening antimicrobial-resistance surveillance, responsible antibiotic use, and infection-prevention measures where the study identifies important resistance risks.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "AMR LQAS is a feasible tool for decentralized AMR surveillance, supporting empirical treatment decisions and district-level health planning, while complementing Malawi's existing sentinel surveillance system."
+      "childSummary": "AMR LQAS is a feasible tool for decentralized AMR surveillance, supporting empirical treatment decisions and district-level health planning, while complementing Malawi's existing sentinel surveillance system.",
+      "authors": "Kennedy Uadiale1,2, Robert Anguyo1,3, Marumbo Chirwa1, Allan Zuza1,5, Thomasena O'Byrne1,2, Nicholas Feasey1,2,5, Anjali Sharma4, Joseph Valadez2",
+      "presentingAuthor": "PRESENTING AUTHOR  Kennedy Uadiale"
     },
     {
       "Abstract ID": "47",
@@ -11338,7 +11430,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar countries, the findings could inform community engagement and health-promotion approaches by showing where knowledge alone may not be enough to change safer health behaviours.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "Rabies KAP levels were insufficient to support Zero by 30 goals."
+      "childSummary": "Rabies KAP levels were insufficient to support Zero by 30 goals.",
+      "authors": "Precious Innocent Mastala1,2,3*, Patrick Ken Kalonde4,5, Shunrang Chin6, Loveryn Dodu7, Enerst Chikhola8, Cheryl Valdez9, Madeline Nyamwaza3, Timothy Adeoluwa Ojadare1,10, Edson Chiweta3, Abel Chipembo11,12, Laston Chimaliro2,13, Shareef Ngunguni2,14, Peter Kamanga3, Melaku Tefera2, Thoko Flav Kapalamula2,15, Heidi E. Brown1",
+      "presentingAuthor": "PRESENTING AUTHOR  Precious Innocent Mastala"
     },
     {
       "Abstract ID": "48",
@@ -11357,7 +11451,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and other malaria-endemic countries, the findings could inform how malaria prevention, treatment, surveillance, or chemoprevention programmes are targeted and evaluated.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "This clinical prediction model can better define aetiology of febrile coma, without reliance on sophisticated laboratory pfHRP-2 assays; crucial for clinicians managing these critically unwell cases in diagnostically…"
+      "childSummary": "This clinical prediction model can better define aetiology of febrile coma, without reliance on sophisticated laboratory pfHRP-2 assays; crucial for clinicians managing these critically unwell cases in diagnostically…",
+      "authors": "Ajisa Ahmadu1, James Jafali1,2, Kyle Wilson1,4, James Chirombo1,2, Priscilla Suleman4, Lusako Sibale1, Charlotte Fuller2,4, Nick Beare, Mike Griffiths6, Christopher Moxon1, Karl Seydel*1,3,4, Stephen Ray*1,2,3,5",
+      "presentingAuthor": "PRESENTING AUTHOR  Ajisa Ahmadu"
     },
     {
       "Abstract ID": "49",
@@ -11376,7 +11472,9 @@
       "grandmotherSummaryBasis": "LLM-generated very simple explanation based only on the supplied abstract.",
       "policyImplication": "For Malawi and similar settings, the study suggests practical ways that health services, digital tools, or implementation processes could be improved, but adoption should be evaluated in the local health-system context.",
       "policyImplicationBasis": "LLM-inferred policy implication based only on the supplied abstract; not necessarily a recommendation stated by the study authors.",
-      "childSummary": "Generative artificial intelligence, combined with layered validation and human review, can substantially reduce the time and specialist expertise required to build ODK forms, strengthening data-collection capacity for research…"
+      "childSummary": "Generative artificial intelligence, combined with layered validation and human review, can substantially reduce the time and specialist expertise required to build ODK forms, strengthening data-collection capacity for research…",
+      "authors": "Dzonzi B.; Muyaya A.1; Makhaza L.1; Phiri V.1; Mphamba S.1",
+      "presentingAuthor": "PRESENTING AUTHOR  Brenald Dzonzi"
     }
   ]
 }
