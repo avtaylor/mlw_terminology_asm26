@@ -1,0 +1,2525 @@
+{
+  "institutions": [
+    {
+      "name": "Malawi Liverpool Wellcome Research Programme",
+      "abstractIds": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49"
+      ],
+      "groups": [
+        {
+          "name": "Communications and Public Engagement Department",
+          "abstractIds": [
+            "29"
+          ],
+          "originalAffiliations": [
+            "Malawi Liverpool Wellcome Research Programme, Communications and Public Engagement Department, P.O. Box 30096, Blantyre, Malawi"
+          ]
+        },
+        {
+          "name": "Data Management Support Unit",
+          "abstractIds": [
+            "49"
+          ],
+          "originalAffiliations": [
+            "Data Management Support Unit (DMSU), Malawi-Liverpool-Wellcome Research Programme, Blantyre, Malawi"
+          ]
+        },
+        {
+          "name": "Infection Biology",
+          "abstractIds": [
+            "22"
+          ],
+          "originalAffiliations": [
+            "Infection Biology, MLW, Blantyre, Malawi"
+          ]
+        },
+        {
+          "name": "Infectious Disease Epidemiology Group",
+          "abstractIds": [
+            "09",
+            "14",
+            "16",
+            "18",
+            "19"
+          ],
+          "originalAffiliations": [
+            "Infectious Disease Epidemiology (IDE) group, Malawi-Liverpool Wellcome Research Programme, P.O. Box 30096, Chichiri, Blantyre 3, Malawi",
+            "Infectious Disease Epidemiology Group, Malawi-Liverpool-Wellcome Programme, Blantyre, Malawi",
+            "Infectious Disease Epidemiology Research Group, Malawi Liverpool Wellcome Programme, Blantyre, Malawi",
+            "Infectious Disease Epidemiology Research Group, Malawi Liverpool Wellcome Programme, Queen Elizabeth Central Hospital Campus, Chipatala Avenue, P.O. Box 30096, Chichiri, Blantyre 3, Malawi",
+            "Infectious Diseases Epidemiology Group, Malawi-Liverpool-Wellcome Clinical Research Programme, Blantyre, Malawi"
+          ]
+        },
+        {
+          "name": "Maternal and Fetal Health Group",
+          "abstractIds": [
+            "36",
+            "37",
+            "38"
+          ],
+          "originalAffiliations": [
+            "Malawi Liverpool Wellcome Research Programme, Maternal and Fetal Health Group, Malawi",
+            "Maternal and Fetal Group, Malawi Liverpool Wellcome Research Programme, Blantyre, Malawi",
+            "Maternal and Fetal Health Group, Malawi Liverpool Wellcome Research Programme, Blantyre, Malawi"
+          ]
+        },
+        {
+          "name": "Pneumonia and Meningitis Pathogens Research Group",
+          "abstractIds": [
+            "02"
+          ],
+          "originalAffiliations": [
+            "Pneumonia and Meningitis Pathogens (PMP) Research Group, Malawi Liverpool Wellcome Programme, Blantyre, Malawi"
+          ]
+        },
+        {
+          "name": "Public Health Group",
+          "abstractIds": [
+            "32",
+            "40"
+          ],
+          "originalAffiliations": [
+            "Malawi Liverpool Wellcome Research Programme, Public Health Group, Blantyre, Malawi",
+            "Public Health Group, Malawi Liverpool Wellcome Research Programme, Blantyre, Malawi"
+          ]
+        },
+        {
+          "name": "Salmonella Group",
+          "abstractIds": [
+            "37",
+            "38"
+          ],
+          "originalAffiliations": [
+            "Salmonella Group, Malawi Liverpool Wellcome Research Programme, Blantyre, Malawi"
+          ]
+        },
+        {
+          "name": "Social Science Theme",
+          "abstractIds": [
+            "31"
+          ],
+          "originalAffiliations": [
+            "Social Science Theme, Malawi Liverpool Wellcome Programme, Blantyre, Malawi"
+          ]
+        },
+        {
+          "name": "Statistical Support Unit",
+          "abstractIds": [
+            "09"
+          ],
+          "originalAffiliations": [
+            "Statistical Support Unit, Malawi Liverpool Wellcome Programme, Blantyre, Malawi"
+          ]
+        },
+        {
+          "name": "Training Department",
+          "abstractIds": [
+            "40"
+          ],
+          "originalAffiliations": [
+            "Training Department, Malawi Liverpool Wellcome Research Programme, Blantyre, Malawi"
+          ]
+        },
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "01",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "17",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "30",
+            "33",
+            "34",
+            "35",
+            "39",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48"
+          ],
+          "originalAffiliations": [
+            "Malawi Liverpool Wellcome Programme / Malawi University of Business and Applied Sciences",
+            "Malawi Liverpool Wellcome Programme, Blantyre, Malawi",
+            "Malawi Liverpool Wellcome Programme, Kamuzu University of Health Sciences, Blantyre, Malawi",
+            "Malawi Liverpool Wellcome Programme, Queen Elizabeth Central Hospital, P.O. Box 30096, Chichiri, Blantyre, Malawi",
+            "Malawi Liverpool Wellcome Research Programme",
+            "Malawi Liverpool Wellcome Research Programme (MLW), Blantyre, Malawi",
+            "Malawi Liverpool Wellcome Research Programme (Malawi)",
+            "Malawi Liverpool Wellcome Research Programme, Blantyre, Malawi",
+            "Malawi-Liverpool-Wellcome Clinical Research Programme, Blantyre, Malawi",
+            "Malawi-Liverpool-Wellcome Programme, Blantyre, Malawi",
+            "Malawi-Liverpool-Wellcome Research Programme, Blantyre, Malawi",
+            "Malawi-Liverpool-Wellcome Trust Clinical Research Programme, Blantyre, Malawi",
+            "The Malawi-Liverpool-Wellcome Research Programme, Blantyre, Malawi"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Liverpool School of Tropical Medicine",
+      "abstractIds": [
+        "01",
+        "04",
+        "05",
+        "06",
+        "07",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "16",
+        "17",
+        "18",
+        "19",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "40",
+        "41",
+        "42",
+        "44",
+        "45",
+        "46",
+        "47"
+      ],
+      "groups": [
+        {
+          "name": "Centre for Tuberculosis Research",
+          "abstractIds": [
+            "41"
+          ],
+          "originalAffiliations": [
+            "Centre for Tuberculosis Research, Liverpool School of Tropical Medicine, Liverpool, United Kingdom"
+          ]
+        },
+        {
+          "name": "Department of Clinical Sciences",
+          "abstractIds": [
+            "04",
+            "05",
+            "06",
+            "07",
+            "09",
+            "10",
+            "11",
+            "18",
+            "19",
+            "24",
+            "27",
+            "28",
+            "29",
+            "30"
+          ],
+          "originalAffiliations": [
+            "Clinical Sciences Department, Liverpool School of Tropical Medicine, Liverpool, United Kingdom",
+            "Department of Clinical Sciences, Liverpool School of Tropical Medicine, Liverpool, UK",
+            "Department of Clinical Sciences, Liverpool School of Tropical Medicine, Liverpool, United Kingdom",
+            "Department of Clinical Sciences, Liverpool School of Tropical Medicine, Pembroke Place, Liverpool, UK",
+            "Department of Clinical Sciences, Liverpool School of Tropical Medicine, UK",
+            "Liverpool School of Tropical Medicine, Clinical Sciences Department, Pembroke Place, Liverpool L3 5QA, United Kingdom"
+          ]
+        },
+        {
+          "name": "Department of Clinical Sciences and International Public Health",
+          "abstractIds": [
+            "16"
+          ],
+          "originalAffiliations": [
+            "Department of Clinical Sciences and International Public Health, Liverpool School of Tropical Medicine, Liverpool, L3 5QA, United Kingdom"
+          ]
+        },
+        {
+          "name": "Department of International Public Health",
+          "abstractIds": [
+            "29",
+            "32"
+          ],
+          "originalAffiliations": [
+            "Department of International Public Health, Liverpool School of Tropical Medicine, Liverpool, UK",
+            "Liverpool School of Tropical Medicine, International Public Health Department, Pembroke Place, Liverpool L3 5QA, United Kingdom"
+          ]
+        },
+        {
+          "name": "Department of Vector Biology",
+          "abstractIds": [
+            "09"
+          ],
+          "originalAffiliations": [
+            "Department of Vector Biology, Liverpool School of Tropical Medicine, Liverpool, United Kingdom"
+          ]
+        },
+        {
+          "name": "Institute for Resilient Health Systems",
+          "abstractIds": [
+            "31"
+          ],
+          "originalAffiliations": [
+            "Institute for Resilient Health Systems, Department of Clinical Sciences, Liverpool School of Tropical Medicine, Liverpool, United Kingdom"
+          ]
+        },
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "01",
+            "12",
+            "13",
+            "17",
+            "23",
+            "25",
+            "26",
+            "33",
+            "40",
+            "42",
+            "44",
+            "45",
+            "46",
+            "47"
+          ],
+          "originalAffiliations": [
+            "Liverpool School of Tropical Medicine",
+            "Liverpool School of Tropical Medicine (UK)",
+            "Liverpool School of Tropical Medicine, Liverpool, UK",
+            "Liverpool School of Tropical Medicine, Liverpool, United Kingdom",
+            "Liverpool School of Tropical Medicine, Pembroke Place, Liverpool, L3 5QA, United Kingdom",
+            "Liverpool School of Tropical Medicine, United Kingdom"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kamuzu University of Health Sciences",
+      "abstractIds": [
+        "01",
+        "02",
+        "04",
+        "05",
+        "12",
+        "13",
+        "16",
+        "18",
+        "19",
+        "20",
+        "21",
+        "23",
+        "24",
+        "27",
+        "28",
+        "35",
+        "37",
+        "38",
+        "39",
+        "43",
+        "44"
+      ],
+      "groups": [
+        {
+          "name": "Bioinformatics, Kamuzu University of Health Sciences, Blantyre, Malawi",
+          "abstractIds": [
+            "28"
+          ],
+          "originalAffiliations": [
+            "Bioinformatics, Kamuzu University of Health Sciences, Blantyre, Malawi"
+          ]
+        },
+        {
+          "name": "Blantyre Malaria Project, Kamuzu University of Health Sciences, Blantyre, Malawi",
+          "abstractIds": [
+            "20"
+          ],
+          "originalAffiliations": [
+            "Blantyre Malaria Project, Kamuzu University of Health Sciences, Blantyre, Malawi"
+          ]
+        },
+        {
+          "name": "Centre for Reproductive Health, Kamuzu University of Health Sciences, Blantyre, Malawi",
+          "abstractIds": [
+            "38"
+          ],
+          "originalAffiliations": [
+            "Centre for Reproductive Health, Kamuzu University of Health Sciences, Blantyre, Malawi"
+          ]
+        },
+        {
+          "name": "Department of Health Systems and Policy, Kamuzu University of Health Sciences, Blantyre, Malawi",
+          "abstractIds": [
+            "37",
+            "38"
+          ],
+          "originalAffiliations": [
+            "Department of Health Systems and Policy, Kamuzu University of Health Sciences, Blantyre, Malawi"
+          ]
+        },
+        {
+          "name": "Department of Mental Health and Psychiatry, Kamuzu University of Health Sciences, Malawi",
+          "abstractIds": [
+            "39"
+          ],
+          "originalAffiliations": [
+            "Department of Mental Health and Psychiatry, Kamuzu University of Health Sciences, Malawi"
+          ]
+        },
+        {
+          "name": "Department of Midwifery, School of Maternal and Reproductive Health, Kamuzu University of Health Sciences, Blantyre, Malawi",
+          "abstractIds": [
+            "37",
+            "38"
+          ],
+          "originalAffiliations": [
+            "Department of Midwifery, School of Maternal and Reproductive Health, Kamuzu University of Health Sciences, Blantyre, Malawi"
+          ]
+        },
+        {
+          "name": "Department of Obstetrics and Gynaecology, Kamuzu University of Health Sciences, Blantyre, Malawi",
+          "abstractIds": [
+            "37"
+          ],
+          "originalAffiliations": [
+            "Department of Obstetrics and Gynaecology, Kamuzu University of Health Sciences, Blantyre, Malawi"
+          ]
+        },
+        {
+          "name": "Department of Obstetrics and Gynecology, Kamuzu University of Health Sciences, Blantyre, Malawi",
+          "abstractIds": [
+            "38"
+          ],
+          "originalAffiliations": [
+            "Department of Obstetrics and Gynecology, Kamuzu University of Health Sciences, Blantyre, Malawi"
+          ]
+        },
+        {
+          "name": "Department of Paediatrics and Child Health, Kamuzu University of Health Sciences, Malawi",
+          "abstractIds": [
+            "39"
+          ],
+          "originalAffiliations": [
+            "Department of Paediatrics and Child Health, Kamuzu University of Health Sciences, Malawi"
+          ]
+        },
+        {
+          "name": "Department of Paediatrics and Child Health, Queen Elizabeth Central Hospital, Kamuzu University of Health Sciences, Blantyre, Malawi",
+          "abstractIds": [
+            "05"
+          ],
+          "originalAffiliations": [
+            "Department of Paediatrics and Child Health, Queen Elizabeth Central Hospital, Kamuzu University of Health Sciences, Blantyre, Malawi"
+          ]
+        },
+        {
+          "name": "Department of Pathology, School of Medicine and Oral Health, Kamuzu University of Health Sciences, Blantyre, Malawi",
+          "abstractIds": [
+            "02",
+            "24"
+          ],
+          "originalAffiliations": [
+            "Department of Pathology, School of Medicine and Oral Health, Kamuzu University of Health Sciences, Blantyre, Malawi"
+          ]
+        },
+        {
+          "name": "Department of Sexual and Reproductive Health, Kamuzu University of Health Sciences, Blantyre, Malawi",
+          "abstractIds": [
+            "37"
+          ],
+          "originalAffiliations": [
+            "Department of Sexual and Reproductive Health, Kamuzu University of Health Sciences, Blantyre, Malawi"
+          ]
+        },
+        {
+          "name": "Health Systems and Policy, School of Global and Public Health, Kamuzu University of Health Sciences, Malawi",
+          "abstractIds": [
+            "39"
+          ],
+          "originalAffiliations": [
+            "Health Systems and Policy, School of Global and Public Health, Kamuzu University of Health Sciences, Malawi"
+          ]
+        },
+        {
+          "name": "Kamuzu University of Health Sciences (KUHeS), Health Economics and Policy Unit, Blantyre, Malawi",
+          "abstractIds": [
+            "43"
+          ],
+          "originalAffiliations": [
+            "Kamuzu University of Health Sciences (KUHeS), Health Economics and Policy Unit, Blantyre, Malawi"
+          ]
+        },
+        {
+          "name": "Malaria Alert Centre, Kamuzu University of Health Sciences, Private Bag 360, Chichiri, Blantyre 3, Malawi",
+          "abstractIds": [
+            "19"
+          ],
+          "originalAffiliations": [
+            "Malaria Alert Centre, Kamuzu University of Health Sciences, Private Bag 360, Chichiri, Blantyre 3, Malawi"
+          ]
+        },
+        {
+          "name": "School of Global and Public Health, Kamuzu University of Health Sciences, Private Bag 360, Chichiri, Blantyre 3, Malawi",
+          "abstractIds": [
+            "19"
+          ],
+          "originalAffiliations": [
+            "School of Global and Public Health, Kamuzu University of Health Sciences, Private Bag 360, Chichiri, Blantyre 3, Malawi"
+          ]
+        },
+        {
+          "name": "School of Life Science and Allied Health Professions, Kamuzu University of Health Sciences, Blantyre, Malawi",
+          "abstractIds": [
+            "27"
+          ],
+          "originalAffiliations": [
+            "School of Life Science and Allied Health Professions, Kamuzu University of Health Sciences, Blantyre, Malawi"
+          ]
+        },
+        {
+          "name": "School of Life Sciences and Allied Health Professions, Department of Pharmacy, Kamuzu University of Health Sciences, Private Bag 360, Chichiri, Blantyre 3, Malawi",
+          "abstractIds": [
+            "19"
+          ],
+          "originalAffiliations": [
+            "School of Life Sciences and Allied Health Professions, Department of Pharmacy, Kamuzu University of Health Sciences, Private Bag 360, Chichiri, Blantyre 3, Malawi"
+          ]
+        },
+        {
+          "name": "School of Public Health and Family Medicine, Kamuzu University of Health Sciences, Blantyre, Malawi",
+          "abstractIds": [
+            "02"
+          ],
+          "originalAffiliations": [
+            "School of Public Health and Family Medicine, Kamuzu University of Health Sciences, Blantyre, Malawi"
+          ]
+        },
+        {
+          "name": "The School of Global and Public Health, Kamuzu University of Health Sciences, Private Bag 360, Blantyre, Malawi",
+          "abstractIds": [
+            "16"
+          ],
+          "originalAffiliations": [
+            "The School of Global and Public Health, Kamuzu University of Health Sciences, Private Bag 360, Blantyre, Malawi"
+          ]
+        },
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "01",
+            "04",
+            "05",
+            "12",
+            "13",
+            "18",
+            "21",
+            "23",
+            "24",
+            "35",
+            "44"
+          ],
+          "originalAffiliations": [
+            "Kamuzu University of Health Sciences",
+            "Kamuzu University of Health Sciences, Blantyre, Malawi",
+            "Kamuzu University of Health Sciences, Blantyre, Malawi (formerly College of Medicine and Kamuzu College of Nursing, University of Malawi)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Liverpool",
+      "abstractIds": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "12",
+        "22",
+        "24",
+        "26",
+        "28",
+        "34",
+        "37",
+        "38",
+        "39",
+        "44",
+        "45",
+        "48"
+      ],
+      "groups": [
+        {
+          "name": "Centre for Global Vaccine Research, Institute of Infection and Global Health, University of Liverpool, Liverpool, United Kingdom",
+          "abstractIds": [
+            "02",
+            "24"
+          ],
+          "originalAffiliations": [
+            "Centre for Global Vaccine Research, Institute of Infection and Global Health, University of Liverpool, Liverpool, United Kingdom"
+          ]
+        },
+        {
+          "name": "CIMI, University of Liverpool, Liverpool, UK",
+          "abstractIds": [
+            "22"
+          ],
+          "originalAffiliations": [
+            "CIMI, University of Liverpool, Liverpool, UK"
+          ]
+        },
+        {
+          "name": "Department of Clinical Infection, Microbiology and Immunology, Institute of Infection, Veterinary & Ecological Sciences, University of Liverpool, Liverpool, United Kingdom",
+          "abstractIds": [
+            "06"
+          ],
+          "originalAffiliations": [
+            "Department of Clinical Infection, Microbiology and Immunology, Institute of Infection, Veterinary & Ecological Sciences, University of Liverpool, Liverpool, United Kingdom"
+          ]
+        },
+        {
+          "name": "Department of clinical infection, microbiology and immunology, University of Liverpool, Liverpool, UK",
+          "abstractIds": [
+            "48"
+          ],
+          "originalAffiliations": [
+            "Department of clinical infection, microbiology and immunology, University of Liverpool, Liverpool, UK"
+          ]
+        },
+        {
+          "name": "Department of Women and Children's Health, Institute of Life Course and Medical Sciences, University of Liverpool, Liverpool, UK",
+          "abstractIds": [
+            "39"
+          ],
+          "originalAffiliations": [
+            "Department of Women and Children's Health, Institute of Life Course and Medical Sciences, University of Liverpool, Liverpool, UK"
+          ]
+        },
+        {
+          "name": "Department of Women's and Children's Health, University of Liverpool, UK",
+          "abstractIds": [
+            "38"
+          ],
+          "originalAffiliations": [
+            "Department of Women's and Children's Health, University of Liverpool, UK"
+          ]
+        },
+        {
+          "name": "Department of Women's Health, University of Liverpool, United Kingdom",
+          "abstractIds": [
+            "37"
+          ],
+          "originalAffiliations": [
+            "Department of Women's Health, University of Liverpool, United Kingdom"
+          ]
+        },
+        {
+          "name": "Institute of Infection Veterinary & Ecological Science, University of Liverpool, Liverpool, UK",
+          "abstractIds": [
+            "07"
+          ],
+          "originalAffiliations": [
+            "Institute of Infection Veterinary & Ecological Science, University of Liverpool, Liverpool, UK"
+          ]
+        },
+        {
+          "name": "Institute of Infection, Veterinary & Ecological Sciences, University of Liverpool, Liverpool, United Kingdom",
+          "abstractIds": [
+            "06"
+          ],
+          "originalAffiliations": [
+            "Institute of Infection, Veterinary & Ecological Sciences, University of Liverpool, Liverpool, United Kingdom"
+          ]
+        },
+        {
+          "name": "Institute of Infection, Veterinary & Ecological Sciences, University of Liverpool, UK",
+          "abstractIds": [
+            "04"
+          ],
+          "originalAffiliations": [
+            "Institute of Infection, Veterinary & Ecological Sciences, University of Liverpool, UK"
+          ]
+        },
+        {
+          "name": "Institute of Infection, Veterinary & Ecological Sciences, University of Liverpool, United Kingdom",
+          "abstractIds": [
+            "37"
+          ],
+          "originalAffiliations": [
+            "Institute of Infection, Veterinary & Ecological Sciences, University of Liverpool, United Kingdom"
+          ]
+        },
+        {
+          "name": "Institute of Infection, Veterinary and Ecological Sciences, University of Liverpool, Liverpool, UK",
+          "abstractIds": [
+            "03",
+            "08",
+            "44"
+          ],
+          "originalAffiliations": [
+            "Institute of Infection, Veterinary and Ecological Sciences, University of Liverpool, Liverpool, UK"
+          ]
+        },
+        {
+          "name": "Institute of Infection, Veterinary and Ecological Sciences, University of Liverpool, Liverpool, United Kingdom",
+          "abstractIds": [
+            "28"
+          ],
+          "originalAffiliations": [
+            "Institute of Infection, Veterinary and Ecological Sciences, University of Liverpool, Liverpool, United Kingdom"
+          ]
+        },
+        {
+          "name": "Institute of Infection, Veterinary and Ecological Sciences, University of Liverpool, UK",
+          "abstractIds": [
+            "38"
+          ],
+          "originalAffiliations": [
+            "Institute of Infection, Veterinary and Ecological Sciences, University of Liverpool, UK"
+          ]
+        },
+        {
+          "name": "Livestock and One Health, University of Liverpool, Liverpool, UK",
+          "abstractIds": [
+            "22"
+          ],
+          "originalAffiliations": [
+            "Livestock and One Health, University of Liverpool, Liverpool, UK"
+          ]
+        },
+        {
+          "name": "University of Liverpool (UK)",
+          "abstractIds": [
+            "45"
+          ],
+          "originalAffiliations": [
+            "University of Liverpool (UK)"
+          ]
+        },
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "01",
+            "02",
+            "05",
+            "12",
+            "26",
+            "34"
+          ],
+          "originalAffiliations": [
+            "University of Liverpool, Department of Pharmacology and Therapeutics, Liverpool, United Kingdom",
+            "University of Liverpool, Liverpool, United Kingdom",
+            "University of Liverpool, United Kingdom"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University College London",
+      "abstractIds": [
+        "02",
+        "05",
+        "06",
+        "07",
+        "17",
+        "24",
+        "27",
+        "45"
+      ],
+      "groups": [
+        {
+          "name": "Division of Infection and Immunity, University College London, London, UK",
+          "abstractIds": [
+            "07",
+            "24"
+          ],
+          "originalAffiliations": [
+            "Division of Infection and Immunity, University College London, London, UK"
+          ]
+        },
+        {
+          "name": "Institute of Infection, Immunity and Transplantation, University College London, London, United Kingdom",
+          "abstractIds": [
+            "05"
+          ],
+          "originalAffiliations": [
+            "Institute of Infection, Immunity and Transplantation, University College London, London, United Kingdom"
+          ]
+        },
+        {
+          "name": "Mucosal Pathogens Research Group, Research Department of Infection, Division of Infection & Immunity, University College London, London, United Kingdom",
+          "abstractIds": [
+            "06"
+          ],
+          "originalAffiliations": [
+            "Mucosal Pathogens Research Group, Research Department of Infection, Division of Infection & Immunity, University College London, London, United Kingdom"
+          ]
+        },
+        {
+          "name": "NIHR Global Health Research Group on Vaccines to Control Respiratory Pathogens and AMR Across Africa (VacAMR), University College London, London, United Kingdom",
+          "abstractIds": [
+            "05"
+          ],
+          "originalAffiliations": [
+            "NIHR Global Health Research Group on Vaccines to Control Respiratory Pathogens and AMR Across Africa (VacAMR), University College London, London, United Kingdom"
+          ]
+        },
+        {
+          "name": "NIHR Global Health Research Unit on Mucosal Pathogens, Division of Infection and Immunity, University College London, WC1E 6JF, London, UK",
+          "abstractIds": [
+            "27"
+          ],
+          "originalAffiliations": [
+            "NIHR Global Health Research Unit on Mucosal Pathogens, Division of Infection and Immunity, University College London, WC1E 6JF, London, UK"
+          ]
+        },
+        {
+          "name": "University College London (UK)",
+          "abstractIds": [
+            "45"
+          ],
+          "originalAffiliations": [
+            "University College London (UK)"
+          ]
+        },
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "02",
+            "17"
+          ],
+          "originalAffiliations": [
+            "University College London, London, UK",
+            "University College London, United Kingdom"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Michigan State University",
+      "abstractIds": [
+        "13",
+        "20",
+        "21",
+        "47",
+        "48"
+      ],
+      "groups": [
+        {
+          "name": "College of Osteopathic Medicine, Michigan State University, East Lansing, Michigan, USA",
+          "abstractIds": [
+            "20",
+            "48"
+          ],
+          "originalAffiliations": [
+            "College of Osteopathic Medicine, Michigan State University, East Lansing, Michigan, USA"
+          ]
+        },
+        {
+          "name": "Department of Microbiology, Genetics, and Immunology, Michigan State University, East Lansing, Michigan, USA",
+          "abstractIds": [
+            "47"
+          ],
+          "originalAffiliations": [
+            "Department of Microbiology, Genetics, and Immunology, Michigan State University, East Lansing, Michigan, USA"
+          ]
+        },
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "13",
+            "21"
+          ],
+          "originalAffiliations": [
+            "Michigan State University",
+            "Michigan State University, Michigan, United States of America"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Edinburgh",
+      "abstractIds": [
+        "01",
+        "03",
+        "04",
+        "07",
+        "08"
+      ],
+      "groups": [
+        {
+          "name": "Centre for Global Health, Usher Institute, University of Edinburgh, UK",
+          "abstractIds": [
+            "08"
+          ],
+          "originalAffiliations": [
+            "Centre for Global Health, Usher Institute, University of Edinburgh, UK"
+          ]
+        },
+        {
+          "name": "Centre for Inflammation Research, University of Edinburgh, Edinburgh, Scotland",
+          "abstractIds": [
+            "07"
+          ],
+          "originalAffiliations": [
+            "Centre for Inflammation Research, University of Edinburgh, Edinburgh, Scotland"
+          ]
+        },
+        {
+          "name": "The University of Edinburgh Usher Institute of Population Health Sciences and Informatics, Edinburgh, Scotland, UK",
+          "abstractIds": [
+            "03"
+          ],
+          "originalAffiliations": [
+            "The University of Edinburgh Usher Institute of Population Health Sciences and Informatics, Edinburgh, Scotland, UK"
+          ]
+        },
+        {
+          "name": "Usher Institute, University of Edinburgh, UK",
+          "abstractIds": [
+            "04"
+          ],
+          "originalAffiliations": [
+            "Usher Institute, University of Edinburgh, UK"
+          ]
+        },
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "01"
+          ],
+          "originalAffiliations": [
+            "University of Edinburgh, United Kingdom"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Oxford",
+      "abstractIds": [
+        "03",
+        "12",
+        "30",
+        "48"
+      ],
+      "groups": [
+        {
+          "name": "Centre for Genomic Pathogen Surveillance, Pandemic Sciences Institute, University of Oxford, Oxford, UK",
+          "abstractIds": [
+            "03"
+          ],
+          "originalAffiliations": [
+            "Centre for Genomic Pathogen Surveillance, Pandemic Sciences Institute, University of Oxford, Oxford, UK"
+          ]
+        },
+        {
+          "name": "Centre for Tropical Medicine and Global Health, Nuffield Department of Medicine, University of Oxford, Oxford, United Kingdom",
+          "abstractIds": [
+            "12"
+          ],
+          "originalAffiliations": [
+            "Centre for Tropical Medicine and Global Health, Nuffield Department of Medicine, University of Oxford, Oxford, United Kingdom"
+          ]
+        },
+        {
+          "name": "Oxford Vaccine Group, Department of Paediatrics, University of Oxford, Oxford, UK",
+          "abstractIds": [
+            "48"
+          ],
+          "originalAffiliations": [
+            "Oxford Vaccine Group, Department of Paediatrics, University of Oxford, Oxford, UK"
+          ]
+        },
+        {
+          "name": "School of Geography and the Environment, University of Oxford, Oxford, UK",
+          "abstractIds": [
+            "30"
+          ],
+          "originalAffiliations": [
+            "School of Geography and the Environment, University of Oxford, Oxford, UK"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Queen Elizabeth Central Hospital",
+      "abstractIds": [
+        "23",
+        "33",
+        "43"
+      ],
+      "groups": [
+        {
+          "name": "Department of Radiology, Queen Elizabeth Central Hospital (QECH), Blantyre, Malawi",
+          "abstractIds": [
+            "43"
+          ],
+          "originalAffiliations": [
+            "Department of Radiology, Queen Elizabeth Central Hospital (QECH), Blantyre, Malawi"
+          ]
+        },
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "23",
+            "33"
+          ],
+          "originalAffiliations": [
+            "Queen Elizabeth Central Hospital",
+            "Queen Elizabeth Central Hospital, Blantyre, Malawi"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Cape Town",
+      "abstractIds": [
+        "12",
+        "17",
+        "32"
+      ],
+      "groups": [
+        {
+          "name": "Climate Systems Analysis Group, University of Cape Town, Cape Town, South Africa",
+          "abstractIds": [
+            "32"
+          ],
+          "originalAffiliations": [
+            "Climate Systems Analysis Group, University of Cape Town, Cape Town, South Africa"
+          ]
+        },
+        {
+          "name": "Division of Clinical Pharmacology, Department of Medicine, University of Cape Town, Cape Town, South Africa",
+          "abstractIds": [
+            "12"
+          ],
+          "originalAffiliations": [
+            "Division of Clinical Pharmacology, Department of Medicine, University of Cape Town, Cape Town, South Africa"
+          ]
+        },
+        {
+          "name": "WorldWide Antimalarial Resistance Network (WWARN), Pharmacology Scientific Group, University of Cape Town, Cape Town, South Africa",
+          "abstractIds": [
+            "12"
+          ],
+          "originalAffiliations": [
+            "WorldWide Antimalarial Resistance Network (WWARN), Pharmacology Scientific Group, University of Cape Town, Cape Town, South Africa"
+          ]
+        },
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "17"
+          ],
+          "originalAffiliations": [
+            "University of Cape Town, Cape Town, South Africa"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of St Andrews",
+      "abstractIds": [
+        "11",
+        "33",
+        "46"
+      ],
+      "groups": [
+        {
+          "name": "School of Medicine, University of St Andrews, St Andrews, UK",
+          "abstractIds": [
+            "46"
+          ],
+          "originalAffiliations": [
+            "School of Medicine, University of St Andrews, St Andrews, UK"
+          ]
+        },
+        {
+          "name": "The School of Medicine, University of St Andrews, St Andrews, UK",
+          "abstractIds": [
+            "11"
+          ],
+          "originalAffiliations": [
+            "The School of Medicine, University of St Andrews, St Andrews, UK"
+          ]
+        },
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "33"
+          ],
+          "originalAffiliations": [
+            "University of St Andrews"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Blantyre Malaria Project",
+      "abstractIds": [
+        "21",
+        "48"
+      ],
+      "groups": [
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "21",
+            "48"
+          ],
+          "originalAffiliations": [
+            "Blantyre Malaria Project",
+            "Blantyre Malaria Project, Blantyre, Malawi"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lancaster University",
+      "abstractIds": [
+        "11",
+        "17"
+      ],
+      "groups": [
+        {
+          "name": "Lancaster Environment Centre, Lancaster University, Lancaster, LA1 4YR, UK",
+          "abstractIds": [
+            "11"
+          ],
+          "originalAffiliations": [
+            "Lancaster Environment Centre, Lancaster University, Lancaster, LA1 4YR, UK"
+          ]
+        },
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "17"
+          ],
+          "originalAffiliations": [
+            "Lancaster University, Lancaster, UK"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lilongwe University",
+      "abstractIds": [
+        "16",
+        "47"
+      ],
+      "groups": [
+        {
+          "name": "Department of Agricultural and Applied Economics, Lilongwe University of Agriculture and Natural Resources, Bunda College Campus, P.O. Box 219, Lilongwe, Malawi",
+          "abstractIds": [
+            "16"
+          ],
+          "originalAffiliations": [
+            "Department of Agricultural and Applied Economics, Lilongwe University of Agriculture and Natural Resources, Bunda College Campus, P.O. Box 219, Lilongwe, Malawi"
+          ]
+        },
+        {
+          "name": "Faculty of Food and Human Sciences, Lilongwe University of Agriculture and Natural Resources, Lilongwe, Malawi",
+          "abstractIds": [
+            "47"
+          ],
+          "originalAffiliations": [
+            "Faculty of Food and Human Sciences, Lilongwe University of Agriculture and Natural Resources, Lilongwe, Malawi"
+          ]
+        },
+        {
+          "name": "Faculty of Veterinary Medicine, Lilongwe University of Agriculture and Natural Resources, Lilongwe, Malawi",
+          "abstractIds": [
+            "47"
+          ],
+          "originalAffiliations": [
+            "Faculty of Veterinary Medicine, Lilongwe University of Agriculture and Natural Resources, Lilongwe, Malawi"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "London School of Hygiene & Tropical Medicine",
+      "abstractIds": [
+        "03",
+        "17"
+      ],
+      "groups": [
+        {
+          "name": "Infection Biology",
+          "abstractIds": [
+            "03"
+          ],
+          "originalAffiliations": [
+            "Department of Infection Biology, London School of Hygiene & Tropical Medicine, London, UK"
+          ]
+        },
+        {
+          "name": "London School of Hygiene and Tropical Medicine, London, UK",
+          "abstractIds": [
+            "17"
+          ],
+          "originalAffiliations": [
+            "London School of Hygiene and Tropical Medicine, London, UK"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Malawi Epidemiology and Intervention Research Unit (MEIRU)",
+      "abstractIds": [
+        "37",
+        "38"
+      ],
+      "groups": [
+        {
+          "name": "Malawi Epidemiology and Intervention Research Unit, Lilongwe, Malawi",
+          "abstractIds": [
+            "37",
+            "38"
+          ],
+          "originalAffiliations": [
+            "Malawi Epidemiology and Intervention Research Unit, Lilongwe, Malawi"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "St Jude Children’s Research Hospital",
+      "abstractIds": [
+        "27",
+        "45"
+      ],
+      "groups": [
+        {
+          "name": "Department of Host-Microbe Interactions, St Jude Children's Research Hospital, Memphis, Tennessee, USA",
+          "abstractIds": [
+            "27"
+          ],
+          "originalAffiliations": [
+            "Department of Host-Microbe Interactions, St Jude Children's Research Hospital, Memphis, Tennessee, USA"
+          ]
+        },
+        {
+          "name": "St Jude Children's Research Hospital (USA)",
+          "abstractIds": [
+            "45"
+          ],
+          "originalAffiliations": [
+            "St Jude Children's Research Hospital (USA)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Glasgow",
+      "abstractIds": [
+        "05",
+        "17"
+      ],
+      "groups": [
+        {
+          "name": "School of Health & Wellbeing, University of Glasgow, Glasgow, UK",
+          "abstractIds": [
+            "17"
+          ],
+          "originalAffiliations": [
+            "School of Health & Wellbeing, University of Glasgow, Glasgow, UK"
+          ]
+        },
+        {
+          "name": "School of Infection and Immunity, University of Glasgow, Glasgow, United Kingdom",
+          "abstractIds": [
+            "05"
+          ],
+          "originalAffiliations": [
+            "School of Infection and Immunity, University of Glasgow, Glasgow, United Kingdom"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Maryland",
+      "abstractIds": [
+        "03",
+        "19"
+      ],
+      "groups": [
+        {
+          "name": "Center for Vaccine Development and Global Health, University of Maryland School of Medicine, Baltimore, MD, 21201, USA",
+          "abstractIds": [
+            "19"
+          ],
+          "originalAffiliations": [
+            "Center for Vaccine Development and Global Health, University of Maryland School of Medicine, Baltimore, MD, 21201, USA"
+          ]
+        },
+        {
+          "name": "Center for Vaccine Development and Global Health, University of Maryland School of Medicine, Baltimore, USA",
+          "abstractIds": [
+            "03"
+          ],
+          "originalAffiliations": [
+            "Center for Vaccine Development and Global Health, University of Maryland School of Medicine, Baltimore, USA"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Sydney",
+      "abstractIds": [
+        "26",
+        "48"
+      ],
+      "groups": [
+        {
+          "name": "Centre for Child and Adolescent Health Research, Western Sydney (Baludarri) Precinct, Faculty of Medicine & Health, University of Sydney",
+          "abstractIds": [
+            "48"
+          ],
+          "originalAffiliations": [
+            "Centre for Child and Adolescent Health Research, Western Sydney (Baludarri) Precinct, Faculty of Medicine & Health, University of Sydney"
+          ]
+        },
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "26"
+          ],
+          "originalAffiliations": [
+            "University of Sydney, Sydney, Australia"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Agricultural Promotion Programme",
+      "abstractIds": [
+        "47"
+      ],
+      "groups": [
+        {
+          "name": "Trustees of Agricultural Promotion Programme, Lilongwe, Malawi",
+          "abstractIds": [
+            "47"
+          ],
+          "originalAffiliations": [
+            "Trustees of Agricultural Promotion Programme, Lilongwe, Malawi"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Barcelona Supercomputing Center",
+      "abstractIds": [
+        "30"
+      ],
+      "groups": [
+        {
+          "name": "Earth Sciences Department, Barcelona Supercomputing Center, Barcelona, Spain",
+          "abstractIds": [
+            "30"
+          ],
+          "originalAffiliations": [
+            "Earth Sciences Department, Barcelona Supercomputing Center, Barcelona, Spain"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Centre for Infectious Disease Research in Zambia (CIDRZ)",
+      "abstractIds": [
+        "46"
+      ],
+      "groups": [
+        {
+          "name": "Centre for Infectious Disease Research, Lusaka, Zambia",
+          "abstractIds": [
+            "46"
+          ],
+          "originalAffiliations": [
+            "Centre for Infectious Disease Research, Lusaka, Zambia"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Centre for Sexual Health, HIV and AIDS Research (CeSHHAR)",
+      "abstractIds": [
+        "31",
+        "32"
+      ],
+      "groups": [
+        {
+          "name": "Climate Environment and Health Department, Centre for Sexual Health and HIV AIDS Research, Harare, Zimbabwe",
+          "abstractIds": [
+            "32"
+          ],
+          "originalAffiliations": [
+            "Climate Environment and Health Department, Centre for Sexual Health and HIV AIDS Research, Harare, Zimbabwe"
+          ]
+        },
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "31"
+          ],
+          "originalAffiliations": [
+            "Centre for Sexual Health, HIV and AIDS Research (CeSHHAR), Harare, Zimbabwe"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cornell University",
+      "abstractIds": [
+        "25"
+      ],
+      "groups": [
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "25"
+          ],
+          "originalAffiliations": [
+            "Cornell University, Ithaca, New York, United States of America"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Doctors with Africa CUAMM",
+      "abstractIds": [
+        "46"
+      ],
+      "groups": [
+        {
+          "name": "Doctors with Africa, CUAMM, Kampala, Uganda",
+          "abstractIds": [
+            "46"
+          ],
+          "originalAffiliations": [
+            "Doctors with Africa, CUAMM, Kampala, Uganda"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Eduardo Mondlane University",
+      "abstractIds": [
+        "47"
+      ],
+      "groups": [
+        {
+          "name": "Centre of Excellence in Agri-Food Systems and Nutrition, Eduardo Mondlane University, Maputo, Mozambique",
+          "abstractIds": [
+            "47"
+          ],
+          "originalAffiliations": [
+            "Centre of Excellence in Agri-Food Systems and Nutrition, Eduardo Mondlane University, Maputo, Mozambique"
+          ]
+        },
+        {
+          "name": "Department of Animal Production and Food Safety, Faculty of Veterinary Sciences, Eduardo Mondlane University, Maputo, Mozambique",
+          "abstractIds": [
+            "47"
+          ],
+          "originalAffiliations": [
+            "Department of Animal Production and Food Safety, Faculty of Veterinary Sciences, Eduardo Mondlane University, Maputo, Mozambique"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Emerging Pathogens Institute",
+      "abstractIds": [
+        "30"
+      ],
+      "groups": [
+        {
+          "name": "Department of Geography and the Emerging Pathogens Institute, University of Florida, USA",
+          "abstractIds": [
+            "30"
+          ],
+          "originalAffiliations": [
+            "Department of Geography and the Emerging Pathogens Institute, University of Florida, USA"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ghent University",
+      "abstractIds": [
+        "32"
+      ],
+      "groups": [
+        {
+          "name": "ICRH, Department of Public Health and Primary Care, Ghent University, Ghent, Belgium",
+          "abstractIds": [
+            "32"
+          ],
+          "originalAffiliations": [
+            "ICRH, Department of Public Health and Primary Care, Ghent University, Ghent, Belgium"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GSK Vaccines",
+      "abstractIds": [
+        "08"
+      ],
+      "groups": [
+        {
+          "name": "GSK Vaccines Institute for Global Health, Siena, Italy",
+          "abstractIds": [
+            "08"
+          ],
+          "originalAffiliations": [
+            "GSK Vaccines Institute for Global Health, Siena, Italy"
+          ]
+        },
+        {
+          "name": "GSK Vaccines Srl, Siena, Italy",
+          "abstractIds": [
+            "08"
+          ],
+          "originalAffiliations": [
+            "GSK Vaccines Srl, Siena, Italy"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hokkaido University",
+      "abstractIds": [
+        "47"
+      ],
+      "groups": [
+        {
+          "name": "Laboratory of Parasitology, Graduate School of Infectious Diseases, Faculty of Veterinary Medicine, Hokkaido University, Sapporo, Hokkaido 060-0818, Japan",
+          "abstractIds": [
+            "47"
+          ],
+          "originalAffiliations": [
+            "Laboratory of Parasitology, Graduate School of Infectious Diseases, Faculty of Veterinary Medicine, Hokkaido University, Sapporo, Hokkaido 060-0818, Japan"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "IBM Research Africa",
+      "abstractIds": [
+        "32"
+      ],
+      "groups": [
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "32"
+          ],
+          "originalAffiliations": [
+            "IBM Research Africa, Braamfontein, South Africa"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Imperial College",
+      "abstractIds": [
+        "17"
+      ],
+      "groups": [
+        {
+          "name": "Imperial College London, London, UK",
+          "abstractIds": [
+            "17"
+          ],
+          "originalAffiliations": [
+            "Imperial College London, London, UK"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Infectious Diseases Institute",
+      "abstractIds": [
+        "28"
+      ],
+      "groups": [
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "28"
+          ],
+          "originalAffiliations": [
+            "Infectious Diseases Institute, Makerere University, Kampala, Uganda"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Institute for Disease Modelling",
+      "abstractIds": [
+        "26"
+      ],
+      "groups": [
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "26"
+          ],
+          "originalAffiliations": [
+            "Institute for Disease Modelling, Bill & Melinda Gates Foundation, Seattle, United States"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Instituto Nacional de Saúde (Mozambique)",
+      "abstractIds": [
+        "30"
+      ],
+      "groups": [
+        {
+          "name": "National Institute of Health, Maputo, Mozambique",
+          "abstractIds": [
+            "30"
+          ],
+          "originalAffiliations": [
+            "National Institute of Health, Maputo, Mozambique"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kamuzu Central Hospital",
+      "abstractIds": [
+        "02"
+      ],
+      "groups": [
+        {
+          "name": "Paediatrics, Kamuzu Central Hospital, Lilongwe, Malawi",
+          "abstractIds": [
+            "02"
+          ],
+          "originalAffiliations": [
+            "Paediatrics, Kamuzu Central Hospital, Lilongwe, Malawi"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Keele University",
+      "abstractIds": [
+        "39"
+      ],
+      "groups": [
+        {
+          "name": "School of Medicine, Keele University, Keele, UK",
+          "abstractIds": [
+            "39"
+          ],
+          "originalAffiliations": [
+            "School of Medicine, Keele University, Keele, UK"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "KEMRI-Wellcome Trust Research Programme",
+      "abstractIds": [
+        "05"
+      ],
+      "groups": [
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "05"
+          ],
+          "originalAffiliations": [
+            "KEMRI-Wellcome Trust Research Programme, Kilifi, Kenya"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kenya Medical Research Institute",
+      "abstractIds": [
+        "31"
+      ],
+      "groups": [
+        {
+          "name": "Kenya Medical Research Institute (KEMRI), Nairobi, Kenya",
+          "abstractIds": [
+            "31"
+          ],
+          "originalAffiliations": [
+            "Kenya Medical Research Institute (KEMRI), Nairobi, Kenya"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lilongwe Society for the Protection and Care of Animals",
+      "abstractIds": [
+        "47"
+      ],
+      "groups": [
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "47"
+          ],
+          "originalAffiliations": [
+            "Lilongwe Society for the Protection and Care of Animals, Lilongwe, Malawi"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lusaka Apex Medical University",
+      "abstractIds": [
+        "37"
+      ],
+      "groups": [
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "37"
+          ],
+          "originalAffiliations": [
+            "Lusaka Apex Medical University, Lusaka, Zambia"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mahidol University",
+      "abstractIds": [
+        "12"
+      ],
+      "groups": [
+        {
+          "name": "Mahidol Oxford Tropical Medicine Research Unit, Faculty of Tropical Medicine, Mahidol University, Bangkok, Thailand",
+          "abstractIds": [
+            "12"
+          ],
+          "originalAffiliations": [
+            "Mahidol Oxford Tropical Medicine Research Unit, Faculty of Tropical Medicine, Mahidol University, Bangkok, Thailand"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Malaria Alert Centre",
+      "abstractIds": [
+        "21"
+      ],
+      "groups": [
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "21"
+          ],
+          "originalAffiliations": [
+            "Malaria Alert Centre"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Malawi Ministry of Health",
+      "abstractIds": [
+        "33"
+      ],
+      "groups": [
+        {
+          "name": "Quality Management Directorate, Ministry of Health",
+          "abstractIds": [
+            "33"
+          ],
+          "originalAffiliations": [
+            "Quality Management Directorate, Ministry of Health"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Malawi University of Business and Applied Sciences",
+      "abstractIds": [
+        "11"
+      ],
+      "groups": [
+        {
+          "name": "Centre for Water, Sanitation, Health, and Appropriate Technology Development (WASHTED), Malawi University of Business and Applied Sciences, Blantyre, Malawi",
+          "abstractIds": [
+            "11"
+          ],
+          "originalAffiliations": [
+            "Centre for Water, Sanitation, Health, and Appropriate Technology Development (WASHTED), Malawi University of Business and Applied Sciences, Blantyre, Malawi"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Midlands State University",
+      "abstractIds": [
+        "32"
+      ],
+      "groups": [
+        {
+          "name": "Place Alert Labs, Surveying and Geomatics Department, Faculty of the Built Environment, Midlands State University, Gweru, Zimbabwe",
+          "abstractIds": [
+            "32"
+          ],
+          "originalAffiliations": [
+            "Place Alert Labs, Surveying and Geomatics Department, Faculty of the Built Environment, Midlands State University, Gweru, Zimbabwe"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "NIHR Global Health Research Group on Vaccines to Control Respiratory Pathogens and AMR",
+      "abstractIds": [
+        "24"
+      ],
+      "groups": [
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "24"
+          ],
+          "originalAffiliations": [
+            "NIHR Global Health Research Group on Vaccines to Control Respiratory Pathogens and AMR"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "NIHR Nottingham Biomedical Research Centre",
+      "abstractIds": [
+        "07"
+      ],
+      "groups": [
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "07"
+          ],
+          "originalAffiliations": [
+            "NIHR Nottingham Biomedical Research Centre, Nottingham, UK"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ragon Institute",
+      "abstractIds": [
+        "04"
+      ],
+      "groups": [
+        {
+          "name": "Ragon Institute of Mass General, MIT and Harvard, Cambridge, MA, USA",
+          "abstractIds": [
+            "04"
+          ],
+          "originalAffiliations": [
+            "Ragon Institute of Mass General, MIT and Harvard, Cambridge, MA, USA"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "UK Health Security Agency",
+      "abstractIds": [
+        "07"
+      ],
+      "groups": [
+        {
+          "name": "Respiratory and Vaccine Preventable Bacteria Reference Unit, UK Health Security Agency, London, UK",
+          "abstractIds": [
+            "07"
+          ],
+          "originalAffiliations": [
+            "Respiratory and Vaccine Preventable Bacteria Reference Unit, UK Health Security Agency, London, UK"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Universidad de los Andes",
+      "abstractIds": [
+        "30"
+      ],
+      "groups": [
+        {
+          "name": "Department of Biological Sciences, Universidad de los Andes, Colombia",
+          "abstractIds": [
+            "30"
+          ],
+          "originalAffiliations": [
+            "Department of Biological Sciences, Universidad de los Andes, Colombia"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University Medical Center Utrecht",
+      "abstractIds": [
+        "06"
+      ],
+      "groups": [
+        {
+          "name": "Julius Centre for Health Sciences and Primary Care, University Medical Centre Utrecht, Utrecht, Netherlands",
+          "abstractIds": [
+            "06"
+          ],
+          "originalAffiliations": [
+            "Julius Centre for Health Sciences and Primary Care, University Medical Centre Utrecht, Utrecht, Netherlands"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Amsterdam / Amsterdam UMC",
+      "abstractIds": [
+        "03"
+      ],
+      "groups": [
+        {
+          "name": "Department of Global Health, Amsterdam University Medical Center, Amsterdam, the Netherlands",
+          "abstractIds": [
+            "03"
+          ],
+          "originalAffiliations": [
+            "Department of Global Health, Amsterdam University Medical Center, Amsterdam, the Netherlands"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Antwerp",
+      "abstractIds": [
+        "08"
+      ],
+      "groups": [
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "08"
+          ],
+          "originalAffiliations": [
+            "University of Antwerp, Belgium"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Arizona",
+      "abstractIds": [
+        "47"
+      ],
+      "groups": [
+        {
+          "name": "Climate Change and Health, Mel and Enid Zuckerman College of Public Health, University of Arizona, Tucson, Arizona, USA",
+          "abstractIds": [
+            "47"
+          ],
+          "originalAffiliations": [
+            "Climate Change and Health, Mel and Enid Zuckerman College of Public Health, University of Arizona, Tucson, Arizona, USA"
+          ]
+        },
+        {
+          "name": "College of Veterinary Medicine, University of Arizona, Tucson, Arizona, USA",
+          "abstractIds": [
+            "47"
+          ],
+          "originalAffiliations": [
+            "College of Veterinary Medicine, University of Arizona, Tucson, Arizona, USA"
+          ]
+        },
+        {
+          "name": "Department of Epidemiology and Biostatistics, Mel and Enid Zuckerman College of Public Health, University of Arizona, Tucson, Arizona, USA",
+          "abstractIds": [
+            "47"
+          ],
+          "originalAffiliations": [
+            "Department of Epidemiology and Biostatistics, Mel and Enid Zuckerman College of Public Health, University of Arizona, Tucson, Arizona, USA"
+          ]
+        },
+        {
+          "name": "Department of Health Promotion Sciences, Mel and Enid Zuckerman College of Public Health, University of Arizona, Tucson, Arizona, USA",
+          "abstractIds": [
+            "47"
+          ],
+          "originalAffiliations": [
+            "Department of Health Promotion Sciences, Mel and Enid Zuckerman College of Public Health, University of Arizona, Tucson, Arizona, USA"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Bern",
+      "abstractIds": [
+        "30"
+      ],
+      "groups": [
+        {
+          "name": "Institute of Social and Preventive Medicine (ISPM), University of Bern, Switzerland",
+          "abstractIds": [
+            "30"
+          ],
+          "originalAffiliations": [
+            "Institute of Social and Preventive Medicine (ISPM), University of Bern, Switzerland"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Birmingham",
+      "abstractIds": [
+        "04"
+      ],
+      "groups": [
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "04"
+          ],
+          "originalAffiliations": [
+            "University of Birmingham, UK"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Cape Coast",
+      "abstractIds": [
+        "20"
+      ],
+      "groups": [
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "20"
+          ],
+          "originalAffiliations": [
+            "University of Cape Coast, Cape Coast, Ghana"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Essex",
+      "abstractIds": [
+        "04"
+      ],
+      "groups": [
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "04"
+          ],
+          "originalAffiliations": [
+            "University of Essex, UK"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Gothenburg",
+      "abstractIds": [
+        "07"
+      ],
+      "groups": [
+        {
+          "name": "Department of Infectious Diseases, Institute of Biomedicine, University of Gothenburg, Gothenburg, Sweden",
+          "abstractIds": [
+            "07"
+          ],
+          "originalAffiliations": [
+            "Department of Infectious Diseases, Institute of Biomedicine, University of Gothenburg, Gothenburg, Sweden"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Ibadan",
+      "abstractIds": [
+        "24"
+      ],
+      "groups": [
+        {
+          "name": "College of Medicine, University of Ibadan, Ibadan, Nigeria",
+          "abstractIds": [
+            "24"
+          ],
+          "originalAffiliations": [
+            "College of Medicine, University of Ibadan, Ibadan, Nigeria"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Manitoba",
+      "abstractIds": [
+        "35"
+      ],
+      "groups": [
+        {
+          "name": "Institute for Global Public Health, University of Manitoba",
+          "abstractIds": [
+            "35"
+          ],
+          "originalAffiliations": [
+            "Institute for Global Public Health, University of Manitoba"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Melbourne",
+      "abstractIds": [
+        "21"
+      ],
+      "groups": [
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "21"
+          ],
+          "originalAffiliations": [
+            "University of Melbourne, Australia"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of North Carolina",
+      "abstractIds": [
+        "18"
+      ],
+      "groups": [
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "18"
+          ],
+          "originalAffiliations": [
+            "University of North Carolina, Lilongwe, Malawi"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Reading",
+      "abstractIds": [
+        "39"
+      ],
+      "groups": [
+        {
+          "name": "Centre for Autism, School of Psychology and Clinical Language Sciences, University of Reading, UK",
+          "abstractIds": [
+            "39"
+          ],
+          "originalAffiliations": [
+            "Centre for Autism, School of Psychology and Clinical Language Sciences, University of Reading, UK"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of South Florida",
+      "abstractIds": [
+        "20"
+      ],
+      "groups": [
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "20"
+          ],
+          "originalAffiliations": [
+            "University of South Florida, Tampa, Florida, USA"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Southampton",
+      "abstractIds": [
+        "35"
+      ],
+      "groups": [
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "35"
+          ],
+          "originalAffiliations": [
+            "University of Southampton"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Stirling",
+      "abstractIds": [
+        "11"
+      ],
+      "groups": [
+        {
+          "name": "Biological & Environmental Sciences, Faculty of Natural Sciences, University of Stirling, Stirling, FK9 4LA, UK",
+          "abstractIds": [
+            "11"
+          ],
+          "originalAffiliations": [
+            "Biological & Environmental Sciences, Faculty of Natural Sciences, University of Stirling, Stirling, FK9 4LA, UK"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Strathclyde",
+      "abstractIds": [
+        "11"
+      ],
+      "groups": [
+        {
+          "name": "Department of Civil and Environmental Engineering, University of Strathclyde, Glasgow, UK",
+          "abstractIds": [
+            "11"
+          ],
+          "originalAffiliations": [
+            "Department of Civil and Environmental Engineering, University of Strathclyde, Glasgow, UK"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of the Witwatersrand",
+      "abstractIds": [
+        "32"
+      ],
+      "groups": [
+        {
+          "name": "Reproductive Health and HIV Institute, University of the Witwatersrand, Johannesburg-Braamfontein, Gauteng, South Africa",
+          "abstractIds": [
+            "32"
+          ],
+          "originalAffiliations": [
+            "Reproductive Health and HIV Institute, University of the Witwatersrand, Johannesburg-Braamfontein, Gauteng, South Africa"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Virginia",
+      "abstractIds": [
+        "26"
+      ],
+      "groups": [
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "26"
+          ],
+          "originalAffiliations": [
+            "University of Virginia, Virginia, United States"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Washington",
+      "abstractIds": [
+        "26"
+      ],
+      "groups": [
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "26"
+          ],
+          "originalAffiliations": [
+            "University of Washington, Seattle, United States"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Wolverhampton",
+      "abstractIds": [
+        "27"
+      ],
+      "groups": [
+        {
+          "name": "Department of Biomedical Sciences and Physiology, School of Life Sciences, Faculty of Science and Engineering, University of Wolverhampton, Wolverhampton, UK",
+          "abstractIds": [
+            "27"
+          ],
+          "originalAffiliations": [
+            "Department of Biomedical Sciences and Physiology, School of Life Sciences, Faculty of Science and Engineering, University of Wolverhampton, Wolverhampton, UK"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Zimbabwe",
+      "abstractIds": [
+        "32"
+      ],
+      "groups": [
+        {
+          "name": "Department of Space Science and Applied Physics, University of Zimbabwe, MP167, Mt Pleasant, Harare, Zimbabwe",
+          "abstractIds": [
+            "32"
+          ],
+          "originalAffiliations": [
+            "Department of Space Science and Applied Physics, University of Zimbabwe, MP167, Mt Pleasant, Harare, Zimbabwe"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "US Centers for Disease Control and Prevention",
+      "abstractIds": [
+        "42"
+      ],
+      "groups": [
+        {
+          "name": "Center for Disease Control and Prevention, Addis Ababa, Ethiopia",
+          "abstractIds": [
+            "42"
+          ],
+          "originalAffiliations": [
+            "Center for Disease Control and Prevention, Addis Ababa, Ethiopia"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vestergaard",
+      "abstractIds": [
+        "09"
+      ],
+      "groups": [
+        {
+          "name": "Vestergaard S.A., Lausanne, Switzerland",
+          "abstractIds": [
+            "09"
+          ],
+          "originalAffiliations": [
+            "Vestergaard S.A., Lausanne, Switzerland"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vrije Universiteit Amsterdam / Amsterdam UMC",
+      "abstractIds": [
+        "42"
+      ],
+      "groups": [
+        {
+          "name": "Faculty of Medicine, Amsterdam Universitair Medisch Centrum, Vrije Universiteit Amsterdam, de Boelelaan 1117, Amsterdam 1018 HV, The Netherlands",
+          "abstractIds": [
+            "42"
+          ],
+          "originalAffiliations": [
+            "Faculty of Medicine, Amsterdam Universitair Medisch Centrum, Vrije Universiteit Amsterdam, de Boelelaan 1117, Amsterdam 1018 HV, The Netherlands"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Wellcome Sanger Institute",
+      "abstractIds": [
+        "27"
+      ],
+      "groups": [
+        {
+          "name": "Parasites and Microbes, Wellcome Sanger Institute, Wellcome Genome Campus, Hinxton, Cambridge CB10 1SA, UK",
+          "abstractIds": [
+            "27"
+          ],
+          "originalAffiliations": [
+            "Parasites and Microbes, Wellcome Sanger Institute, Wellcome Genome Campus, Hinxton, Cambridge CB10 1SA, UK"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "West Lancashire Teaching Hospital",
+      "abstractIds": [
+        "17"
+      ],
+      "groups": [
+        {
+          "name": "Mersey and West Lancashire Teaching Hospitals NHS Trust, Liverpool, UK",
+          "abstractIds": [
+            "17"
+          ],
+          "originalAffiliations": [
+            "Mersey and West Lancashire Teaching Hospitals NHS Trust, Liverpool, UK"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "World Health Organization (WHO)",
+      "abstractIds": [
+        "42"
+      ],
+      "groups": [
+        {
+          "name": "World Health Organization, Regional Office for Africa, Brazzaville, Congo",
+          "abstractIds": [
+            "42"
+          ],
+          "originalAffiliations": [
+            "World Health Organization, Regional Office for Africa, Brazzaville, Congo"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Worldwide Radiology",
+      "abstractIds": [
+        "43"
+      ],
+      "groups": [
+        {
+          "name": "Worldwide Radiology (WWR), United Kingdom",
+          "abstractIds": [
+            "43"
+          ],
+          "originalAffiliations": [
+            "Worldwide Radiology (WWR), United Kingdom"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Yale University",
+      "abstractIds": [
+        "27"
+      ],
+      "groups": [
+        {
+          "name": "Department of Epidemiology of Microbial Diseases, Yale School of Public Health, Yale University, New Haven, Connecticut, USA",
+          "abstractIds": [
+            "27"
+          ],
+          "originalAffiliations": [
+            "Department of Epidemiology of Microbial Diseases, Yale School of Public Health, Yale University, New Haven, Connecticut, USA"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Zambart",
+      "abstractIds": [
+        "17"
+      ],
+      "groups": [
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "17"
+          ],
+          "originalAffiliations": [
+            "Zambart, Lusaka, Zambia"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Zomba Central Hospital",
+      "abstractIds": [
+        "33"
+      ],
+      "groups": [
+        {
+          "name": "Institution-wide / group not specified",
+          "abstractIds": [
+            "33"
+          ],
+          "originalAffiliations": [
+            "Zomba Central Hospital"
+          ]
+        }
+      ]
+    }
+  ],
+  "source": "Affiliation lines in the ASM 2026 handbook; grouping heuristically standardised. Co-authorship is abstract-level; individual author–affiliation mapping is not asserted."
+}

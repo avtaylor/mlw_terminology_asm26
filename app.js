@@ -130,7 +130,7 @@ async function init(){
   $("#networkL2").addEventListener("click",()=>{networkLevel=2; setLevelButtons("network",2); renderNetwork()});
   $$("[data-start-view]").forEach(b=>b.addEventListener("click",()=>chooseAnalysis(b.dataset.startView)));
   $("#changeAnalysis").addEventListener("click",showAnalysisChooser);
-  initDashboard(); renderDictionary(); renderDomains(); renderAbstracts();
+  initDashboard(); renderDictionary(); renderDomains(); renderAbstracts(); initPartners();
 }
 function chooseAnalysis(view){
   $("#start").hidden=true;
@@ -147,15 +147,16 @@ function showAnalysisChooser(){
 function switchView(v){
   // Context-sensitive navigation: research streams and abstracts have focused menus.
   const visibleViews = v === "streams"
-    ? new Set(["streams", "opportunities", "abstracts"])
+    ? new Set(["streams", "opportunities", "partners", "abstracts"])
     : v === "opportunities"
-      ? new Set(["streams", "opportunities", "abstracts"])
+      ? new Set(["streams", "opportunities", "partners", "abstracts"])
     : v === "abstracts"
-      ? new Set(["network", "streams", "opportunities", "abstracts"])
-      : new Set(["domains", "dictionary", "dashboard", "network", "opportunities", "abstracts"]);
+      ? new Set(["network", "streams", "opportunities", "partners", "abstracts"])
+      : new Set(["domains", "dictionary", "dashboard", "network", "opportunities", "partners", "abstracts"]);
   $$(".tab").forEach(x=>{x.hidden=!visibleViews.has(x.dataset.view)});
   $$(".tab").forEach(x=>x.classList.toggle("active",x.dataset.view===v));
   $$(".view").forEach(x=>x.hidden=x.id!==v);
+  if(v==="partners") renderPartners();
   if(v==="network") renderNetwork();
   if(v==="dashboard") renderDashboard();
 }
@@ -541,7 +542,13 @@ function openStreamAbstract(id){
     .replace(/\b(KEYWORDS|INTRODUCTION|BACKGROUND|AIM|OBJECTIVE|METHODS|RESULTS|DISCUSSION|CONCLUSION)\b/g,'<strong class="section-label">$1</strong>');
   content.innerHTML=`<h3>Abstract ${esc(aid)}: ${esc(a["Abstract title"])}</h3>
     <p class="stream-dialog-meta">${esc(a["Section"])} · PDF page ${esc(a["PDF page"])}</p>
-    <p class="stream-dialog-authors">${a.authors?`<strong>Authors:</strong> ${esc(a.authors)}`:`<strong>Presenting author:</strong> ${esc(a.presentingAuthor||"Not available")}`}</p>
+    <div class="stream-dialog-credit"><h4>Authors</h4>
+    <p class="stream-dialog-authors">${esc(a.authors||a.presentingAuthor||"Full author list not available in the extracted source.")}</p>
+    <h4>Affiliations</h4>
+    ${a.sourceAffiliations?.affiliations?.length
+      ? `<ol class="stream-dialog-affiliations">${a.sourceAffiliations.affiliations.map(x=>`<li value="${Number(x.number)}">${esc(x.text)}</li>`).join("")}</ol>`
+      : `<p class="stream-muted">${esc(a.sourceAffiliations?.note||"Affiliations not available from the extracted handbook.")}</p>`}
+    <p class="stream-muted">Affiliation numbers and wording are transcribed from the ASM handbook. The list does not assign an institution to each author unless explicitly supported by the source.</p></div>
     <div class="actual-abstract"><h4>Abstract</h4><p class="linked-text">${abstractHTML}</p></div>`;
   wireDictionaryLinks(content);
   if(!dialog.open)dialog.showModal();
@@ -552,3 +559,149 @@ document.querySelector("#streamAbstractDialog")?.addEventListener("click",e=>{if
 document.querySelectorAll("[data-stream-section]").forEach(el=>el.addEventListener("click",()=>openStreamSection(el.dataset.streamSection)));
 document.querySelectorAll("[data-stream-group]").forEach(el=>el.addEventListener("click",()=>openStreamGroup(Number(el.dataset.streamGroup))));
 document.querySelectorAll("[data-stream-abstract]").forEach(el=>el.addEventListener("click",()=>openStreamAbstract(el.dataset.streamAbstract)));
+
+// Partners: affiliation-level evidence, with researcher connections through abstracts.
+let PARTNERS=null;
+let PARTNER_SUMMARY=null;
+async function initPartners(){
+  try { PARTNERS=await fetch("partners.json").then(r=>r.json()); }
+  catch(e){document.querySelector("#partnerResults").textContent="Partner affiliation data could not be loaded.";return;}
+  document.querySelector("#partnerSearch").addEventListener("input",renderPartners);
+  // Delegated click handling: partner abstract buttons are created dynamically.
+  document.querySelector("#partnerResults").addEventListener("click",event=>{
+    const button=event.target.closest("button[data-stream-abstract]");
+    if(!button || !event.currentTarget.contains(button))return;
+    event.preventDefault();
+    openStreamAbstract(button.dataset.streamAbstract);
+  });
+  try { PARTNER_SUMMARY=await fetch("partner_summary.json").then(r=>r.json()); } catch(e) { console.warn("Partner summary unavailable",e); }
+  document.querySelectorAll(".partner-sort-button").forEach(button=>button.addEventListener("click",()=>{
+    const key=button.dataset.partnerSort;
+    partnerSummarySort=partnerSummarySort.key===key?{key,ascending:!partnerSummarySort.ascending}:{key,ascending:key==="id"};
+    renderPartnerSummary();
+  }));
+  renderPartnerSummary();
+  renderPartners();
+}
+function renderPartners(){
+  if(!PARTNERS||!DATA)return;
+  const q=(document.querySelector("#partnerSearch")?.value||"").trim().toLowerCase();
+  const abstracts=new Map(DATA.abstracts.map(a=>[String(a["Abstract ID"]).padStart(2,"0"),a]));
+  const domainByAbstract=new Map();
+  DATA.terms.forEach(t=>(t.occurrences||[]).forEach(o=>{
+    const id=String(o.abstractId||"").padStart(2,"0");
+    if(!abstracts.has(id))return;
+    if(!domainByAbstract.has(id))domainByAbstract.set(id,new Set());
+    domainByAbstract.get(id).add(t.domainLevel1||t.domain);
+  }));
+  // A single predominant terminology domain per abstract, using the same
+  // extracted-term frequency principle as the Abstracts view.
+  const predominantDomain=id=>{
+    const counts=new Map();
+    DATA.terms.forEach(t=>{
+      const domain=t.domainLevel1||t.domain;
+      if(!domain)return;
+      const occurrences=(t.occurrences||[]).filter(o=>String(o.abstractId||"").padStart(2,"0")===id);
+      if(occurrences.length)counts.set(domain,(counts.get(domain)||0)+occurrences.length);
+    });
+    return [...counts].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0]))[0]?.[0]||"Not assigned";
+  };
+  const contributionTable=(ids,field)=>{
+    const buckets=new Map();
+    [...new Set(ids)].filter(id=>abstracts.has(id)).forEach(id=>{
+      const a=abstracts.get(id);
+      const label=field==="section"?(a["Section"]||"Not specified"):predominantDomain(id);
+      if(!buckets.has(label))buckets.set(label,[]);
+      buckets.get(label).push(id);
+    });
+    if(!buckets.size)return '<p>No classified abstracts.</p>';
+    return `<table class="partner-contribution-table"><thead><tr><th>${field==="section"?"Handbook research section":"Predominant terminology domain"}</th><th>Abstracts</th><th>References</th></tr></thead><tbody>${[...buckets].sort((a,b)=>b[1].length-a[1].length||a[0].localeCompare(b[0])).map(([label,refs])=>`<tr><td>${esc(label)}</td><td>${refs.length}</td><td>${refs.map(abButton).join(" ")}</td></tr>`).join("")}</tbody></table>`;
+  };
+  const abButton=id=>`<button type="button" class="stream-abstract-link" data-stream-abstract="${esc(id)}" title="Preview abstract A${esc(id)}">A${esc(id)}</button>`;
+  const institutions=PARTNERS.institutions.filter(ins=>{
+    if(!q)return true;
+    const ids=ins.abstractIds.map(id=>abstracts.get(id)).filter(Boolean);
+    return ins.name.toLowerCase().includes(q)||ins.groups.some(g=>g.name.toLowerCase().includes(q))
+      ||ids.some(a=>([a["Abstract title"],a["Section"],a.authors,a.presentingAuthor,"A"+a["Abstract ID"]].join(" ").toLowerCase().includes(q)));
+  });
+  document.querySelector("#partnerCount").textContent=`${institutions.length} of ${PARTNERS.institutions.length} institution labels · ${new Set(institutions.flatMap(i=>i.abstractIds)).size} connected abstracts`;
+  document.querySelector("#partnerResults").innerHTML=institutions.map(ins=>{
+    const ids=ins.abstractIds.filter(id=>abstracts.has(id));
+    const domains=[...new Set(ids.flatMap(id=>[...(domainByAbstract.get(id)||[])]))].sort();
+    const groups=ins.groups.map(g=>`<details class="partner-group"><summary>${esc(g.name)} <small>(${g.abstractIds.length} abstract${g.abstractIds.length===1?"":"s"})</small></summary><div class="partner-links">${g.abstractIds.map(abButton).join(" ")}</div><details class="partner-group-classification"><summary>Research classifications for this group</summary><h5>Handbook sections</h5>${contributionTable(g.abstractIds,"section")}<h5>Predominant terminology domains</h5>${contributionTable(g.abstractIds,"domain")}</details><details class="partner-source-affiliations"><summary>Original affiliation wording (${(g.originalAffiliations||[g.name]).length})</summary><ul>${(g.originalAffiliations||[g.name]).map(a=>`<li>${esc(a)}</li>`).join("")}</ul></details></details>`).join("");
+    const authors=ids.map(id=>{
+      const a=abstracts.get(id);
+      return `<details class="partner-author-abstract"><summary>A${esc(id)} — ${esc(a["Abstract title"])} <small>· ${esc(a["Section"])}</small></summary>
+        <p><strong>Authors as printed:</strong> ${esc(a.authors||a.presentingAuthor||"Not available")}</p>
+        <p><strong>Terminology domains represented:</strong> ${esc([...(domainByAbstract.get(id)||[])].sort().join("; ")||"Not assigned")}</p>
+        <p>${abButton(id)} Preview abstract</p></details>`;
+    }).join("");
+    return `<details class="partner-institution"><summary><strong>${esc(ins.name)}</strong><span>${ids.length} abstracts · ${ins.groups.length} listed affiliations</span></summary>
+      <div class="partner-detail"><p><strong>Connected abstracts:</strong> ${ids.map(abButton).join(" ")}</p>
+      <p><strong>Terminology domains appearing in those abstracts:</strong> ${esc(domains.join("; ")||"Not assigned")}</p>
+      <h4>Research contributions by domain</h4><p class="stream-muted">Counts represent abstracts listing an affiliation with this institution, not the institution’s exclusive contribution. Each abstract has one handbook section and one predominant extracted terminology domain. Abstracts may appear under multiple institutions.</p><h5>Handbook research sections</h5>${contributionTable(ids,"section")}<h5>Predominant terminology domains</h5>${contributionTable(ids,"domain")}<h4>Departments, research groups and affiliation entries</h4>${groups}
+      <h4>Researchers and research connections</h4><p class="stream-muted">These author lists belong to the connected abstracts; they are not verified staff lists for this institution.</p>${authors}</div></details>`;
+  }).join("")||'<p>No matching affiliations. Try a broader search.</p>';
+}
+
+let partnerSummarySort={key:"id",ascending:true};
+function renderPartnerSummary(){
+  if(!PARTNERS||!DATA||!PARTNER_SUMMARY)return;
+  const byId=new Map(DATA.abstracts.map(a=>[String(a["Abstract ID"]).padStart(2,"0"),a]));
+  const region=PARTNER_SUMMARY.institutionRegion;
+  const ids=[...byId.keys()].sort();
+  const summary=ids.map(id=>{
+    const names=[...new Set(PARTNERS.institutions.filter(i=>i.abstractIds.includes(id)&&i.name!=="Malawi Liverpool Wellcome Research Programme").map(i=>i.name))];
+    const tally={"UK":0,"Malawi":0,"Other international":0,"Location to verify":0};
+    names.forEach(n=>{tally[region[n]||"Location to verify"]++;});
+    return {id,tally,total:names.length};
+  });
+  const counts=summary.map(x=>x.total);
+  const min=Math.min(...counts),max=Math.max(...counts);
+  const stat=(label,value)=>`<div class="partner-stat"><strong>${esc(String(value))}</strong><span>${esc(label)}</span></div>`;
+  const refs=(arr)=>arr.map(x=>`<button class="stream-abstract-link" type="button" data-stream-abstract="${esc(x.id)}">A${esc(x.id)}</button>`).join(" ");
+  document.querySelector("#partnerSummaryCards").innerHTML=
+    stat("Abstracts",summary.length)+stat("Minimum external institutions / abstract",min)+stat("Maximum external institutions / abstract",max)
+    +stat("Abstracts with UK institutions",summary.filter(x=>x.tally.UK).length)
+    +stat("Abstracts with other Malawi institutions",summary.filter(x=>x.tally.Malawi).length)
+    +stat("Abstracts with other international institutions",summary.filter(x=>x.tally["Other international"]).length)
+    +`<p class="partner-stat-note">Minimum: ${refs(summary.filter(x=>x.total===min))} · Maximum: ${refs(summary.filter(x=>x.total===max))}</p>`;
+  // Strict direct computational simulation: A11 and A14.
+  // A16 and A30 use existing simulation outputs but are not marked as direct simulation.
+  // Mathematical modelling is recorded for all four studies.
+  const simulationIds=new Set(["11","14"]);
+  const mathematicalIds=new Set(["11","14","16","30"]);
+  summary.forEach(x=>{
+    x.section=byId.get(x.id)?.Section||"Not classified";
+    x.math=mathematicalIds.has(x.id)?1:0;
+    x.simulation=simulationIds.has(x.id)?1:0;
+  });
+  const sortedSummary=[...summary].sort((a,b)=>{
+    const key=partnerSummarySort.key;
+    const av=key==="id"?Number(a.id):key==="total"?a.total:key==="section"?a.section:key==="math"?a.math:key==="simulation"?a.simulation:a.tally[key];
+    const bv=key==="id"?Number(b.id):key==="total"?b.total:key==="section"?b.section:key==="math"?b.math:key==="simulation"?b.simulation:b.tally[key];
+    const comparison=typeof av==="string"?av.localeCompare(bv):(av-bv);
+    return (partnerSummarySort.ascending?1:-1)*comparison || Number(a.id)-Number(b.id);
+  });
+  document.querySelectorAll(".partner-sort-button").forEach(button=>{
+    const selected=button.dataset.partnerSort===partnerSummarySort.key;
+    button.querySelector(".partner-sort-arrow").textContent=selected?(partnerSummarySort.ascending?"▲":"▼"):"⇅";
+    button.setAttribute("aria-sort-direction",selected?(partnerSummarySort.ascending?"ascending":"descending"):"none");
+  });
+  document.querySelector("#partnerSummaryRows").innerHTML=sortedSummary.map(x=>`<tr><td><button class="stream-abstract-link" type="button" data-stream-abstract="${esc(x.id)}">A${esc(x.id)}</button></td><td class="partner-section-cell">${esc(x.section)}</td><td class="partner-method-flag" aria-label="${x.math?"Reported":"Not established"}">${x.math?"✓":"—"}</td><td class="partner-method-flag" aria-label="${x.simulation?"Reported":"Not established"}">${x.simulation?"✓":"—"}</td><td>${x.tally.UK}</td><td>${x.tally.Malawi}</td><td>${x.tally["Other international"]}</td><td>${x.tally["Location to verify"]}</td><td><strong>${x.total}</strong></td></tr>`).join("");
+  const primary=ids.map(id=>{
+    const name=PARTNER_SUMMARY.firstListedInstitution[id];
+    const place=name?(region[name]||"Location to verify"):"Unresolved";
+    return {id,name,place,aff:PARTNER_SUMMARY.firstListedAffiliation[id],external:name&&name!=="Malawi Liverpool Wellcome Research Programme"?1:0};
+  });
+  const resolved=primary.filter(x=>x.name);
+  document.querySelector("#partnerPrimaryCards").innerHTML=
+    stat("First affiliations resolved",`${resolved.length} / ${ids.length}`)+stat("With non-MLW first institution",resolved.filter(x=>x.external).length)
+    +stat("With MLW as first institution",resolved.filter(x=>!x.external).length)
+    +stat("Unresolved first affiliations",ids.length-resolved.length);
+  document.querySelector("#partnerPrimaryRows").innerHTML=primary.map(x=>`<tr><td><button class="stream-abstract-link" type="button" data-stream-abstract="${esc(x.id)}">A${esc(x.id)}</button></td><td>${esc(x.aff||"Not reliably extracted")}</td><td>${esc(x.name||"Unresolved")}</td><td>${esc(x.place)}</td><td>${x.name?x.external:"—"}</td></tr>`).join("");
+  document.querySelector(".partner-summary").addEventListener("click",e=>{
+    const b=e.target.closest("button[data-stream-abstract]");
+    if(b){e.preventDefault();openStreamAbstract(b.dataset.streamAbstract);}
+  });
+}
