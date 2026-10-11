@@ -11124,13 +11124,28 @@
         "affiliations": [
           {
             "number": 1,
-            "text": "Malawi Liverpool Wellcome Programme / Malawi University of Business and Applied Sciences"
+            "text": "Malawi Liverpool Wellcome Programme; Malawi University of Business and Applied Sciences"
           },
           {
             "number": 2,
-            "text": "Infectious Disease Epidemiology Group, Malawi-Liverpool-Wellcome Programme, Blantyre, Malawi"
+            "text": "Infectious Disease Epidemiology Group, Malawi-Liverpool-Wellcome Programme"
           }
-        ]
+        ],
+        "authorAffiliations": [
+          {
+            "author": "Maenje A.",
+            "numbers": [
+              1
+            ]
+          },
+          {
+            "author": "Mategula D.",
+            "numbers": [
+              2
+            ]
+          }
+        ],
+        "note": "Affiliations supplied by the user; no affiliation assignment supplied for the third author."
       }
     },
     {
@@ -11154,8 +11169,16 @@
       "authors": "Olive Mbekwani-Kalata1, Melody Sakala1, Marlen Chawani1, Donnie Mategula1, Rhona Mijumbi-Deve1",
       "presentingAuthor": "PRESENTING AUTHOR  Olive Mbekwani-Kalata",
       "sourceAffiliations": {
-        "affiliations": [],
-        "note": "Numbered affiliations not reliably recovered."
+        "affiliations": [
+          {
+            "number": 1,
+            "text": "The Malawi-Liverpool-Wellcome Research Programme"
+          }
+        ],
+        "allAuthorsAffiliationNumbers": [
+          1
+        ],
+        "note": "Affiliation supplied by the user for all authors."
       }
     },
     {
@@ -12107,8 +12130,16 @@
       "authors": "Mayamiko D. Kapulula",
       "presentingAuthor": "PRESENTING AUTHOR  Mayamiko D. Kapulula",
       "sourceAffiliations": {
-        "affiliations": [],
-        "note": "Numbered affiliations not reliably recovered."
+        "affiliations": [
+          {
+            "number": 1,
+            "text": "Malawi Liverpool Wellcome Research Programme, Maternal and Fetal Health Group"
+          }
+        ],
+        "allAuthorsAffiliationNumbers": [
+          1
+        ],
+        "note": "Affiliation supplied by the user for the author."
       }
     },
     {
@@ -12728,8 +12759,16 @@
       "authors": "Dzonzi B.; Muyaya A.1; Makhaza L.1; Phiri V.1; Mphamba S.1",
       "presentingAuthor": "PRESENTING AUTHOR  Brenald Dzonzi",
       "sourceAffiliations": {
-        "affiliations": [],
-        "note": "Numbered affiliations not reliably recovered."
+        "affiliations": [
+          {
+            "number": 1,
+            "text": "Data Management Support Unit (DMSU), Malawi-Liverpool-Wellcome Research Programme"
+          }
+        ],
+        "allAuthorsAffiliationNumbers": [
+          1
+        ],
+        "note": "Affiliation supplied by the user for all authors."
       }
     }
   ]

@@ -548,7 +548,9 @@ function openStreamAbstract(id){
     ${a.sourceAffiliations?.affiliations?.length
       ? `<ol class="stream-dialog-affiliations">${a.sourceAffiliations.affiliations.map(x=>`<li value="${Number(x.number)}">${esc(x.text)}</li>`).join("")}</ol>`
       : `<p class="stream-muted">${esc(a.sourceAffiliations?.note||"Affiliations not available from the extracted handbook.")}</p>`}
-    <p class="stream-muted">Affiliation numbers and wording are transcribed from the ASM handbook. The list does not assign an institution to each author unless explicitly supported by the source.</p></div>
+    ${a.sourceAffiliations?.authorAffiliations?.length ? `<p><strong>Author–affiliation mapping:</strong> ${a.sourceAffiliations.authorAffiliations.map(x=>`${esc(x.author)} (${x.numbers.map(n=>esc(String(n))).join(", ")})`).join("; ")}</p>` : ""}
+    ${a.sourceAffiliations?.allAuthorsAffiliationNumbers?.length ? `<p><strong>Affiliation for all listed authors:</strong> ${a.sourceAffiliations.allAuthorsAffiliationNumbers.map(n=>esc(String(n))).join(", ")}</p>` : ""}
+    <p class="stream-muted">${esc(a.sourceAffiliations?.note||"Affiliation numbers and wording are transcribed from the ASM handbook. Individual author–affiliation mappings are not inferred where unavailable.")}</p></div>
     <div class="actual-abstract"><h4>Abstract</h4><p class="linked-text">${abstractHTML}</p></div>`;
   wireDictionaryLinks(content);
   if(!dialog.open)dialog.showModal();
@@ -688,7 +690,7 @@ function renderPartnerSummary(){
     button.querySelector(".partner-sort-arrow").textContent=selected?(partnerSummarySort.ascending?"▲":"▼"):"⇅";
     button.setAttribute("aria-sort-direction",selected?(partnerSummarySort.ascending?"ascending":"descending"):"none");
   });
-  document.querySelector("#partnerSummaryRows").innerHTML=sortedSummary.map(x=>`<tr><td><button class="stream-abstract-link" type="button" data-stream-abstract="${esc(x.id)}">A${esc(x.id)}</button></td><td class="partner-section-cell">${esc(x.section)}</td><td class="partner-method-flag" aria-label="${x.math?"Reported":"Not established"}">${x.math?"✓":"—"}</td><td class="partner-method-flag" aria-label="${x.simulation?"Reported":"Not established"}">${x.simulation?"✓":"—"}</td><td>${x.tally.UK}</td><td>${x.tally.Malawi}</td><td>${x.tally["Other international"]}</td><td>${x.tally["Location to verify"]}</td><td><strong>${x.total}</strong></td></tr>`).join("");
+  document.querySelector("#partnerSummaryRows").innerHTML=sortedSummary.map(x=>`<tr><td><button class="stream-abstract-link" type="button" data-stream-abstract="${esc(x.id)}">A${esc(x.id)}</button></td><td class="partner-section-cell">${esc(x.section)}</td><td class="partner-method-flag" aria-label="${x.math?"Reported":"Not established"}">${x.math?"✓":"—"}</td><td class="partner-method-flag" aria-label="${x.simulation?"Reported":"Not established"}">${x.simulation?"✓":"—"}</td><td>${partnerCountButton(x.id,"UK",x.tally.UK)}</td><td>${partnerCountButton(x.id,"Malawi",x.tally.Malawi)}</td><td>${partnerCountButton(x.id,"Other international",x.tally["Other international"])}</td><td>${partnerCountButton(x.id,"Location to verify",x.tally["Location to verify"])}</td><td>${partnerCountButton(x.id,"Total",x.total)}</td></tr>`).join("");
   const primary=ids.map(id=>{
     const name=PARTNER_SUMMARY.firstListedInstitution[id];
     const place=name?(region[name]||"Location to verify"):"Unresolved";
@@ -702,6 +704,47 @@ function renderPartnerSummary(){
   document.querySelector("#partnerPrimaryRows").innerHTML=primary.map(x=>`<tr><td><button class="stream-abstract-link" type="button" data-stream-abstract="${esc(x.id)}">A${esc(x.id)}</button></td><td>${esc(x.aff||"Not reliably extracted")}</td><td>${esc(x.name||"Unresolved")}</td><td>${esc(x.place)}</td><td>${x.name?x.external:"—"}</td></tr>`).join("");
   document.querySelector(".partner-summary").addEventListener("click",e=>{
     const b=e.target.closest("button[data-stream-abstract]");
-    if(b){e.preventDefault();openStreamAbstract(b.dataset.streamAbstract);}
+    if(b){e.preventDefault();openStreamAbstract(b.dataset.streamAbstract);return;}
+    const countButton=e.target.closest("button[data-partner-count]");
+    if(countButton){e.preventDefault();openPartnerCountDialog(countButton.dataset.partnerAbstract,countButton.dataset.partnerCount);}
   });
 }
+
+// Institution counts in the abstract-level summary are drill-down controls.
+function partnerCountButton(id,category,count){
+  return `<button type="button" class="partner-count-link" data-partner-abstract="${esc(id)}" data-partner-count="${esc(category)}" aria-label="Show ${esc(category)} institutions for abstract A${esc(id)} (${count})">${count}</button>`;
+}
+function openPartnerCountDialog(id,category){
+  const dialog=document.querySelector("#partnerCountDialog");
+  const content=document.querySelector("#partnerCountContent");
+  if(!dialog||!content||!PARTNERS||!PARTNER_SUMMARY)return;
+  const aid=String(id).padStart(2,"0");
+  const region=PARTNER_SUMMARY.institutionRegion||{};
+  const institutions=PARTNERS.institutions.filter(i=>i.name!=="Malawi Liverpool Wellcome Research Programme" && i.abstractIds.includes(aid))
+    .filter(i=>category==="Total" || (region[i.name]||"Location to verify")===category)
+    .sort((a,b)=>a.name.localeCompare(b.name));
+  const abstract=DATA?.abstracts?.find(a=>String(a["Abstract ID"]).padStart(2,"0")===aid);
+  const regionOrder=["UK","Malawi","Other international","Location to verify"];
+  const rows=institutions.map(i=>{
+    const groups=(i.groups||[]).filter(g=>g.abstractIds.includes(aid));
+    const groupNames=groups.map(g=>g.name).filter(Boolean);
+    return `<tr><td><strong>${esc(i.name)}</strong></td><td>${esc(region[i.name]||"Location to verify")}</td><td>${groupNames.length?groupNames.map(esc).join("; "):"Not specified"}</td></tr>`;
+  }).join("");
+  content.innerHTML=`<h3>A${esc(aid)} — ${esc(category==="Total"?"All external institutions":category+" institutions")}</h3>
+    <p class="partner-popup-abstract-title">${esc(abstract?.["Abstract title"]||"")}</p>
+    <p><strong>${institutions.length}</strong> distinct institution${institutions.length===1?"":"s"} in this category.</p>
+    ${institutions.length?`<div class="partner-table-scroll"><table class="partner-contribution-table"><thead><tr><th>Institution</th><th>Location</th><th>Associated department / group</th></tr></thead><tbody>${rows}</tbody></table></div>`:
+    `<p>No external institutions are recorded in this category for this abstract.</p>`}
+    <p class="stream-muted">Based on institutional affiliations reported for this abstract; not a verified list of formal partnerships or individual contributions. MLW is excluded from the counts.</p>
+    <button type="button" class="stream-abstract-link" data-partner-open-abstract="${esc(aid)}">View abstract A${esc(aid)}</button>`;
+  dialog.showModal();
+}
+(function initPartnerCountDialog(){
+  const dialog=document.querySelector("#partnerCountDialog");
+  if(!dialog)return;
+  dialog.querySelector("#closePartnerCountDialog")?.addEventListener("click",()=>dialog.close());
+  dialog.addEventListener("click",e=>{
+    const button=e.target.closest("button[data-partner-open-abstract]");
+    if(button){dialog.close();openStreamAbstract(button.dataset.partnerOpenAbstract);}
+  });
+})();

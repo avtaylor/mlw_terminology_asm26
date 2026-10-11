@@ -230,3 +230,5 @@ a{color:inherit}.top{background:#123a49;color:#fff;padding:28px 24px}.top-inner{
 .partner-contribution-table .partner-sort-button{font-size:.82rem;white-space:nowrap;}
 
 .stream-dialog-credit{padding:12px 15px;margin:14px 0;border:1px solid #d4dce5;border-radius:9px;background:#f6f9fc}.stream-dialog-credit h4{margin:8px 0}.stream-dialog-affiliations{padding-left:24px;margin:8px 0;line-height:1.55}.stream-dialog-affiliations li{margin:4px 0}.stream-dialog-authors{line-height:1.6}
+
+.partner-count-link{font:inherit;font-weight:700;color:#175f83;border:1px solid #a8c8db;background:#eef7fc;border-radius:6px;min-width:32px;padding:4px 7px;cursor:pointer;text-decoration:underline;text-underline-offset:2px}.partner-count-link:hover,.partner-count-link:focus-visible{background:#cfe8f5;outline:2px solid #4385a8;outline-offset:1px}.partner-count-dialog{max-width:min(900px,94vw)}.partner-popup-abstract-title{font-weight:600;line-height:1.5}
