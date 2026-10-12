@@ -692,15 +692,17 @@ function renderPartnerSummary(){
   });
   document.querySelector("#partnerSummaryRows").innerHTML=sortedSummary.map(x=>`<tr><td><button class="stream-abstract-link" type="button" data-stream-abstract="${esc(x.id)}">A${esc(x.id)}</button></td><td class="partner-section-cell">${esc(x.section)}</td><td class="partner-method-flag" aria-label="${x.math?"Reported":"Not established"}">${x.math?"✓":"—"}</td><td class="partner-method-flag" aria-label="${x.simulation?"Reported":"Not established"}">${x.simulation?"✓":"—"}</td><td>${partnerCountButton(x.id,"UK",x.tally.UK)}</td><td>${partnerCountButton(x.id,"Malawi",x.tally.Malawi)}</td><td>${partnerCountButton(x.id,"Other international",x.tally["Other international"])}</td><td>${partnerCountButton(x.id,"Location to verify",x.tally["Location to verify"])}</td><td>${partnerCountButton(x.id,"Total",x.total)}</td></tr>`).join("");
   const primary=ids.map(id=>{
-    const name=PARTNER_SUMMARY.firstListedInstitution[id];
-    const place=name?(region[name]||"Location to verify"):"Unresolved";
-    return {id,name,place,aff:PARTNER_SUMMARY.firstListedAffiliation[id],external:name&&name!=="Malawi Liverpool Wellcome Research Programme"?1:0};
+    const names=PARTNER_SUMMARY.firstListedInstitutions?.[id] || (PARTNER_SUMMARY.firstListedInstitution[id]?[PARTNER_SUMMARY.firstListedInstitution[id]]:[]);
+    const name=names.join("; ");
+    const place=names.length?[...new Set(names.map(n=>region[n]||"Location to verify"))].join("; "):"Unresolved";
+    const external=names.filter(n=>n!=="Malawi Liverpool Wellcome Research Programme").length;
+    return {id,name,place,aff:PARTNER_SUMMARY.firstListedAffiliation[id],external,hasMLW:names.includes("Malawi Liverpool Wellcome Research Programme")};
   });
   const resolved=primary.filter(x=>x.name);
   document.querySelector("#partnerPrimaryCards").innerHTML=
-    stat("First affiliations resolved",`${resolved.length} / ${ids.length}`)+stat("With non-MLW first institution",resolved.filter(x=>x.external).length)
-    +stat("With MLW as first institution",resolved.filter(x=>!x.external).length)
-    +stat("Unresolved first affiliations",ids.length-resolved.length);
+    stat("First affiliations resolved",`${resolved.length} / ${ids.length}`)+stat("With external institution in first affiliation",resolved.filter(x=>x.external).length)
+    +stat("With MLW in first affiliation",resolved.filter(x=>x.hasMLW).length)
+    +stat("Unresolved first affiliations",ids.length-resolved.length)+`<p class="partner-stat-note">A first-listed affiliation may name more than one institution (A14 includes MLW and MUBAS). The MLW and external counts can therefore overlap.</p>`;
   document.querySelector("#partnerPrimaryRows").innerHTML=primary.map(x=>`<tr><td><button class="stream-abstract-link" type="button" data-stream-abstract="${esc(x.id)}">A${esc(x.id)}</button></td><td>${esc(x.aff||"Not reliably extracted")}</td><td>${esc(x.name||"Unresolved")}</td><td>${esc(x.place)}</td><td>${x.name?x.external:"—"}</td></tr>`).join("");
   document.querySelector(".partner-summary").addEventListener("click",e=>{
     const b=e.target.closest("button[data-stream-abstract]");

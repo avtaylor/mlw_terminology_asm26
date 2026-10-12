@@ -100,8 +100,8 @@
     "11": "Malawi Liverpool Wellcome Research Programme, Blantyre, Malawi",
     "12": "Malawi-Liverpool-Wellcome Research Programme, Blantyre, Malawi",
     "13": "Malawi Liverpool Wellcome Research Programme, Blantyre, Malawi",
-    "14": "Malawi Liverpool Wellcome Programme / Malawi University of Business and Applied Sciences",
-    "15": null,
+    "14": "Malawi Liverpool Wellcome Programme; Malawi University of Business and Applied Sciences",
+    "15": "The Malawi-Liverpool-Wellcome Research Programme",
     "16": "Infectious Disease Epidemiology Research Group, Malawi Liverpool Wellcome Programme, Queen Elizabeth Central Hospital Campus, Chipatala Avenue, P.O. Box 30096, Chichiri, Blantyre 3, Malawi",
     "17": "Malawi Liverpool Wellcome Programme, Blantyre, Malawi",
     "18": "Infectious Diseases Epidemiology Group, Malawi-Liverpool-Wellcome Clinical Research Programme, Blantyre, Malawi",
@@ -122,7 +122,7 @@
     "33": "Malawi Liverpool Wellcome Research Programme",
     "34": "Malawi Liverpool Wellcome Research Programme, Blantyre, Malawi",
     "35": "Malawi Liverpool Wellcome Research Programme",
-    "36": null,
+    "36": "Malawi Liverpool Wellcome Research Programme, Maternal and Fetal Health Group",
     "37": "Maternal and Fetal Health Group, Malawi Liverpool Wellcome Research Programme, Blantyre, Malawi",
     "38": "Maternal and Fetal Group, Malawi Liverpool Wellcome Research Programme, Blantyre, Malawi",
     "39": "Department of Women and Children's Health, Institute of Life Course and Medical Sciences, University of Liverpool, Liverpool, UK",
@@ -135,7 +135,7 @@
     "46": "Malawi Liverpool Wellcome Research Programme, Blantyre, Malawi",
     "47": "Department of Epidemiology and Biostatistics, Mel and Enid Zuckerman College of Public Health, University of Arizona, Tucson, Arizona, USA",
     "48": "Malawi-Liverpool-Wellcome Research Programme, Blantyre, Malawi",
-    "49": null
+    "49": "Data Management Support Unit (DMSU), Malawi-Liverpool-Wellcome Research Programme"
   },
   "firstListedInstitution": {
     "01": "Malawi Liverpool Wellcome Research Programme",
@@ -152,7 +152,7 @@
     "12": "Malawi Liverpool Wellcome Research Programme",
     "13": "Malawi Liverpool Wellcome Research Programme",
     "14": "Malawi Liverpool Wellcome Research Programme",
-    "15": null,
+    "15": "Malawi Liverpool Wellcome Research Programme",
     "16": "Malawi Liverpool Wellcome Research Programme",
     "17": "Malawi Liverpool Wellcome Research Programme",
     "18": "Malawi Liverpool Wellcome Research Programme",
@@ -173,7 +173,7 @@
     "33": "Malawi Liverpool Wellcome Research Programme",
     "34": "Malawi Liverpool Wellcome Research Programme",
     "35": "Malawi Liverpool Wellcome Research Programme",
-    "36": null,
+    "36": "Malawi Liverpool Wellcome Research Programme",
     "37": "Malawi Liverpool Wellcome Research Programme",
     "38": "Malawi Liverpool Wellcome Research Programme",
     "39": "University of Liverpool",
@@ -186,7 +186,13 @@
     "46": "Malawi Liverpool Wellcome Research Programme",
     "47": "University of Arizona",
     "48": "Malawi Liverpool Wellcome Research Programme",
-    "49": null
+    "49": "Malawi Liverpool Wellcome Research Programme"
   },
-  "method": "First numbered affiliation (1.) in each abstract, when reliably identified; NOT necessarily primary affiliation for each author."
+  "method": "First numbered affiliation (1.) in each abstract, when reliably identified; NOT necessarily primary affiliation for each author. Corrected user-supplied first affiliations for A14, A15, A36 and A49; A14 lists two distinct institutions in affiliation 1. firstListedInstitutions contains multi-institution overrides.",
+  "firstListedInstitutions": {
+    "14": [
+      "Malawi Liverpool Wellcome Research Programme",
+      "Malawi University of Business and Applied Sciences"
+    ]
+  }
 }
