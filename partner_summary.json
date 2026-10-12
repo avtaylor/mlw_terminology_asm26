@@ -135,7 +135,8 @@
     "46": "Malawi Liverpool Wellcome Research Programme, Blantyre, Malawi",
     "47": "Department of Epidemiology and Biostatistics, Mel and Enid Zuckerman College of Public Health, University of Arizona, Tucson, Arizona, USA",
     "48": "Malawi-Liverpool-Wellcome Research Programme, Blantyre, Malawi",
-    "49": "Data Management Support Unit (DMSU), Malawi-Liverpool-Wellcome Research Programme"
+    "49": "Data Management Support Unit (DMSU), Malawi-Liverpool-Wellcome Research Programme",
+    "50": "Malawi Liverpool Wellcome Research Programme, Policy Unit, Lilongwe, Malawi"
   },
   "firstListedInstitution": {
     "01": "Malawi Liverpool Wellcome Research Programme",
@@ -186,13 +187,17 @@
     "46": "Malawi Liverpool Wellcome Research Programme",
     "47": "University of Arizona",
     "48": "Malawi Liverpool Wellcome Research Programme",
-    "49": "Malawi Liverpool Wellcome Research Programme"
+    "49": "Malawi Liverpool Wellcome Research Programme",
+    "50": "Malawi Liverpool Wellcome Research Programme"
   },
   "method": "First numbered affiliation (1.) in each abstract, when reliably identified; NOT necessarily primary affiliation for each author. Corrected user-supplied first affiliations for A14, A15, A36 and A49; A14 lists two distinct institutions in affiliation 1. firstListedInstitutions contains multi-institution overrides.",
   "firstListedInstitutions": {
     "14": [
       "Malawi Liverpool Wellcome Research Programme",
       "Malawi University of Business and Applied Sciences"
+    ],
+    "50": [
+      "Malawi Liverpool Wellcome Research Programme"
     ]
   },
   "firstAuthorMLW": {
@@ -229,7 +234,8 @@
       "41",
       "46",
       "48",
-      "49"
+      "49",
+      "50"
     ],
     "notMLWAbstractIds": [
       "09",

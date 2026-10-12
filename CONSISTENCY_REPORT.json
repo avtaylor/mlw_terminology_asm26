@@ -1,0 +1,30 @@
+{
+  "abstracts": 50,
+  "ids_unique": 50,
+  "terms": 236,
+  "terms_added_for_A50": [
+    "evidence synthesis",
+    "co-production",
+    "evidence-informed policymaking",
+    "evidence juries",
+    "rapid reviews",
+    "Chatham House Rules",
+    "healthcare waste management",
+    "clean energy"
+  ],
+  "existing_terms_linked_to_A50": [
+    "knowledge translation",
+    "stakeholder engagement"
+  ],
+  "A50_partner_institutions": [
+    "Malawi Liverpool Wellcome Research Programme"
+  ],
+  "A50_streams": [
+    "Health systems, access and implementation",
+    "Research methods, tools and infrastructure"
+  ],
+  "notes": [
+    "New terminology annotations are interpretative and require domain-expert validation.",
+    "Original static interpretative prose is preserved unless an explicit numeric correction was required."
+  ]
+}

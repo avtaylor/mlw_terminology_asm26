@@ -1,11 +1,11 @@
 {
   "meta": {
     "title": "MLW Research Terminology Explorer",
-    "terms": 211,
-    "abstracts": 49,
-    "sourcePages": 57,
-    "note": "The supplied PDF contains 57 pages and 49 pages with detailed numbered abstracts; section-divider pages contain no abstract text.",
-    "abstractResearchSummaries": 49,
+    "terms": 236,
+    "abstracts": 50,
+    "sourcePages": 50,
+    "note": "The supplied ASM handbook includes 50 numbered abstracts; abstract 50 is on the final PDF page.",
+    "abstractResearchSummaries": 50,
     "disciplineDashboard": {
       "disciplines": [
         "Data Scientist / Statistician",
@@ -23,7 +23,7 @@
         "Potentially ambiguous to both"
       ]
     },
-    "termCount": 228
+    "termCount": 236
   },
   "terms": [
     {
@@ -5555,9 +5555,9 @@
       "definition": "Involvement of relevant stakeholders in designing or implementing research/tools.",
       "definitionStatus": "Explicit/inferable",
       "varies": true,
-      "sources": "38, 42",
-      "count": 2,
-      "pages": "42, 47",
+      "sources": "38, 42, 50",
+      "count": 3,
+      "pages": "42, 47, 50",
       "occurrences": [
         {
           "abstractId": "38",
@@ -5574,6 +5574,14 @@
           "page": 47,
           "interpretation": "Involvement of relevant stakeholders in designing or implementing research/tools. In this abstract it is used in diagnostic evaluation.",
           "context": "42 ACCESS, QUALITY & PEOPLE-CENTRED CARE ENGAGING STAKEHOLDERS TO CO-DESIGN A DRIED SPOT KIT FOR THE DIAGNOSIS OF CENTRAL NERVOUS SYSTEM INFECTIONS IN LOW-RESOURCE SETTINGS Matandika M.L.; Hobus M.C.1; Jones-Phillips B.2; Kalua L.3; Kathyola D.3; Mwenda M"
+        },
+        {
+          "abstractId": "50",
+          "section": "EXPANDING CAPACITY & NEW INITIATIVES",
+          "title": "CO-PRODUCING EVIDENCE FOR POLICY UPTAKE: LESSONS FROM EVIDENCE JURIES IN MALAWI'S HEALTH AND CLEAN ENERGY SECTORS",
+          "page": 50,
+          "interpretation": "Involvement of affected or decision-making groups in research or policy processes.",
+          "context": "DS Evidence juries; Co-production; Evidence synthesis; Knowledge translation; Evidence-informed policymaking; Stakeholder engagement; Malawi BACKGROUND Despite the growth of evidence synthesis, translating findings into timely and actionable policy remains a persistent challenge, particularly in low- "
         }
       ],
       "domainLevel1": "Health systems, implementation & economics",
@@ -5859,9 +5867,9 @@
       "definition": "Process of moving research evidence into policy or action.",
       "definitionStatus": "Explicit/inferable",
       "varies": false,
-      "sources": "15",
-      "count": 1,
-      "pages": "16",
+      "sources": "15, 50",
+      "count": 2,
+      "pages": "16, 50",
       "occurrences": [
         {
           "abstractId": "15",
@@ -5870,6 +5878,14 @@
           "page": 16,
           "interpretation": "Process of moving research evidence into policy or action. In this abstract it is used to characterise antimicrobial resistance; applied to malaria.",
           "context": "15 MALARIA & TB: EPIDEMIOLOGY & SURVEILLANCE FROM EVIDENCE TO ACTION: HOW A MULTI-COUNTRY CONSORTIUM LEARNED TO TRANSLATE RESEARCH INTO POLICY AGAINST ANTIMALARIAL DRUG RESISTANCE Olive Mbekwani-Kalata1, Melody Sakala1, Marlen Chawani1, Donnie Mategula1, Rhona Mijumbi-Deve1 The Malawi-Liverpool-Wellcome Research Programm"
+        },
+        {
+          "abstractId": "50",
+          "section": "EXPANDING CAPACITY & NEW INITIATIVES",
+          "title": "CO-PRODUCING EVIDENCE FOR POLICY UPTAKE: LESSONS FROM EVIDENCE JURIES IN MALAWI'S HEALTH AND CLEAN ENERGY SECTORS",
+          "page": 50,
+          "interpretation": "Processes for moving research findings into policy and practice.",
+          "context": "KEYWORDS Evidence juries; Co-production; Evidence synthesis; Knowledge translation; Evidence-informed policymaking; Stakeholder engagement; Malawi BACKGROUND Despite the growth of evidence synthesis, translating findings into timely and actionable poli"
         }
       ],
       "domainLevel1": "Health systems, implementation & economics",
@@ -10444,6 +10460,278 @@
           "type": "search"
         }
       ]
+    },
+    {
+      "id": 229,
+      "slug": "evidence-synthesis",
+      "term": "evidence synthesis",
+      "abbr": "",
+      "domain": "Evidence synthesis / policy",
+      "definition": "Evidence synthesis combines findings from multiple studies to inform decisions.",
+      "definitionStatus": "Inferred from abstract context",
+      "varies": false,
+      "sources": "50",
+      "count": 1,
+      "pages": "50",
+      "occurrences": [
+        {
+          "abstractId": "50",
+          "section": "EXPANDING CAPACITY & NEW INITIATIVES",
+          "title": "CO-PRODUCING EVIDENCE FOR POLICY UPTAKE: LESSONS FROM EVIDENCE JURIES IN MALAWI'S HEALTH AND CLEAN ENERGY SECTORS",
+          "page": 50,
+          "interpretation": "Evidence synthesis combines findings from multiple studies to inform decisions.",
+          "context": "KEYWORDS Evidence juries; Co-production; Evidence synthesis; Knowledge translation; Evidence-informed policymaking; Stakeholder engagement; Malawi BACKGROUND Despite the growth of evidence synthesis, translating findings into tim"
+        }
+      ],
+      "domainLevel1": "Public health, policy & implementation",
+      "disciplineFamiliarity": {
+        "Data Scientist / Statistician": 1,
+        "Epidemiologist": 2,
+        "Clinician": 2,
+        "Laboratory / Microbiology Scientist": 1,
+        "Molecular / Genomics Scientist": 1,
+        "Social / Implementation Scientist": 3
+      },
+      "semanticAmbiguity": false,
+      "externalReferences": []
+    },
+    {
+      "id": 230,
+      "slug": "co-production",
+      "term": "co-production",
+      "abbr": "",
+      "domain": "Implementation science / policy",
+      "definition": "Collaborative development or interpretation of evidence with stakeholders and intended users.",
+      "definitionStatus": "Inferred from abstract context",
+      "varies": false,
+      "sources": "50",
+      "count": 1,
+      "pages": "50",
+      "occurrences": [
+        {
+          "abstractId": "50",
+          "section": "EXPANDING CAPACITY & NEW INITIATIVES",
+          "title": "CO-PRODUCING EVIDENCE FOR POLICY UPTAKE: LESSONS FROM EVIDENCE JURIES IN MALAWI'S HEALTH AND CLEAN ENERGY SECTORS",
+          "page": 50,
+          "interpretation": "Collaborative development or interpretation of evidence with stakeholders and intended users.",
+          "context": "KEYWORDS Evidence juries; Co-production; Evidence synthesis; Knowledge translation; Evidence-informed policymaking; Stakeholder engagement; Malawi BACKGROUND Despite the growth of evidence synthesis, translati"
+        }
+      ],
+      "domainLevel1": "Public health, policy & implementation",
+      "disciplineFamiliarity": {
+        "Data Scientist / Statistician": 1,
+        "Epidemiologist": 2,
+        "Clinician": 2,
+        "Laboratory / Microbiology Scientist": 1,
+        "Molecular / Genomics Scientist": 1,
+        "Social / Implementation Scientist": 3
+      },
+      "semanticAmbiguity": false,
+      "externalReferences": []
+    },
+    {
+      "id": 231,
+      "slug": "evidence-informed-policymaking",
+      "term": "evidence-informed policymaking",
+      "abbr": "",
+      "domain": "Implementation science / policy",
+      "definition": "Use of research evidence alongside contextual considerations to inform policy decisions.",
+      "definitionStatus": "Inferred from abstract context",
+      "varies": false,
+      "sources": "50",
+      "count": 1,
+      "pages": "50",
+      "occurrences": [
+        {
+          "abstractId": "50",
+          "section": "EXPANDING CAPACITY & NEW INITIATIVES",
+          "title": "CO-PRODUCING EVIDENCE FOR POLICY UPTAKE: LESSONS FROM EVIDENCE JURIES IN MALAWI'S HEALTH AND CLEAN ENERGY SECTORS",
+          "page": 50,
+          "interpretation": "Use of research evidence alongside contextual considerations to inform policy decisions.",
+          "context": "KEYWORDS Evidence juries; Co-production; Evidence synthesis; Knowledge translation; Evidence-informed policymaking; Stakeholder engagement; Malawi BACKGROUND Despite the growth of evidence synthesis, translating findings into timely and actionable policy remains a persistent challeng"
+        }
+      ],
+      "domainLevel1": "Public health, policy & implementation",
+      "disciplineFamiliarity": {
+        "Data Scientist / Statistician": 1,
+        "Epidemiologist": 2,
+        "Clinician": 2,
+        "Laboratory / Microbiology Scientist": 1,
+        "Molecular / Genomics Scientist": 1,
+        "Social / Implementation Scientist": 3
+      },
+      "semanticAmbiguity": false,
+      "externalReferences": []
+    },
+    {
+      "id": 232,
+      "slug": "evidence-juries",
+      "term": "evidence juries",
+      "abbr": "",
+      "domain": "Implementation science / policy",
+      "definition": "Structured stakeholder deliberations that evaluate evidence and produce context-sensitive recommendations.",
+      "definitionStatus": "Inferred from abstract context",
+      "varies": false,
+      "sources": "50",
+      "count": 1,
+      "pages": "50",
+      "occurrences": [
+        {
+          "abstractId": "50",
+          "section": "EXPANDING CAPACITY & NEW INITIATIVES",
+          "title": "CO-PRODUCING EVIDENCE FOR POLICY UPTAKE: LESSONS FROM EVIDENCE JURIES IN MALAWI'S HEALTH AND CLEAN ENERGY SECTORS",
+          "page": 50,
+          "interpretation": "Structured stakeholder deliberations that evaluate evidence and produce context-sensitive recommendations.",
+          "context": "KEYWORDS Evidence juries; Co-production; Evidence synthesis; Knowledge translation; Evidence-informed policymaking; Stakeholder engagement; Malawi BACKGROUND Despite the growth of evidence synth"
+        }
+      ],
+      "domainLevel1": "Public health, policy & implementation",
+      "disciplineFamiliarity": {
+        "Data Scientist / Statistician": 1,
+        "Epidemiologist": 2,
+        "Clinician": 2,
+        "Laboratory / Microbiology Scientist": 1,
+        "Molecular / Genomics Scientist": 1,
+        "Social / Implementation Scientist": 3
+      },
+      "semanticAmbiguity": false,
+      "externalReferences": []
+    },
+    {
+      "id": 233,
+      "slug": "rapid-reviews",
+      "term": "rapid reviews",
+      "abbr": "",
+      "domain": "Evidence synthesis / policy",
+      "definition": "Accelerated evidence reviews produced to meet decision-making timelines.",
+      "definitionStatus": "Inferred from abstract context",
+      "varies": false,
+      "sources": "50",
+      "count": 1,
+      "pages": "50",
+      "occurrences": [
+        {
+          "abstractId": "50",
+          "section": "EXPANDING CAPACITY & NEW INITIATIVES",
+          "title": "CO-PRODUCING EVIDENCE FOR POLICY UPTAKE: LESSONS FROM EVIDENCE JURIES IN MALAWI'S HEALTH AND CLEAN ENERGY SECTORS",
+          "page": 50,
+          "interpretation": "Accelerated evidence reviews produced to meet decision-making timelines.",
+          "context": ", the Malawi Liverpool Wellcome Trust Research Programme convened two evidence juries in Lilongwe, drawing on rapid reviews addressing (1) gender barriers to women's participation in clean energy decision-making and (2) sustainable healthcare waste management in the context of climate change."
+        }
+      ],
+      "domainLevel1": "Public health, policy & implementation",
+      "disciplineFamiliarity": {
+        "Data Scientist / Statistician": 1,
+        "Epidemiologist": 2,
+        "Clinician": 2,
+        "Laboratory / Microbiology Scientist": 1,
+        "Molecular / Genomics Scientist": 1,
+        "Social / Implementation Scientist": 3
+      },
+      "semanticAmbiguity": false,
+      "externalReferences": []
+    },
+    {
+      "id": 234,
+      "slug": "chatham-house-rules",
+      "term": "Chatham House Rules",
+      "abbr": "",
+      "domain": "Research governance / policy",
+      "definition": "Discussion convention allowing use of information without identifying speakers.",
+      "definitionStatus": "Inferred from abstract context",
+      "varies": false,
+      "sources": "50",
+      "count": 1,
+      "pages": "50",
+      "occurrences": [
+        {
+          "abstractId": "50",
+          "section": "EXPANDING CAPACITY & NEW INITIATIVES",
+          "title": "CO-PRODUCING EVIDENCE FOR POLICY UPTAKE: LESSONS FROM EVIDENCE JURIES IN MALAWI'S HEALTH AND CLEAN ENERGY SECTORS",
+          "page": 50,
+          "interpretation": "Discussion convention allowing use of information without identifying speakers.",
+          "context": "nt ministries, academia, civil society, and the private sector. Using a structured deliberative process under Chatham House Rules, participants engaged with synthesized evidence, policy context presentations, and facilitated discussions. Jurors assessed evidence based on relevance, feasibility, equ"
+        }
+      ],
+      "domainLevel1": "Public health, policy & implementation",
+      "disciplineFamiliarity": {
+        "Data Scientist / Statistician": 1,
+        "Epidemiologist": 2,
+        "Clinician": 2,
+        "Laboratory / Microbiology Scientist": 1,
+        "Molecular / Genomics Scientist": 1,
+        "Social / Implementation Scientist": 3
+      },
+      "semanticAmbiguity": false,
+      "externalReferences": []
+    },
+    {
+      "id": 235,
+      "slug": "healthcare-waste-management",
+      "term": "healthcare waste management",
+      "abbr": "",
+      "domain": "Health systems / environment",
+      "definition": "Management of waste produced by healthcare services, including safe handling and disposal.",
+      "definitionStatus": "Inferred from abstract context",
+      "varies": false,
+      "sources": "50",
+      "count": 1,
+      "pages": "50",
+      "occurrences": [
+        {
+          "abstractId": "50",
+          "section": "EXPANDING CAPACITY & NEW INITIATIVES",
+          "title": "CO-PRODUCING EVIDENCE FOR POLICY UPTAKE: LESSONS FROM EVIDENCE JURIES IN MALAWI'S HEALTH AND CLEAN ENERGY SECTORS",
+          "page": 50,
+          "interpretation": "Management of waste produced by healthcare services, including safe handling and disposal.",
+          "context": "s addressing (1) gender barriers to women's participation in clean energy decision-making and (2) sustainable healthcare waste management in the context of climate change. Each jury included 6-7 participants from government ministries, academia, civil society, and the private sector. Using a structured del"
+        }
+      ],
+      "domainLevel1": "Public health, policy & implementation",
+      "disciplineFamiliarity": {
+        "Data Scientist / Statistician": 1,
+        "Epidemiologist": 2,
+        "Clinician": 2,
+        "Laboratory / Microbiology Scientist": 1,
+        "Molecular / Genomics Scientist": 1,
+        "Social / Implementation Scientist": 3
+      },
+      "semanticAmbiguity": false,
+      "externalReferences": []
+    },
+    {
+      "id": 236,
+      "slug": "clean-energy",
+      "term": "clean energy",
+      "abbr": "",
+      "domain": "Health systems / environment",
+      "definition": "Energy sources and technologies with lower pollution and environmental impact.",
+      "definitionStatus": "Inferred from abstract context",
+      "varies": false,
+      "sources": "50",
+      "count": 1,
+      "pages": "50",
+      "occurrences": [
+        {
+          "abstractId": "50",
+          "section": "EXPANDING CAPACITY & NEW INITIATIVES",
+          "title": "CO-PRODUCING EVIDENCE FOR POLICY UPTAKE: LESSONS FROM EVIDENCE JURIES IN MALAWI'S HEALTH AND CLEAN ENERGY SECTORS",
+          "page": 50,
+          "interpretation": "Energy sources and technologies with lower pollution and environmental impact.",
+          "context": "on for timely knowledge translation and practical implementation of evidence synthesis in Malawi's health and clean energy sectors. METHODS In 2025, the Malawi Liverpool Wellcome Trust Research Programme convened two evidence juries in Lilongwe, drawing on rapid reviews addressing (1) gender"
+        }
+      ],
+      "domainLevel1": "Public health, policy & implementation",
+      "disciplineFamiliarity": {
+        "Data Scientist / Statistician": 1,
+        "Epidemiologist": 2,
+        "Clinician": 2,
+        "Laboratory / Microbiology Scientist": 1,
+        "Molecular / Genomics Scientist": 1,
+        "Social / Implementation Scientist": 3
+      },
+      "semanticAmbiguity": false,
+      "externalReferences": []
     }
   ],
   "abstracts": [
@@ -12769,6 +13057,39 @@
           1
         ],
         "note": "Affiliation supplied by the user for all authors."
+      }
+    },
+    {
+      "Abstract ID": "50",
+      "Section": "EXPANDING CAPACITY & NEW INITIATIVES",
+      "Abstract title": "CO-PRODUCING EVIDENCE FOR POLICY UPTAKE: LESSONS FROM EVIDENCE JURIES IN MALAWI'S HEALTH AND CLEAN ENERGY SECTORS",
+      "PDF page": 50,
+      "introduction": "Despite the growth of evidence synthesis, translating findings into timely and actionable policy remains a persistent challenge, particularly in low- and middle-income countries (LMICs). Co-production approaches that actively engage policymakers and stakeholders throughout the evidence-to-decision process are increasingly recognized as critical to improving uptake. Evidence juries represent an emerging deliberative model that facilitates collective interpretation of evidence and supports context-responsive decision-making.",
+      "researchProblem": "Despite the growth of evidence synthesis, translating findings into timely and actionable policy remains a persistent challenge, particularly in low- and middle-income countries (LMICs). Co-production approaches that actively engage policymakers and stakeholders throughout the evidence-to-decision process are increasingly recognized as critical to improving uptake. Evidence juries represent an emerging deliberative model that facilitates collective interpretation of evidence and supports context-responsive decision-making.",
+      "plainConclusion": "Evidence juries demonstrate a promising model for bridging the last mile of evidence synthesis by incorporating co-production into knowledge translation processes. By aligning deliberative processes with policy needs, they enhance the relevance, legitimacy, and usability of evidence. Institutionalizing such approaches within policy cycles, alongside mechanisms to track uptake, could strengthen equitable and timely implementation of evidence-informed decisions in LMICs.",
+      "problemBasis": "Stated background and objectives",
+      "conclusionBasis": "Stated conclusion",
+      "actualAbstract": "KEYWORDS\nEvidence juries; Co-production; Evidence synthesis; Knowledge translation; Evidence-informed policymaking; Stakeholder engagement; Malawi\nBACKGROUND\nDespite the growth of evidence synthesis, translating findings into timely and actionable policy remains a persistent challenge, particularly in low- and middle-income countries (LMICs). Co-production approaches that actively engage policymakers and stakeholders throughout the evidence-to-decision process are increasingly recognized as critical to improving uptake. Evidence juries represent an emerging deliberative model that facilitates collective interpretation of evidence and supports context-responsive decision-making.\nOBJECTIVES\nTo examine how evidence juries can support co-production for timely knowledge translation and practical implementation of evidence synthesis in Malawi's health and clean energy sectors.\nMETHODS\nIn 2025, the Malawi Liverpool Wellcome Trust Research Programme convened two evidence juries in Lilongwe, drawing on rapid reviews addressing (1) gender barriers to women's participation in clean energy decision-making and (2) sustainable healthcare waste management in the context of climate change. Each jury included 6-7 participants from government ministries, academia, civil society, and the private sector. Using a structured deliberative process under Chatham House Rules, participants engaged with synthesized evidence, policy context presentations, and facilitated discussions. Jurors assessed evidence based on relevance, feasibility, equity, and contextual applicability, culminating in formal verdicts and implementation-oriented recommendations.\nRESULTS\nEvidence juries created a participatory space for co-producing meaning from evidence, enabling stakeholders to interrogate findings against lived realities and system constraints. In the clean energy jury, participants affirmed the relevance of evidence on gender inequities but highlighted the need for complementary primary data and stronger intersectoral coordination. In the healthcare waste jury, participants identified misalignment between synthesized evidence and national policy implementation realities, emphasizing infrastructure gaps, resource constraints, and fragmented governance. Across both cases, co-production strengthened ownership of evidence among policymakers and generated context-sensitive, actionable recommendations.\nCONCLUSIONS\nEvidence juries demonstrate a promising model for bridging the last mile of evidence synthesis by incorporating co-production into knowledge translation processes. By aligning deliberative processes with policy needs, they enhance the relevance, legitimacy, and usability of evidence. Institutionalizing such approaches within policy cycles, alongside mechanisms to track uptake, could strengthen equitable and timely implementation of evidence-informed decisions in LMICs.",
+      "communitySummary": "Two evidence juries in Malawi brought policymakers and other stakeholders together to interpret research evidence on clean energy and healthcare waste management and develop recommendations suited to local policy needs.",
+      "communitySummaryBasis": "Paraphrased from supplied abstract.",
+      "grandmotherSummary": "People working on public policy met to discuss research on clean energy and healthcare waste. Together they identified practical steps that better fit Malawi’s needs.",
+      "grandmotherSummaryBasis": "Plain-language paraphrase of supplied abstract.",
+      "policyImplication": "Structured evidence juries may help policymakers and researchers translate evidence into locally appropriate action; uptake should be monitored.",
+      "policyImplicationBasis": "Inferred from stated conclusions.",
+      "childSummary": "Groups of people discussed research and agreed on ideas to improve clean energy and healthcare waste policies in Malawi.",
+      "authors": "Sakala, M.; Mpando, T.L.; Lakudzala, S.; Mbekwani, O.; Sambakunsi, R.; Nkwanju, S.; Chinkombero, A.; Chawani, M.S.; Mijumbi, R.",
+      "presentingAuthor": "PRESENTING AUTHOR  Talitha Louisa Mpando",
+      "sourceAffiliations": {
+        "affiliations": [
+          {
+            "number": 1,
+            "text": "Malawi Liverpool Wellcome Research Programme, Policy Unit, Lilongwe, Malawi"
+          }
+        ],
+        "allAuthorsAffiliationNumbers": [
+          1
+        ],
+        "note": "Single unnumbered institutional affiliation appears beneath the full author list; treated as applying to listed authors."
       }
     }
   ]

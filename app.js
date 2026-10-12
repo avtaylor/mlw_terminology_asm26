@@ -521,7 +521,7 @@ document.addEventListener("click",e=>{if(e.target.closest(".network-article-back
 init().catch(e=>{document.body.innerHTML="<p style='padding:20px'>Could not load the terminology data. If opening locally, serve this folder with a small HTTP server (see README).</p>"});
 
 // Research Streams navigation: handbook sections and interpretative groups remain distinct.
-const STREAM_GROUP_IDS=[[3,17,22,24,26,27,44,45,46],[1,2,3,4,5,6,7,8,21,23,25],[9,12,14,15,16,18,19,20,21,30],[32,33,34,35,36,37,38,39],[11,29,30,31,32]];
+const STREAM_GROUP_IDS=[[3,17,22,24,26,27,44,45,46],[1,2,3,4,5,6,7,8,21,23,25],[9,12,14,15,16,18,19,20,21,30],[32,33,34,35,36,37,38,39,50],[11,29,30,31,32,50]];
 function openStreamSection(section){
   streamAbstractSelection=null;
   abstractDomainLevel=2;

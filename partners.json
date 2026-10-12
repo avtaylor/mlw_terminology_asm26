@@ -49,7 +49,8 @@
         "46",
         "47",
         "48",
-        "49"
+        "49",
+        "50"
       ],
       "groups": [
         {
@@ -217,6 +218,15 @@
             "Malawi-Liverpool-Wellcome Research Programme, Blantyre, Malawi",
             "Malawi-Liverpool-Wellcome Trust Clinical Research Programme, Blantyre, Malawi",
             "The Malawi-Liverpool-Wellcome Research Programme, Blantyre, Malawi"
+          ]
+        },
+        {
+          "name": "Policy Unit",
+          "abstractIds": [
+            "50"
+          ],
+          "originalAffiliations": [
+            "Malawi Liverpool Wellcome Research Programme, Policy Unit, Lilongwe, Malawi"
           ]
         }
       ]
