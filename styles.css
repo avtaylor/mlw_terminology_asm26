@@ -242,3 +242,5 @@ a{color:inherit}.top{background:#123a49;color:#fff;padding:28px 24px}.top-inner{
 .analysis-link{border:1px solid #9cb5c5;border-radius:7px;background:#eff5f8;color:#183c53;font-weight:700;font-size:.82rem;letter-spacing:.02em;padding:10px 13px;cursor:pointer}
 .analysis-link:hover,.analysis-link:focus-visible{background:#d8e9f2;outline:2px solid transparent;box-shadow:0 0 0 2px #547c96}
 @media(max-width:600px){.analysis-choices{grid-template-columns:1fr}.analysis-choice{padding:16px}}
+
+.liverpool-focus{border:2px solid #64859d;border-left:7px solid #326a89;border-radius:12px;background:#f2f7fb;padding:20px;margin:24px 0 30px}.liverpool-focus h3{margin-top:0}.liverpool-panels{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:16px 0}.liverpool-panels>div{min-width:0;overflow-x:auto;background:white;border:1px solid #d3dfe9;border-radius:9px;padding:12px}.liverpool-focus .partner-institution{background:white}.liverpool-all{background:white;border:1px solid #d3dfe9;padding:13px;border-radius:9px;margin-top:16px}.liverpool-all>summary{cursor:pointer}@media(max-width:800px){.liverpool-panels{grid-template-columns:1fr}}

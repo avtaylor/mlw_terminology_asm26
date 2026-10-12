@@ -591,6 +591,7 @@ async function initPartners(){
   }));
   renderPartnerSummary();
   renderPartners();
+  renderLiverpoolFocus();
 }
 function renderPartners(){
   if(!PARTNERS||!DATA)return;
@@ -786,4 +787,36 @@ function openPrimaryPartnerDialog(id){
     <p class="stream-muted">This proxy uses the first listed affiliation, not verified primary affiliations for every author. It is not evidence of formal partnership or relative contribution.</p>
     <button type="button" class="stream-abstract-link" data-partner-open-abstract="${esc(aid)}">View abstract A${esc(aid)}</button>`;
   dialog.showModal();
+}
+
+function renderLiverpoolFocus(){
+  if(!PARTNERS||!DATA)return;
+  const target=document.querySelector("#liverpoolStats");if(!target)return;
+  const liverpool=PARTNERS.institutions.find(i=>i.name==="University of Liverpool");if(!liverpool)return;
+  const mlw=PARTNERS.institutions.find(i=>i.name==="Malawi Liverpool Wellcome Research Programme");
+  const byId=new Map(DATA.abstracts.map(a=>[String(a["Abstract ID"]).padStart(2,"0"),a]));
+  const ids=[...new Set(liverpool.abstractIds)].filter(id=>byId.has(id)).sort();
+  const shared=ids.filter(id=>mlw?.abstractIds.includes(id));
+  const ref=id=>`<button type="button" class="stream-abstract-link" data-stream-abstract="${esc(id)}">A${esc(id)}</button>`;
+  const stat=(label,value)=>`<div class="partner-stat"><strong>${esc(String(value))}</strong><span>${esc(label)}</span></div>`;
+  target.innerHTML=stat("Liverpool-linked abstracts",ids.length)+stat("Share of all abstracts",(100*ids.length/DATA.abstracts.length).toFixed(1)+"%")+stat("Also listing MLW",shared.length)+stat("Distinct other institutions",PARTNERS.institutions.filter(i=>i.name!==liverpool.name&&i.name!==mlw?.name&&i.abstractIds.some(id=>ids.includes(id))).length);
+  const sections=new Map();ids.forEach(id=>{const key=byId.get(id)["Section"]||"Unspecified";if(!sections.has(key))sections.set(key,[]);sections.get(key).push(id)});
+  const rows=(entries)=>`<table class="partner-contribution-table"><thead><tr><th>Category</th><th>Abstracts</th><th>References</th></tr></thead><tbody>${entries.map(([name,arr])=>`<tr><td>${esc(name)}</td><td>${arr.length}</td><td>${arr.map(ref).join(" ")}</td></tr>`).join("")}</tbody></table>`;
+  document.querySelector("#liverpoolSections").innerHTML=rows([...sections].sort((a,b)=>b[1].length-a[1].length));
+  const others=PARTNERS.institutions.filter(i=>i.name!==liverpool.name&&i.name!==mlw?.name).map(i=>[i.name,i.abstractIds.filter(id=>ids.includes(id))]).filter(x=>x[1].length).sort((a,b)=>b[1].length-a[1].length||a[0].localeCompare(b[0]));
+  document.querySelector("#liverpoolCoauthors").innerHTML=rows(others);
+  const normalise=n=>{
+    const x=n.toLowerCase();
+    if(x.includes("clinical infection")||x.includes("microbiology and immunology"))return "Department of Clinical Infection, Microbiology and Immunology";
+    if(x.includes("women")&&x.includes("health"))return "Women's and Children's Health units";
+    if(x.includes("infection")&&(x.includes("ecological")||x.includes("veterinary")))return "Institute of Infection, Veterinary and Ecological Sciences";
+    if(x.includes("global vaccine"))return "Centre for Global Vaccine Research";
+    if(x.includes("livestock")||x.includes("cimi"))return "Livestock and One Health / CIMI";
+    if(x.includes("pharmacology"))return "Department of Pharmacology and Therapeutics";
+    return "University-wide or unspecified unit";
+  };
+  const groups=new Map();liverpool.groups.forEach(g=>{const name=normalise(g.name);if(!groups.has(name))groups.set(name,{ids:new Set(),original:new Set()});const b=groups.get(name);g.abstractIds.forEach(id=>b.ids.add(id));(g.originalAffiliations||[g.name]).forEach(t=>b.original.add(t));});
+  document.querySelector("#liverpoolGroups").innerHTML=[...groups].sort((a,b)=>b[1].ids.size-a[1].ids.size).map(([name,g])=>`<details class="partner-institution"><summary><strong>${esc(name)}</strong><span>${g.ids.size} abstracts</span></summary><div class="partner-detail"><p>${[...g.ids].sort().map(ref).join(" ")}</p><strong>Affiliation wording in handbook:</strong><ul>${[...g.original].map(t=>`<li>${esc(t)}</li>`).join("")}</ul></div></details>`).join("");
+  document.querySelector("#liverpoolAbstracts").innerHTML=ids.map(id=>{const a=byId.get(id);return `<details class="partner-author-abstract"><summary>${ref(id)} ${esc(a["Abstract title"]||"")}</summary><p><strong>Authors listed:</strong> ${esc(a.authors||a.presentingAuthor||"Not available")}</p><p><strong>Section:</strong> ${esc(a["Section"]||"Not specified")}</p></details>`}).join("");
+  document.querySelector(".liverpool-focus").addEventListener("click",event=>{const b=event.target.closest("button[data-stream-abstract]");if(b){event.preventDefault();openStreamAbstract(b.dataset.streamAbstract)}});
 }
