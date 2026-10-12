@@ -194,5 +194,73 @@
       "Malawi Liverpool Wellcome Research Programme",
       "Malawi University of Business and Applied Sciences"
     ]
+  },
+  "firstAuthorMLW": {
+    "confirmedAbstractIds": [
+      "01",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "10",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "40",
+      "41",
+      "46",
+      "48",
+      "49"
+    ],
+    "notMLWAbstractIds": [
+      "09",
+      "19",
+      "20",
+      "31",
+      "32",
+      "39",
+      "44",
+      "47"
+    ],
+    "unresolvedAbstractIds": [
+      "02",
+      "11",
+      "12",
+      "21",
+      "22",
+      "42",
+      "43",
+      "45"
+    ],
+    "basis": "First-author numbered affiliation markers matched to handbook entries where present; A14, A36 and A49 incorporate user-supplied author affiliation corrections. Cases without first-author markers remain unverified even when institutional affiliation lists are complete.",
+    "unresolvedReasons": {
+      "02": "First author Kang’oma M. has no affiliation marker; co-authors have numbered markers.",
+      "11": "Authors listed without individual affiliation markers.",
+      "12": "Full author list / first-author affiliation mapping not recovered.",
+      "21": "First author Banda J.P. has no numbered affiliation marker.",
+      "22": "Authors listed without individual affiliation markers.",
+      "42": "First author Matandika M.L. has no numbered affiliation marker.",
+      "43": "First author Sibale K.S. has no numbered affiliation marker.",
+      "45": "First author O’Connor L. has no numbered affiliation marker."
+    }
   }
 }

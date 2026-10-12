@@ -128,11 +128,13 @@ async function init(){
   $("#domainL2").addEventListener("click",()=>{domainLevel=2; setLevelButtons("domain",2); renderDomains()});
   $("#networkL1").addEventListener("click",()=>{networkLevel=1; setLevelButtons("network",1); renderNetwork()});
   $("#networkL2").addEventListener("click",()=>{networkLevel=2; setLevelButtons("network",2); renderNetwork()});
-  $$("[data-start-view]").forEach(b=>b.addEventListener("click",()=>chooseAnalysis(b.dataset.startView)));
+  $$("[data-start-view]").forEach(b=>b.addEventListener("click",()=>chooseAnalysis(b.dataset.startView,b.dataset.analysisGroup)));
   $("#changeAnalysis").addEventListener("click",showAnalysisChooser);
   initDashboard(); renderDictionary(); renderDomains(); renderAbstracts(); initPartners();
 }
-function chooseAnalysis(view){
+let selectedAnalysisGroup=null;
+function chooseAnalysis(view, group){
+  selectedAnalysisGroup=String(group||"1");
   $("#start").hidden=true;
   $("#workspace").hidden=false;
   switchView(view);
@@ -145,14 +147,19 @@ function showAnalysisChooser(){
   window.scrollTo({top:0,behavior:"auto"});
 }
 function switchView(v){
-  // Context-sensitive navigation: research streams and abstracts have focused menus.
-  const visibleViews = v === "streams"
-    ? new Set(["streams", "opportunities", "partners", "abstracts"])
-    : v === "opportunities"
-      ? new Set(["streams", "opportunities", "partners", "abstracts"])
-    : v === "abstracts"
-      ? new Set(["network", "streams", "opportunities", "partners", "abstracts"])
-      : new Set(["domains", "dictionary", "dashboard", "network", "opportunities", "partners", "abstracts"]);
+  // The dashboard section selected by the user determines the available views.
+  // Keep that section's navigation stable when switching between its tabs.
+  const groups={
+    "1":["abstracts"],
+    "2":["abstracts","streams"],
+    "3":["partners","abstracts"],
+    "4":["opportunities","abstracts"],
+    "5":["domains","dictionary","dashboard","network"]
+  };
+  const visibleViews=new Set(groups[selectedAnalysisGroup]||["abstracts"]);
+  // Direct links from other views (e.g. network nodes) can open an abstract
+  // without discarding the chosen dashboard section.
+  visibleViews.add(v);
   $$(".tab").forEach(x=>{x.hidden=!visibleViews.has(x.dataset.view)});
   $$(".tab").forEach(x=>x.classList.toggle("active",x.dataset.view===v));
   $$(".view").forEach(x=>x.hidden=x.id!==v);
@@ -662,11 +669,18 @@ function renderPartnerSummary(){
   const min=Math.min(...counts),max=Math.max(...counts);
   const stat=(label,value)=>`<div class="partner-stat"><strong>${esc(String(value))}</strong><span>${esc(label)}</span></div>`;
   const refs=(arr)=>arr.map(x=>`<button class="stream-abstract-link" type="button" data-stream-abstract="${esc(x.id)}">A${esc(x.id)}</button>`).join(" ");
+  // First-listed affiliation (affiliation 1) is not the same as the first author's verified affiliation.
+  const firstAffiliationMLWIds=summary.filter(x=>{
+    const listed=PARTNER_SUMMARY.firstListedInstitutions?.[x.id] || PARTNER_SUMMARY.firstListedInstitution?.[x.id];
+    const names=Array.isArray(listed)?listed:[listed].filter(Boolean);
+    return names.includes("Malawi Liverpool Wellcome Research Programme");
+  }).map(x=>x.id);
   document.querySelector("#partnerSummaryCards").innerHTML=
-    stat("Abstracts",summary.length)+stat("Minimum external institutions / abstract",min)+stat("Maximum external institutions / abstract",max)
+    stat("Abstracts",summary.length)+stat("MLW in first-listed affiliation",firstAffiliationMLWIds.length)+stat("Minimum external institutions / abstract",min)+stat("Maximum external institutions / abstract",max)
     +stat("Abstracts with UK institutions",summary.filter(x=>x.tally.UK).length)
     +stat("Abstracts with other Malawi institutions",summary.filter(x=>x.tally.Malawi).length)
     +stat("Abstracts with other international institutions",summary.filter(x=>x.tally["Other international"]).length)
+    +`<p class="partner-stat-note"><strong>MLW in first-listed affiliation:</strong> ${firstAffiliationMLWIds.length} of ${summary.length} abstracts. This uses the first numbered affiliation entry (including multiple institutions in that entry), matching the primary-affiliation-only sensitivity analysis. It does <strong>not</strong> mean that the first author is confirmed to be affiliated with MLW. <details><summary>Show matching abstracts</summary>${refs(summary.filter(x=>firstAffiliationMLWIds.includes(x.id)))}</details></p>`
     +`<p class="partner-stat-note">Minimum: ${refs(summary.filter(x=>x.total===min))} · Maximum: ${refs(summary.filter(x=>x.total===max))}</p>`;
   // Strict direct computational simulation: A11 and A14.
   // A16 and A30 use existing simulation outputs but are not marked as direct simulation.
@@ -703,10 +717,12 @@ function renderPartnerSummary(){
     stat("First affiliations resolved",`${resolved.length} / ${ids.length}`)+stat("With external institution in first affiliation",resolved.filter(x=>x.external).length)
     +stat("With MLW in first affiliation",resolved.filter(x=>x.hasMLW).length)
     +stat("Unresolved first affiliations",ids.length-resolved.length)+`<p class="partner-stat-note">A first-listed affiliation may name more than one institution (A14 includes MLW and MUBAS). The MLW and external counts can therefore overlap.</p>`;
-  document.querySelector("#partnerPrimaryRows").innerHTML=primary.map(x=>`<tr><td><button class="stream-abstract-link" type="button" data-stream-abstract="${esc(x.id)}">A${esc(x.id)}</button></td><td>${esc(x.aff||"Not reliably extracted")}</td><td>${esc(x.name||"Unresolved")}</td><td>${esc(x.place)}</td><td>${x.name?x.external:"—"}</td></tr>`).join("");
+  document.querySelector("#partnerPrimaryRows").innerHTML=primary.map(x=>`<tr><td><button class="stream-abstract-link" type="button" data-stream-abstract="${esc(x.id)}">A${esc(x.id)}</button></td><td>${esc(x.aff||"Not reliably extracted")}</td><td>${esc(x.name||"Unresolved")}</td><td>${esc(x.place)}</td><td>${x.name?`<button type="button" class="partner-count-link" data-primary-count="${esc(x.id)}" aria-label="Show first-affiliation institutions for abstract A${esc(x.id)}">${x.external}</button>`:"—"}</td></tr>`).join("");
   document.querySelector(".partner-summary").addEventListener("click",e=>{
     const b=e.target.closest("button[data-stream-abstract]");
     if(b){e.preventDefault();openStreamAbstract(b.dataset.streamAbstract);return;}
+    const primaryButton=e.target.closest("button[data-primary-count]");
+    if(primaryButton){e.preventDefault();openPrimaryPartnerDialog(primaryButton.dataset.primaryCount);return;}
     const countButton=e.target.closest("button[data-partner-count]");
     if(countButton){e.preventDefault();openPartnerCountDialog(countButton.dataset.partnerAbstract,countButton.dataset.partnerCount);}
   });
@@ -750,3 +766,24 @@ function openPartnerCountDialog(id,category){
     if(button){dialog.close();openStreamAbstract(button.dataset.partnerOpenAbstract);}
   });
 })();
+
+function openPrimaryPartnerDialog(id){
+  const dialog=document.querySelector("#partnerCountDialog");
+  const content=document.querySelector("#partnerCountContent");
+  if(!dialog||!content||!PARTNER_SUMMARY)return;
+  const aid=String(id).padStart(2,"0");
+  const names=PARTNER_SUMMARY.firstListedInstitutions?.[aid] || (PARTNER_SUMMARY.firstListedInstitution?.[aid]?[PARTNER_SUMMARY.firstListedInstitution[aid]]:[]);
+  const unique=[...new Set(names)];
+  const aff=PARTNER_SUMMARY.firstListedAffiliation?.[aid]||"Not reliably extracted";
+  const regions=PARTNER_SUMMARY.institutionRegion||{};
+  const external=unique.filter(n=>n!=="Malawi Liverpool Wellcome Research Programme");
+  const abstract=DATA?.abstracts?.find(a=>String(a["Abstract ID"]).padStart(2,"0")===aid);
+  content.innerHTML=`<h3>A${esc(aid)} — First-listed affiliation</h3>
+    <p class="partner-popup-abstract-title">${esc(abstract?.["Abstract title"]||"")}</p>
+    <p><strong>Original first-listed affiliation:</strong> ${esc(aff)}</p>
+    <p><strong>${external.length} external institution${external.length===1?"":"s"}</strong> under the first-affiliation proxy.</p>
+    ${unique.length?`<div class="partner-table-scroll"><table class="partner-contribution-table"><thead><tr><th>Resolved institution</th><th>Location</th><th>Counted as external?</th></tr></thead><tbody>${unique.map(n=>`<tr><td>${esc(n)}</td><td>${esc(regions[n]||"Location to verify")}</td><td>${n==="Malawi Liverpool Wellcome Research Programme"?"No — MLW":"Yes"}</td></tr>`).join("")}</tbody></table></div>`:"<p>First-listed institutions could not be resolved; no zero count is inferred.</p>"}
+    <p class="stream-muted">This proxy uses the first listed affiliation, not verified primary affiliations for every author. It is not evidence of formal partnership or relative contribution.</p>
+    <button type="button" class="stream-abstract-link" data-partner-open-abstract="${esc(aid)}">View abstract A${esc(aid)}</button>`;
+  dialog.showModal();
+}

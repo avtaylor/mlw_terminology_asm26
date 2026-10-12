@@ -232,3 +232,13 @@ a{color:inherit}.top{background:#123a49;color:#fff;padding:28px 24px}.top-inner{
 .stream-dialog-credit{padding:12px 15px;margin:14px 0;border:1px solid #d4dce5;border-radius:9px;background:#f6f9fc}.stream-dialog-credit h4{margin:8px 0}.stream-dialog-affiliations{padding-left:24px;margin:8px 0;line-height:1.55}.stream-dialog-affiliations li{margin:4px 0}.stream-dialog-authors{line-height:1.6}
 
 .partner-count-link{font:inherit;font-weight:700;color:#175f83;border:1px solid #a8c8db;background:#eef7fc;border-radius:6px;min-width:32px;padding:4px 7px;cursor:pointer;text-decoration:underline;text-underline-offset:2px}.partner-count-link:hover,.partner-count-link:focus-visible{background:#cfe8f5;outline:2px solid #4385a8;outline-offset:1px}.partner-count-dialog{max-width:min(900px,94vw)}.partner-popup-abstract-title{font-weight:600;line-height:1.5}
+
+/* Main dashboard: five clearly separated research areas and scoped navigation. */
+.analysis-choices{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,370px),1fr));gap:18px;margin:24px 0 32px}
+.analysis-choice{background:#fff;border:1px solid #d4dde7;border-left:5px solid #47788d;border-radius:12px;padding:20px 22px;box-shadow:0 3px 10px rgba(28,51,71,.055);display:flex;flex-direction:column;gap:12px}
+.analysis-choice:nth-child(2){border-left-color:#627fa6}.analysis-choice:nth-child(3){border-left-color:#8b70ae}.analysis-choice:nth-child(4){border-left-color:#418e7a}.analysis-choice:nth-child(5){border-left-color:#bc8554}
+.analysis-choice-heading{display:flex;align-items:center;gap:12px}.analysis-choice-heading h3{font-size:1.08rem;line-height:1.4;margin:0}.analysis-choice-number{font-weight:700;color:#526579;font-size:.86rem}
+.analysis-choice p{line-height:1.6;margin:0;flex:1;color:#354454}.analysis-choice-links{display:flex;flex-wrap:wrap;gap:9px;margin-top:6px}
+.analysis-link{border:1px solid #9cb5c5;border-radius:7px;background:#eff5f8;color:#183c53;font-weight:700;font-size:.82rem;letter-spacing:.02em;padding:10px 13px;cursor:pointer}
+.analysis-link:hover,.analysis-link:focus-visible{background:#d8e9f2;outline:2px solid transparent;box-shadow:0 0 0 2px #547c96}
+@media(max-width:600px){.analysis-choices{grid-template-columns:1fr}.analysis-choice{padding:16px}}
