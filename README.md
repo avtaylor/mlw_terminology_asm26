@@ -27,3 +27,5 @@ For local testing, use `vercel dev` rather than a simple static server such as `
 
 ## Expertise & Datasets page
 Added an ASM-grounded planning page with eight expertise areas and eight dataset opportunities, clickable abstract previews, initial discussion contacts, and confirmation requirements. Accessible from the starting chooser and the relevant navigation menus.
+
+Version 17: Replaced generic negative disease-modelling explanations with more specific distinctions between descriptive profiling, statistical analysis, and disease modelling, based on abstract-level evidence.

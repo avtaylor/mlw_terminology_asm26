@@ -10778,6 +10778,19 @@
             "text": "University of Edinburgh, United Kingdom"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "Applied",
+        "modelType": "Statistical",
+        "representation": "Data",
+        "purpose": "Prediction",
+        "specificModel": "Elastic-net logistic regression; random forest; support vector machines",
+        "objectiveExtract": "In this study, we used verified serology training datasets to objectively assess post-campaign Typhoid Conjugate Vaccine (TCV) coverage in children from Blantyre, Malawi.",
+        "objectiveBasis": "Abstract introduction/background (extracted or inferred)",
+        "confidence": "High",
+        "evidence": "Elastic-net logistic regression; random forest; support vector machines; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Statistical analysis of observed associations; no explicit disease prediction, progression or transmission model is described."
       }
     },
     {
@@ -10831,6 +10844,19 @@
             "text": "Centre for Global Vaccine Research, Institute of Infection and Global Health, University of Liverpool, Liverpool, United Kingdom"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "Unclear",
+        "modelType": "Statistical",
+        "representation": "Data",
+        "purpose": "Explanation",
+        "specificModel": "Vaccine impact analysis; model specification not explicit",
+        "objectiveExtract": "We leveraged an existing cluster-randomised evaluation of RTS,S/AS01 in Malawi to investigate the vaccine effects on carriage of antimicrobial resistant Streptococcus pneumoniae, a key bystander pathogen, for evidence of beneficial vaccine effects on AMR.",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Vaccine impact analysis; model specification not explicit; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Statistical analysis of observed associations; no explicit disease prediction, progression or transmission model is described."
       }
     },
     {
@@ -10884,6 +10910,19 @@
             "text": "Centre for Genomic Pathogen Surveillance, Pandemic Sciences Institute, University of Oxford, Oxford, UK"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "No",
+        "modelType": "None",
+        "representation": "Neither",
+        "purpose": "Understanding/theory",
+        "specificModel": "Genomic comparison and phylogenetic analysis; no newly developed model stated",
+        "objectiveExtract": "Investigate: GENOMIC SURVEILLANCE OF SALMONELLA TYPHI BEFORE AND AFTER TYPHOID CONJUGATE VACCINE ROLLOUT IN MALAWI",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Genomic comparison and phylogenetic analysis; no newly developed model stated; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation."
       }
     },
     {
@@ -10941,6 +10980,19 @@
             "text": "University of Essex, UK"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "Applied",
+        "modelType": "Statistical",
+        "representation": "Data",
+        "purpose": "Explanation",
+        "specificModel": "Systems serology multivariate analysis",
+        "objectiveExtract": "AIM To characterize humoral immune responses against iNTS disease and determine how age and malaria infection influence their breadth and functionality.",
+        "objectiveBasis": "Abstract introduction/background (extracted or inferred)",
+        "confidence": "High",
+        "evidence": "Systems serology multivariate analysis; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract."
       }
     },
     {
@@ -11002,6 +11054,19 @@
             "text": "Institute of Infection, Immunity and Transplantation, University College London, London, United Kingdom"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "No",
+        "modelType": "None",
+        "representation": "Neither",
+        "purpose": "Explanation",
+        "specificModel": "Virological and serological descriptive study",
+        "objectiveExtract": "Investigate: RESPIRATORY SYNCYTIAL VIRUS INFECTION AND AGE-SPECIFIC SEROLOGY IN YOUNG CHILDREN IN BLANTYRE, MALAWI",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Virological and serological descriptive study; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model."
       }
     },
     {
@@ -11051,6 +11116,19 @@
             "text": "Institute of Infection, Veterinary & Ecological Sciences, University of Liverpool, Liverpool, United Kingdom"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "Unclear",
+        "modelType": "Statistical",
+        "representation": "Data",
+        "purpose": "Explanation",
+        "specificModel": "Vaccine impact analysis; verify full methods",
+        "objectiveExtract": "Investigate: THE IMPACT OF MALARIA RTS,S/AS01 VACCINE AND PCV-13 ON EXTENDED-SPECTRUM BETA-LACTAMASE (ESBL)- PRODUCING ESCHERICHIA COLI CARRIAGE AND ANTIMICROBIAL RESISTANCE IN MALAWIAN CHILDREN",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Vaccine impact analysis; verify full methods; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Statistical analysis of observed associations; no explicit disease prediction, progression or transmission model is described."
       }
     },
     {
@@ -11108,6 +11186,19 @@
             "text": "Centre for Inflammation Research, University of Edinburgh, Edinburgh, Scotland"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "No",
+        "modelType": "None",
+        "representation": "Neither",
+        "purpose": "Explanation",
+        "specificModel": "Diagnostic assay evaluation",
+        "objectiveExtract": "Investigate: EVALUATING A SEROTYPE-SPECIFIC URINE ANTIGEN DETECTION ASSAY IN HOSPITALISED MALAWIAN CHILDREN WITH ACUTE RESPIRATORY INFECTION AND HIGH ANTIBIOTIC EXPOSURE",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Diagnostic assay evaluation; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation."
       }
     },
     {
@@ -11157,6 +11248,19 @@
             "text": "Centre for Global Health, Usher Institute, University of Edinburgh, UK"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "No",
+        "modelType": "None",
+        "representation": "Neither",
+        "purpose": "Explanation",
+        "specificModel": "Vaccine trial safety and immunogenicity analysis",
+        "objectiveExtract": "Typhimurium account for >90% of iNTS cases. A novel trivalent iNTS-TCV vaccine is under development by the GSK Vaccines Institute for Global Health (GVGH).",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Vaccine trial safety and immunogenicity analysis; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation."
       }
     },
     {
@@ -11202,6 +11306,19 @@
             "text": "Vestergaard S.A., Lausanne, Switzerland"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "Applied",
+        "modelType": "Statistical",
+        "representation": "Data",
+        "purpose": "Explanation",
+        "specificModel": "Spatial generalised additive models",
+        "objectiveExtract": "Investigate: DRIVERS OF FINE-SCALE SPATIAL AND TEMPORAL VARIATION IN MALARIA AND SCHISTOSOMIASIS IN CHIKWAWA, MALAWI: A GENERALIZED ADDITIVE MODELLING STUDY",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Spatial generalised additive models; verify full paper for complete methods",
+        "diseaseModelling": "Yes",
+        "diseaseModellingBasis": "Spatial models of malaria and schistosomiasis risk"
       }
     },
     {
@@ -11235,6 +11352,19 @@
             "text": "Department of Clinical Sciences, Liverpool School of Tropical Medicine, Liverpool, United Kingdom"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "Applied",
+        "modelType": "Statistical",
+        "representation": "Data",
+        "purpose": "Explanation",
+        "specificModel": "Single-cell computational analysis and gene-set enrichment",
+        "objectiveExtract": "OBJECTIVES This study aimed to identify novel host-directed therapies for TB using single-cell RNA sequencing (scRNA-seq) and in-vitro gene perturbation experiments.",
+        "objectiveBasis": "Abstract introduction/background (extracted or inferred)",
+        "confidence": "High",
+        "evidence": "Single-cell computational analysis and gene-set enrichment; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract."
       }
     },
     {
@@ -11288,6 +11418,19 @@
             "text": "The School of Medicine, University of St Andrews, St Andrews, UK"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "New",
+        "modelType": "Simulation + Statistical",
+        "representation": "Both",
+        "purpose": "Explanation",
+        "specificModel": "Physics-based environmental simulation; U-Net segmentation",
+        "objectiveExtract": "We aimed to develop methods for mapping waste accumulation, quantify spatio-temporal patterns over a year and develop methods to examine associations with human exposure.",
+        "objectiveBasis": "Abstract introduction/background (extracted or inferred)",
+        "confidence": "High",
+        "evidence": "Physics-based environmental simulation; U-Net segmentation; verify full paper for complete methods",
+        "diseaseModelling": "Yes",
+        "diseaseModellingBasis": "Environmental exposure and transmission scenarios relevant to infectious disease"
       }
     },
     {
@@ -11345,6 +11488,19 @@
             "text": "Mahidol Oxford Tropical Medicine Research Unit, Faculty of Tropical Medicine, Mahidol University, Bangkok, Thailand"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "No",
+        "modelType": "None",
+        "representation": "Neither",
+        "purpose": "Explanation",
+        "specificModel": "Randomised trial; no explicit model in abstract",
+        "objectiveExtract": "Aligning PMC dosing with routine infant health-facility visits may improve feasibility and adherence. We evaluated visit-aligned DP for PMC in Malawian infants during the rollout of RTS,S/AS01 malaria vaccination.",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Randomised trial; no explicit model in abstract; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation."
       }
     },
     {
@@ -11386,6 +11542,19 @@
             "text": "Michigan State University, Michigan, United States of America"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "No",
+        "modelType": "None",
+        "representation": "Neither",
+        "purpose": "Explanation",
+        "specificModel": "Diagnostic test performance",
+        "objectiveExtract": "Investigate: PERFORMANCE OF INTERFERON-GAMMA RELEASE ASSAY AMONG UNDER-FIVE CHILDREN WITH PRESUMED TUBERCULOSIS IN MALAWI",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Diagnostic test performance; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation."
       }
     },
     {
@@ -11434,6 +11603,19 @@
           }
         ],
         "note": "Affiliations supplied by the user; no affiliation assignment supplied for the third author."
+      },
+      "modelClassification": {
+        "development": "Extended",
+        "modelType": "Mathematical + Simulation + Statistical",
+        "representation": "Phenomena",
+        "purpose": "Prediction",
+        "specificModel": "Human–mosquito compartmental transmission model with chemoprevention",
+        "objectiveExtract": "We developed a locally calibrated transmission model to identify the most effective SMC drug and coverage strategy.",
+        "objectiveBasis": "Abstract introduction/background (extracted or inferred)",
+        "confidence": "High",
+        "evidence": "Human–mosquito compartmental transmission model with chemoprevention; verify full paper for complete methods",
+        "diseaseModelling": "Yes",
+        "diseaseModellingBasis": "Mechanistic malaria transmission and chemoprevention"
       }
     },
     {
@@ -11467,6 +11649,19 @@
           1
         ],
         "note": "Affiliation supplied by the user for all authors."
+      },
+      "modelClassification": {
+        "development": "Applied",
+        "modelType": "Statistical",
+        "representation": "Data",
+        "purpose": "Explanation",
+        "specificModel": "Social network analysis",
+        "objectiveExtract": "Investigate: FROM EVIDENCE TO ACTION: HOW A MULTI-COUNTRY CONSORTIUM LEARNED TO TRANSLATE RESEARCH INTO POLICY AGAINST ANTIMALARIAL DRUG RESISTANCE",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Social network analysis; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract."
       }
     },
     {
@@ -11508,6 +11703,19 @@
             "text": "The School of Global and Public Health, Kamuzu University of Health Sciences, Private Bag 360, Blantyre, Malawi"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "Applied",
+        "modelType": "Mathematical + Simulation",
+        "representation": "Phenomena",
+        "purpose": "Prediction",
+        "specificModel": "SEIR model outputs for cost-effectiveness analysis",
+        "objectiveExtract": "Investigate: COST-EFFECTIVENESS ANALYSIS OF MALARIA CHEMOPREVENTION STRATEGIES IN MALAWI",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "SEIR model outputs for cost-effectiveness analysis; verify full paper for complete methods",
+        "diseaseModelling": "Yes",
+        "diseaseModellingBasis": "Malaria transmission model used in economic evaluation"
       }
     },
     {
@@ -11573,6 +11781,19 @@
             "text": "University College London, London, UK"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "Applied",
+        "modelType": "Statistical",
+        "representation": "Data",
+        "purpose": "Explanation",
+        "specificModel": "Annual risk of TB infection estimation",
+        "objectiveExtract": "Investigate: REDUCTIONS IN MYCOBACTERIUM TUBERCULOSIS INFECTION IN URBAN BLANTYRE, MALAWI: PRELIMINARY RESULTS FROM THE ZAMSA-TB STUDY",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Annual risk of TB infection estimation; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract."
       }
     },
     {
@@ -11614,6 +11835,19 @@
             "text": "University of North Carolina, Lilongwe, Malawi"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "Applied",
+        "modelType": "Statistical",
+        "representation": "Data",
+        "purpose": "Explanation",
+        "specificModel": "Random-effects meta-analysis",
+        "objectiveExtract": "Investigate: SPATIOTEMPORAL DYNAMICS OF MARKERS OF CHLOROQUINE RESISTANCE AND SENSITIVITY IN PLASMODIUM FALCIPARUM FOLLOWING DRUG WITHDRAWAL IN SUB-SAHARAN AFRICA",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Random-effects meta-analysis; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Statistical analysis of observed associations; no explicit disease prediction, progression or transmission model is described."
       }
     },
     {
@@ -11663,6 +11897,19 @@
             "text": "Department of Clinical Sciences, Liverpool School of Tropical Medicine, Pembroke Place, Liverpool, UK"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "No",
+        "modelType": "None",
+        "representation": "Neither",
+        "purpose": "Explanation",
+        "specificModel": "Randomised intervention comparison",
+        "objectiveExtract": "Investigate: MALARIA CHEMOPREVENTION IN SCHOOL-AGE CHILDREN: A RANDOMIZED CONTROLLED TRIAL COMPARING DIHYDROARTEMISININ-PIPERAQUINE AND SULFADOXINE-PYRIMETHAMINE PLUS AMODIAQUINE TO CONTROL IN MALAWI",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Randomised intervention comparison; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model."
       }
     },
     {
@@ -11704,6 +11951,19 @@
             "text": "College of Osteopathic Medicine, Michigan State University, East Lansing, Michigan, USA"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "No",
+        "modelType": "None",
+        "representation": "Neither",
+        "purpose": "Explanation",
+        "specificModel": "Cross-sectional laboratory comparisons",
+        "objectiveExtract": "OBJECTIVES The study aimed to investigate the prevalence of asymptomatic, uncomplicated, and cerebral malaria among these ABO blood phenotypes. Also, peripheral parasitemia and the parasite marker, Histidine-Rich Protein 2 (HRP-2), were used as markers of parasite invasion.",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Cross-sectional laboratory comparisons; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model."
       }
     },
     {
@@ -11749,6 +12009,19 @@
             "text": "Kamuzu University of Health Sciences"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "Applied",
+        "modelType": "Statistical",
+        "representation": "Data",
+        "purpose": "Prediction",
+        "specificModel": "Multivariable machine-learning models",
+        "objectiveExtract": "We aim to identify antigenic PfEMP1 targets and elucidate functional features of antibodies associated with CM protection.",
+        "objectiveBasis": "Abstract introduction/background (extracted or inferred)",
+        "confidence": "High",
+        "evidence": "Multivariable machine-learning models; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Data-driven analysis is described, but the abstract does not establish a model of disease risk, progression or transmission."
       }
     },
     {
@@ -11786,6 +12059,19 @@
             "text": "Livestock and One Health, University of Liverpool, Liverpool, UK"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "Unclear",
+        "modelType": "Statistical",
+        "representation": "Data",
+        "purpose": "Explanation",
+        "specificModel": "Matched case-control association analysis",
+        "objectiveExtract": "This study identifies risk factors for paediatric Campylobacter-associated diarrhoea that have not previously been investigated in Malawi.",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Matched case-control association analysis; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract."
       }
     },
     {
@@ -11827,6 +12113,19 @@
             "text": "Kamuzu University of Health Sciences, Blantyre, Malawi"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "Applied",
+        "modelType": "Statistical",
+        "representation": "Data",
+        "purpose": "Explanation",
+        "specificModel": "High-dimensional immune profiling",
+        "objectiveExtract": "We therefore sought to define the cellular, memory, and tissue-residency landscapes of the nasal and female genital tract (FGT) mucosa in adult women in Malawi.",
+        "objectiveBasis": "Abstract introduction/background (extracted or inferred)",
+        "confidence": "High",
+        "evidence": "High-dimensional immune profiling; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract."
       }
     },
     {
@@ -11884,6 +12183,19 @@
             "text": "Department of Clinical Sciences, Liverpool School of Tropical Medicine, Liverpool, United Kingdom"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "No",
+        "modelType": "None",
+        "representation": "Neither",
+        "purpose": "Understanding/theory",
+        "specificModel": "Longitudinal carriage and shedding measurements",
+        "objectiveExtract": "Investigate: IMPLICATIONS OF PNEUMOCOCCAL CARRIAGE, SHEDDING, ANTIMICROBIAL RESISTANCE PATTERNS, AND POTENTIAL WITHIN-HOUSEHOLD TRANSMISSION IN MALAWI",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Longitudinal carriage and shedding measurements; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model."
       }
     },
     {
@@ -11921,6 +12233,19 @@
             "text": "Cornell University, Ithaca, New York, United States of America"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "No",
+        "modelType": "None",
+        "representation": "Neither",
+        "purpose": "Explanation",
+        "specificModel": "Experimental screening",
+        "objectiveExtract": "RESEARCH QUESTION & OBJECTIVE This study investigates how epigenetic reprogramming of lung-resident macrophages influences HIV replication, aiming to identify epigenetic compounds that restrict viral replication in an ex vivo human AM model.",
+        "objectiveBasis": "Abstract introduction/background (extracted or inferred)",
+        "confidence": "High",
+        "evidence": "Experimental screening; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation."
       }
     },
     {
@@ -11974,6 +12299,19 @@
             "text": "University of Liverpool, Liverpool, United Kingdom"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "No",
+        "modelType": "None",
+        "representation": "Neither",
+        "purpose": "Explanation",
+        "specificModel": "Environmental and clinical surveillance comparison",
+        "objectiveExtract": ". If concordance between environmental and clinical serotype distributions is confirmed, ES could serve as a scalable, low-cost tool to monitor vaccine impact without reliance on facility-based surveillance alone.",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Environmental and clinical surveillance comparison; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model."
       }
     },
     {
@@ -12031,6 +12369,19 @@
             "text": "School of Life Science and Allied Health Professions, Kamuzu University of Health Sciences, Blantyre, Malawi"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "Applied",
+        "modelType": "Statistical",
+        "representation": "Data",
+        "purpose": "Understanding/theory",
+        "specificModel": "Genomic phylogenetic analysis",
+        "objectiveExtract": "Investigate: LINEAGE AND CAPSULAR LOCUS DIVERSIFICATION OF PERSISTENTLY CARRIED PNEUMOCOCCAL SEROTYPES 3 AND 19F AMONG ADULTS IN MALAWI",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Genomic phylogenetic analysis; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract."
       }
     },
     {
@@ -12076,6 +12427,19 @@
             "text": "Institute of Infection, Veterinary and Ecological Sciences, University of Liverpool, Liverpool, United Kingdom"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "No",
+        "modelType": "None",
+        "representation": "Neither",
+        "purpose": "Illustration",
+        "specificModel": "Software dashboard; not necessarily a scientific model",
+        "objectiveExtract": "Microbiology and antimicrobial resistance (AMR) data are critical for antimicrobial stewardship but remain underused in many low- and middle-income country hospitals, where",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Software dashboard; not necessarily a scientific model; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model."
       }
     },
     {
@@ -12113,6 +12477,19 @@
             "text": "Liverpool School of Tropical Medicine, International Public Health Department, Pembroke Place, Liverpool L3 5QA, United Kingdom"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "No",
+        "modelType": "None",
+        "representation": "Neither",
+        "purpose": "Understanding/theory",
+        "specificModel": "Qualitative photovoice analysis",
+        "objectiveExtract": "This community engagement project adopted a bottom-up approach to understand the perspectives and lived experiences of individuals about the health impacts of climate change.",
+        "objectiveBasis": "Abstract introduction/background (extracted or inferred)",
+        "confidence": "High",
+        "evidence": "Qualitative photovoice analysis; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model."
       }
     },
     {
@@ -12170,6 +12547,19 @@
             "text": "Institute of Social and Preventive Medicine (ISPM), University of Bern, Switzerland"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "Applied",
+        "modelType": "Simulation + Statistical",
+        "representation": "Both",
+        "purpose": "Explanation",
+        "specificModel": "Climate ensemble counterfactual scenarios and malaria burden attribution",
+        "objectiveExtract": "Investigate: QUANTIFYING THE MALARIA BURDEN ATTRIBUTABLE TO ANTHROPOGENIC CLIMATE CHANGE IN MALAWI",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Climate ensemble counterfactual scenarios and malaria burden attribution; verify full paper for complete methods",
+        "diseaseModelling": "Yes",
+        "diseaseModellingBasis": "Climate-attributable malaria burden modelling"
       }
     },
     {
@@ -12211,6 +12601,19 @@
             "text": "Centre for Sexual Health, HIV and AIDS Research (CeSHHAR), Harare, Zimbabwe"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "No",
+        "modelType": "None",
+        "representation": "Neither",
+        "purpose": "Understanding/theory",
+        "specificModel": "Mixed-methods health systems research",
+        "objectiveExtract": "Investigate: ADVANCING HEALTH SYSTEMS RESILIENCE RESEARCH IN THE CONTEXT OF CLIMATE-INDUCED DISASTERS: EVIDENCE FROM KENYA, MALAWI, AND ZIMBABWE",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Mixed-methods health systems research; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model."
       }
     },
     {
@@ -12272,6 +12675,19 @@
             "text": "Department of Space Science and Applied Physics, University of Zimbabwe, MP167, Mt Pleasant, Harare, Zimbabwe"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "Applied",
+        "modelType": "Statistical",
+        "representation": "Data",
+        "purpose": "Explanation",
+        "specificModel": "Case-crossover distributed non-linear lag model",
+        "objectiveExtract": "Investigate: ASSESSING THE ACUTE EFFECTS OF PM2.5 AND INTERACTION WITH TEMPERATURE ON PRETERM BIRTH: A CASE-CROSSOVER AND GENERALIZED ADDITIVE MODEL STUDY DESIGN IN SUB-SAHARAN AFRICA (ASPIT STUDY)",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Case-crossover distributed non-linear lag model; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract."
       }
     },
     {
@@ -12321,6 +12737,19 @@
             "text": "Quality Management Directorate, Ministry of Health"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "No",
+        "modelType": "None",
+        "representation": "Neither",
+        "purpose": "Explanation",
+        "specificModel": "Implementation study and prevalence/cost surveys",
+        "objectiveExtract": "The IPC-Implement study aimed to develop and evaluate a context-specific, multifaceted implementation strategy to improve IPC practices in tertiary hospitals.",
+        "objectiveBasis": "Abstract introduction/background (extracted or inferred)",
+        "confidence": "High",
+        "evidence": "Implementation study and prevalence/cost surveys; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model."
       }
     },
     {
@@ -12354,6 +12783,19 @@
             "text": "University of Liverpool, Liverpool, United Kingdom"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "Applied",
+        "modelType": "Statistical",
+        "representation": "Data",
+        "purpose": "Explanation",
+        "specificModel": "Meta-analysis and incidence/association estimation",
+        "objectiveExtract": "Investigate: UNDERSTANDING SEVERE MATERNAL INFECTIONS AND IMPACTING HEALTH OUTCOMES IN MALAWI: A MIXED-METHODS IMPLEMENTATION SCIENCE STUDY",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Meta-analysis and incidence/association estimation; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract."
       }
     },
     {
@@ -12395,6 +12837,19 @@
             "text": "Kamuzu University of Health Sciences"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "Applied",
+        "modelType": "Statistical",
+        "representation": "Data",
+        "purpose": "Explanation",
+        "specificModel": "Multivariable logistic regression and spatial analysis",
+        "objectiveExtract": "Investigate: PREVALENCE, DETERMINANTS AND SPATIAL INEQUALITIES IN DELAYED INITIATION OF FIRST ANTENATAL CARE AMONG REPRODUCTIVE WOMEN IN MALAWI: A SECONDARY ANALYSIS OF DHS DATA",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Multivariable logistic regression and spatial analysis; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Statistical analysis of observed associations; no explicit disease prediction, progression or transmission model is described."
       }
     },
     {
@@ -12428,6 +12883,19 @@
           1
         ],
         "note": "Affiliation supplied by the user for the author."
+      },
+      "modelClassification": {
+        "development": "No",
+        "modelType": "None",
+        "representation": "Neither",
+        "purpose": "Explanation",
+        "specificModel": "Proposed randomised trial",
+        "objectiveExtract": "OBJECTIVE To evaluate the effect of multiple micronutrient supplementation on hemoglobin levels among anaemic adolescent girls attending public secondary schools in Blantyre, Malawi.",
+        "objectiveBasis": "Abstract introduction/background (extracted or inferred)",
+        "confidence": "High",
+        "evidence": "Proposed randomised trial; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation."
       }
     },
     {
@@ -12493,6 +12961,19 @@
             "text": "Department of Health Systems and Policy, Kamuzu University of Health Sciences, Blantyre, Malawi"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "No",
+        "modelType": "None",
+        "representation": "Neither",
+        "purpose": "Understanding/theory",
+        "specificModel": "Phenomenological qualitative study",
+        "objectiveExtract": "Investigate: EXPERIENCES OF VULNERABLE MATERNITY SERVICE USERS IN MALAWI AND ZAMBIA 1 1 2 3 Mtisunge Joshua Gondwe , Chifundo Kondoni , Arnold Hamapa , Catherine Bamuya , Annie",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Phenomenological qualitative study; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation."
       }
     },
     {
@@ -12554,6 +13035,19 @@
             "text": "Department of Health Systems and Policy, Kamuzu University of Health Sciences, Blantyre, Malawi"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "No",
+        "modelType": "None",
+        "representation": "Neither",
+        "purpose": "Illustration",
+        "specificModel": "Co-design and validation of feedback tool",
+        "objectiveExtract": "Investigate: MEASURING WOMEN'S EXPERIENCES WITH MATERNITY SERVICES: DEVELOPMENT OF A FEEDBACK TOOL IN MALAWI 1 1 1 1 Chifundo Kondoni , Mtisunge Joshua Gondwe , Yamikani Chimwaza , Leonard Mndala , Annie",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Co-design and validation of feedback tool; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation."
       }
     },
     {
@@ -12607,6 +13101,19 @@
             "text": "Department of Mental Health and Psychiatry, Kamuzu University of Health Sciences, Malawi"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "Planned",
+        "modelType": "Statistical",
+        "representation": "Data",
+        "purpose": "Prediction",
+        "specificModel": "Planned diagnostic accuracy and predictive validity assessment",
+        "objectiveExtract": "We will identify predictors of NDDs and functioning in early school age children, including STREAM scores.",
+        "objectiveBasis": "Abstract introduction/background (extracted or inferred)",
+        "confidence": "Medium",
+        "evidence": "Planned diagnostic accuracy and predictive validity assessment; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract."
       }
     },
     {
@@ -12644,6 +13151,19 @@
             "text": "Training Department, Malawi Liverpool Wellcome Research Programme, Blantyre, Malawi"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "No",
+        "modelType": "None",
+        "representation": "Neither",
+        "purpose": "Understanding/theory",
+        "specificModel": "Scoping review",
+        "objectiveExtract": "Investigate: MAPPING INTERVENTIONS ADDRESSING HIV CARE ENGAGEMENT AMONG MOBILE POPULATIONS IN SUB-SAHARAN AFRICA: A SCOPING REVIEW",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Scoping review; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model."
       }
     },
     {
@@ -12677,6 +13197,19 @@
             "text": "Centre for Tuberculosis Research, Liverpool School of Tropical Medicine, Liverpool, United Kingdom"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "No",
+        "modelType": "None",
+        "representation": "Neither",
+        "purpose": "Understanding/theory",
+        "specificModel": "Qualitative analysis using conceptual framework",
+        "objectiveExtract": "Investigate: GENDERED BARRIERS AND ENABLERS TO TUBERCULOSIS PREVENTIVE THERAPY AND VACCINATION: A QUALITATIVE STUDY FROM URBAN BLANTYRE, MALAWI",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Qualitative analysis using conceptual framework; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model."
       }
     },
     {
@@ -12722,6 +13255,19 @@
             "text": "Center for Disease Control and Prevention, Addis Ababa, Ethiopia"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "No",
+        "modelType": "None",
+        "representation": "Neither",
+        "purpose": "Understanding/theory",
+        "specificModel": "Formative mixed-methods research",
+        "objectiveExtract": "Dried spot technology offers a promising fit-for-purpose alternative by making the collection, storage and transportation of clinical specimens for the diagnosis of meningitis simpler, safer and more accessible. Here, we describe the development of a Target Product Profile (TPP) for a dried spot kit (DSK) informed by stakeholders' perspectives.",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Formative mixed-methods research; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model."
       }
     },
     {
@@ -12763,6 +13309,19 @@
             "text": "Kamuzu University of Health Sciences (KUHeS), Health Economics and Policy Unit, Blantyre, Malawi"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "No",
+        "modelType": "None",
+        "representation": "Neither",
+        "purpose": "Explanation",
+        "specificModel": "Usability survey and thematic analysis",
+        "objectiveExtract": "Therefore, evaluating platform usability helps identify implementation challenges and select teleradiology platforms that are fit for purpose in resource-constrained radiology settings.",
+        "objectiveBasis": "Abstract introduction/background (extracted or inferred)",
+        "confidence": "High",
+        "evidence": "Usability survey and thematic analysis; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model."
       }
     },
     {
@@ -12804,6 +13363,19 @@
             "text": "Liverpool School of Tropical Medicine, Liverpool, UK"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "Unclear",
+        "modelType": "Statistical",
+        "representation": "Data",
+        "purpose": "Explanation",
+        "specificModel": "Attributable Shigella burden estimation",
+        "objectiveExtract": "Investigate: SHIGELLA BURDEN, SEROTYPES AND ANTIMICROBIAL RESISTANCE AMONG CHILDREN UNDER FIVE IN LOW- AND MIDDLE-INCOME COUNTRIES: THE ENTERICS FOR GLOBAL HEALTH STUDY",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Attributable Shigella burden estimation; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract."
       }
     },
     {
@@ -12849,6 +13421,19 @@
             "text": "Liverpool School of Tropical Medicine (UK)"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "No",
+        "modelType": "None",
+        "representation": "Neither",
+        "purpose": "Explanation",
+        "specificModel": "Observational cohort in progress",
+        "objectiveExtract": "This study will examine whether antibiotics and hospitalisation for community-acquired pneumonia (CAP) change nasopharyngeal AMR carriage in Malawian children.",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Observational cohort in progress; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model."
       }
     },
     {
@@ -12894,6 +13479,19 @@
             "text": "School of Medicine, University of St Andrews, St Andrews, UK"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "Applied",
+        "modelType": "Statistical",
+        "representation": "Data",
+        "purpose": "Prediction",
+        "specificModel": "Lot quality assurance sampling decision thresholds",
+        "objectiveExtract": "Investigate: LOT QUALITY ASSURANCE SAMPLING AS A TOOL FOR ANTIMICROBIAL RESISTANCE SURVEILLANCE IN MALAWI",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Lot quality assurance sampling decision thresholds; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract."
       }
     },
     {
@@ -12975,6 +13573,19 @@
             "text": "Department of Microbiology, Genetics, and Immunology, Michigan State University, East Lansing, Michigan, USA"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "Applied",
+        "modelType": "Statistical",
+        "representation": "Data",
+        "purpose": "Explanation",
+        "specificModel": "Mediation analysis of knowledge, attitudes and practices",
+        "objectiveExtract": "Investigate: BEYOND KNOWLEDGE: ATTITUDES AS A PATHWAY TO RABIES-SAFE PRACTICES IN URBAN LILONGWE, MALAWI",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Mediation analysis of knowledge, attitudes and practices; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Statistical analysis of observed associations; no explicit disease prediction, progression or transmission model is described."
       }
     },
     {
@@ -13024,6 +13635,19 @@
             "text": "Centre for Child and Adolescent Health Research, Western Sydney (Baludarri) Precinct, Faculty of Medicine & Health, University of Sydney"
           }
         ]
+      },
+      "modelClassification": {
+        "development": "Applied",
+        "modelType": "Statistical",
+        "representation": "Data",
+        "purpose": "Prediction",
+        "specificModel": "Clinical prediction model using PfHRP2",
+        "objectiveExtract": "We aimed to improve the diagnostic accuracy of cerebral malaria among children with discordant malaria test results in resource-limited settings.",
+        "objectiveBasis": "Abstract introduction/background (extracted or inferred)",
+        "confidence": "High",
+        "evidence": "Clinical prediction model using PfHRP2; verify full paper for complete methods",
+        "diseaseModelling": "Yes",
+        "diseaseModellingBasis": "Clinical prediction of malaria-related coma aetiology"
       }
     },
     {
@@ -13057,6 +13681,19 @@
           1
         ],
         "note": "Affiliation supplied by the user for all authors."
+      },
+      "modelClassification": {
+        "development": "Applied",
+        "modelType": "Statistical",
+        "representation": "Data",
+        "purpose": "Illustration",
+        "specificModel": "Existing large language model for questionnaire-to-form conversion",
+        "objectiveExtract": "Electronic data capture with Open Data Kit (ODK) underpins many health studies in Malawi, yet converting paper questionnaires into ODK XLSForms remains manual, slow, and error-prone, demanding specialist knowledge of XLSForm structure, skip logic, and ODK's restrictive XPath dialect. We developed ODKForm GenAI, a web-based system that uses generative artificial intelligence to automate this conversion while keeping a human in the loop.",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Existing large language model for questionnaire-to-form conversion; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract."
       }
     },
     {
@@ -13090,6 +13727,19 @@
           1
         ],
         "note": "Single unnumbered institutional affiliation appears beneath the full author list; treated as applying to listed authors."
+      },
+      "modelClassification": {
+        "development": "No",
+        "modelType": "None",
+        "representation": "Neither",
+        "purpose": "Understanding/theory",
+        "specificModel": "Evidence juries and knowledge translation",
+        "objectiveExtract": "Despite the growth of evidence synthesis, translating findings into timely and actionable policy remains a persistent challenge, particularly in low- and middle-income countries (LMICs). Co-production approaches that actively engage policymakers and stakeholders throughout the evidence-to-decision process are increasingly recognized as critical to improving uptake. Evidence juries represent an emerging deliberative model that facilitates collective interpretation of evidence and supports context-responsive decision-making.",
+        "objectiveBasis": "Inferred from title; verify against full paper",
+        "confidence": "Medium",
+        "evidence": "Evidence juries and knowledge translation; verify full paper for complete methods",
+        "diseaseModelling": "No",
+        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation."
       }
     }
   ]
