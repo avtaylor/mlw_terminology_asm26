@@ -824,15 +824,31 @@ function renderLiverpoolFocus(){
 // Article-level modelling taxonomy: generated from the 50 abstract records.
 function renderModelClassifications(){
  const target=document.querySelector('#modelClassificationRows');if(!target||!DATA)return;
- const disease=document.querySelector('#diseaseModelFilter')?.value||'',dev=document.querySelector('#modelDevFilter')?.value||'',rep=document.querySelector('#modelRepFilter')?.value||'',purpose=document.querySelector('#modelPurposeFilter')?.value||'',query=(document.querySelector('#modelSearch')?.value||'').toLowerCase();
- const rows=DATA.abstracts.filter(a=>{const c=a.modelClassification||{};return (!disease||c.diseaseModelling===disease)&&(!dev||c.development===dev)&&(!rep||c.representation===rep)&&(!purpose||c.purpose===purpose)&&(!query||[a['Abstract title'],c.specificModel,c.objectiveExtract].join(' ').toLowerCase().includes(query));});
+ const disease=document.querySelector('#diseaseModelFilter')?.value||'',dev=document.querySelector('#modelDevFilter')?.value||'',rep=document.querySelector('#modelRepFilter')?.value||'',purpose=document.querySelector('#modelPurposeFilter')?.value||'',approach=document.querySelector('#modelApproachFilter')?.value||'',query=(document.querySelector('#modelSearch')?.value||'').toLowerCase();
+ const rows=DATA.abstracts.filter(a=>{const c=a.modelClassification||{};return (!disease||c.diseaseModelling===disease)&&(!dev||c.development===dev)&&(!rep||c.representation===rep)&&(!purpose||c.purpose===purpose)&&(!approach||String(c.modelType||'').toLowerCase().includes(approach.toLowerCase()))&&(!query||[a['Abstract title'],c.specificModel,c.objectiveExtract].join(' ').toLowerCase().includes(query));});
  const makeChart=(id,labels,getLabels)=>{const el=document.getElementById(id);if(!el)return;const counts=labels.map(label=>({label,n:rows.filter(a=>getLabels(a.modelClassification||{}).includes(label)).length}));const max=Math.max(1,...counts.map(x=>x.n));el.innerHTML=counts.map(({label,n})=>`<div class="model-bar-row"><span class="model-bar-label">${esc(label)}</span><div class="model-bar-track"><div class="model-bar-fill" style="width:${100*n/max}%"></div></div><strong class="model-bar-value">${n}</strong></div>`).join('');el.setAttribute('aria-label',counts.map(x=>`${x.label}: ${x.n}`).join('; '));};
  makeChart('diseaseModelChart',['Yes','No'],c=>[c.diseaseModelling||'No']);
  makeChart('modelTypeChart',['Statistical','Mathematical','Simulation'],c=>['Statistical','Mathematical','Simulation'].filter(x=>String(c.modelType||'').toLowerCase().includes(x.toLowerCase())));
  makeChart('modelPurposeChart',['Prediction','Explanation','Understanding/theory','Illustration','Analogy','Other/unclear'],c=>{const p=String(c.purpose||'');return ['Prediction','Explanation','Understanding/theory','Illustration','Analogy'].includes(p)?[p]:['Other/unclear']});
  document.querySelector('#modelCount').textContent=`Showing ${rows.length} of ${DATA.abstracts.length} abstracts`;
- target.innerHTML=rows.map(a=>{const c=a.modelClassification||{};return `<tr><td><button type="button" class="stream-abstract-link" data-stream-abstract="${esc(a['Abstract ID'])}">A${esc(a['Abstract ID'])}</button><div class="classification-title">${esc(a['Abstract title'])}</div></td><td><strong>${esc(c.diseaseModelling||"No")}</strong><div class="classification-basis">${esc(c.diseaseModellingBasis||"")}</div></td><td>${esc(c.development)}</td><td>${esc(c.modelType)}</td><td>${esc(c.representation)}</td><td>${esc(c.purpose)}</td><td>${esc(c.specificModel)}</td><td>${esc(c.objectiveExtract)}<div class="classification-basis">${esc(c.objectiveBasis)} · Confidence: ${esc(c.confidence)}</div></td></tr>`}).join('');
+ target.innerHTML=rows.map(a=>{const c=a.modelClassification||{};return `<tr><td><button type="button" class="stream-abstract-link" data-stream-abstract="${esc(a['Abstract ID'])}">A${esc(a['Abstract ID'])}</button><div class="classification-title">${esc(a['Abstract title'])}</div></td><td><strong>${esc(c.diseaseModelling||"No")}</strong><div class="classification-basis">${esc(c.diseaseModellingBasis||"")}</div></td><td>${esc(c.development)}</td><td>${esc(c.modelType)}</td><td>${esc(c.representation)}</td><td>${esc(c.purpose)}</td><td>${esc(c.specificModel)}</td><td>${esc(c.objectiveExtract)}<div class="classification-basis">${esc(c.objectiveBasis)} · Confidence: ${esc(c.confidence)}</div></td><td><strong>${esc(c.forecasting||"Unclear")}</strong><div class="classification-basis">${esc(c.forecastingBasis||"")}</div></td></tr>`}).join('');
 }
-document.querySelectorAll('#diseaseModelFilter,#modelDevFilter,#modelRepFilter,#modelPurposeFilter,#modelSearch').forEach(el=>el.addEventListener('input',renderModelClassifications));
+document.querySelectorAll('#diseaseModelFilter,#modelDevFilter,#modelRepFilter,#modelPurposeFilter,#modelApproachFilter,#modelSearch').forEach(el=>el.addEventListener('input',renderModelClassifications));
 document.querySelector('#modelClassificationRows')?.addEventListener('click',e=>{const b=e.target.closest('[data-stream-abstract]');if(b)openStreamAbstract(b.dataset.streamAbstract)});
 const modelClassPoll=setInterval(()=>{if(DATA){clearInterval(modelClassPoll);renderModelClassifications()}},100);
+
+// Section navigation opens collapsed targets before scrolling.
+document.querySelectorAll('.expertise-page-nav a').forEach(a=>a.addEventListener('click',()=>{const d=document.querySelector(a.getAttribute('href'));if(d)d.open=true;}));
+document.querySelectorAll('[data-expertise-toggle]').forEach(b=>b.addEventListener('click',()=>{const open=b.dataset.expertiseToggle==='expand';document.querySelectorAll('#opportunities .expertise-collapse').forEach(d=>d.open=open);}));
+
+// v19: floating return-to-top button, only while Expertise & Datasets is visible.
+(()=>{
+ const button=document.getElementById('expertiseBackTop');
+ const page=document.getElementById('opportunities');
+ if(!button||!page)return;
+ const update=()=>{button.classList.toggle('is-visible',!page.hidden && window.scrollY>240);};
+ window.addEventListener('scroll',update,{passive:true});
+ document.addEventListener('click',()=>requestAnimationFrame(update));
+ button.addEventListener('click',()=>{page.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});});
+ update();
+})();

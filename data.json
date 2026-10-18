@@ -10790,7 +10790,9 @@
         "confidence": "High",
         "evidence": "Elastic-net logistic regression; random forest; support vector machines; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Statistical analysis of observed associations; no explicit disease prediction, progression or transmission model is described."
+        "diseaseModellingBasis": "Statistical analysis of observed associations; no explicit disease prediction, progression or transmission model is described.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -10856,7 +10858,9 @@
         "confidence": "Medium",
         "evidence": "Vaccine impact analysis; model specification not explicit; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Statistical analysis of observed associations; no explicit disease prediction, progression or transmission model is described."
+        "diseaseModellingBasis": "Statistical analysis of observed associations; no explicit disease prediction, progression or transmission model is described.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -10922,7 +10926,9 @@
         "confidence": "Medium",
         "evidence": "Genomic comparison and phylogenetic analysis; no newly developed model stated; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation."
+        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -10992,7 +10998,9 @@
         "confidence": "High",
         "evidence": "Systems serology multivariate analysis; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract."
+        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -11066,7 +11074,9 @@
         "confidence": "Medium",
         "evidence": "Virological and serological descriptive study; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model."
+        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -11128,7 +11138,9 @@
         "confidence": "Medium",
         "evidence": "Vaccine impact analysis; verify full methods; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Statistical analysis of observed associations; no explicit disease prediction, progression or transmission model is described."
+        "diseaseModellingBasis": "Statistical analysis of observed associations; no explicit disease prediction, progression or transmission model is described.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -11198,7 +11210,9 @@
         "confidence": "Medium",
         "evidence": "Diagnostic assay evaluation; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation."
+        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -11260,7 +11274,9 @@
         "confidence": "Medium",
         "evidence": "Vaccine trial safety and immunogenicity analysis; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation."
+        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -11318,7 +11334,9 @@
         "confidence": "Medium",
         "evidence": "Spatial generalised additive models; verify full paper for complete methods",
         "diseaseModelling": "Yes",
-        "diseaseModellingBasis": "Spatial models of malaria and schistosomiasis risk"
+        "diseaseModellingBasis": "Spatial models of malaria and schistosomiasis risk",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -11364,7 +11382,9 @@
         "confidence": "High",
         "evidence": "Single-cell computational analysis and gene-set enrichment; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract."
+        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -11430,7 +11450,9 @@
         "confidence": "High",
         "evidence": "Physics-based environmental simulation; U-Net segmentation; verify full paper for complete methods",
         "diseaseModelling": "Yes",
-        "diseaseModellingBasis": "Environmental exposure and transmission scenarios relevant to infectious disease"
+        "diseaseModellingBasis": "Environmental exposure and transmission scenarios relevant to infectious disease",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -11500,7 +11522,9 @@
         "confidence": "Medium",
         "evidence": "Randomised trial; no explicit model in abstract; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation."
+        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -11554,7 +11578,9 @@
         "confidence": "Medium",
         "evidence": "Diagnostic test performance; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation."
+        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -11615,7 +11641,9 @@
         "confidence": "High",
         "evidence": "Human–mosquito compartmental transmission model with chemoprevention; verify full paper for complete methods",
         "diseaseModelling": "Yes",
-        "diseaseModellingBasis": "Mechanistic malaria transmission and chemoprevention"
+        "diseaseModellingBasis": "Mechanistic malaria transmission and chemoprevention",
+        "forecasting": "Unclear",
+        "forecastingBasis": "Scenario projections may be forward-looking, but an explicit time-specific forecast is not established from the classification."
       }
     },
     {
@@ -11661,7 +11689,9 @@
         "confidence": "Medium",
         "evidence": "Social network analysis; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract."
+        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -11715,7 +11745,9 @@
         "confidence": "Medium",
         "evidence": "SEIR model outputs for cost-effectiveness analysis; verify full paper for complete methods",
         "diseaseModelling": "Yes",
-        "diseaseModellingBasis": "Malaria transmission model used in economic evaluation"
+        "diseaseModellingBasis": "Malaria transmission model used in economic evaluation",
+        "forecasting": "Unclear",
+        "forecastingBasis": "Scenario projections may be forward-looking, but an explicit time-specific forecast is not established from the classification."
       }
     },
     {
@@ -11793,7 +11825,9 @@
         "confidence": "Medium",
         "evidence": "Annual risk of TB infection estimation; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract."
+        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -11847,7 +11881,9 @@
         "confidence": "Medium",
         "evidence": "Random-effects meta-analysis; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Statistical analysis of observed associations; no explicit disease prediction, progression or transmission model is described."
+        "diseaseModellingBasis": "Statistical analysis of observed associations; no explicit disease prediction, progression or transmission model is described.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -11909,7 +11945,9 @@
         "confidence": "Medium",
         "evidence": "Randomised intervention comparison; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model."
+        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -11963,7 +12001,9 @@
         "confidence": "Medium",
         "evidence": "Cross-sectional laboratory comparisons; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model."
+        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -12021,7 +12061,9 @@
         "confidence": "High",
         "evidence": "Multivariable machine-learning models; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Data-driven analysis is described, but the abstract does not establish a model of disease risk, progression or transmission."
+        "diseaseModellingBasis": "Data-driven analysis is described, but the abstract does not establish a model of disease risk, progression or transmission.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -12071,7 +12113,9 @@
         "confidence": "Medium",
         "evidence": "Matched case-control association analysis; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract."
+        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -12125,7 +12169,9 @@
         "confidence": "High",
         "evidence": "High-dimensional immune profiling; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract."
+        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -12195,7 +12241,9 @@
         "confidence": "Medium",
         "evidence": "Longitudinal carriage and shedding measurements; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model."
+        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -12245,7 +12293,9 @@
         "confidence": "High",
         "evidence": "Experimental screening; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation."
+        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -12311,7 +12361,9 @@
         "confidence": "Medium",
         "evidence": "Environmental and clinical surveillance comparison; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model."
+        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -12381,7 +12433,9 @@
         "confidence": "Medium",
         "evidence": "Genomic phylogenetic analysis; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract."
+        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -12439,7 +12493,9 @@
         "confidence": "Medium",
         "evidence": "Software dashboard; not necessarily a scientific model; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model."
+        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -12489,7 +12545,9 @@
         "confidence": "High",
         "evidence": "Qualitative photovoice analysis; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model."
+        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -12559,7 +12617,9 @@
         "confidence": "Medium",
         "evidence": "Climate ensemble counterfactual scenarios and malaria burden attribution; verify full paper for complete methods",
         "diseaseModelling": "Yes",
-        "diseaseModellingBasis": "Climate-attributable malaria burden modelling"
+        "diseaseModellingBasis": "Climate-attributable malaria burden modelling",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -12613,7 +12673,9 @@
         "confidence": "Medium",
         "evidence": "Mixed-methods health systems research; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model."
+        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -12687,7 +12749,9 @@
         "confidence": "Medium",
         "evidence": "Case-crossover distributed non-linear lag model; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract."
+        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -12749,7 +12813,9 @@
         "confidence": "High",
         "evidence": "Implementation study and prevalence/cost surveys; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model."
+        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -12795,7 +12861,9 @@
         "confidence": "Medium",
         "evidence": "Meta-analysis and incidence/association estimation; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract."
+        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -12849,7 +12917,9 @@
         "confidence": "Medium",
         "evidence": "Multivariable logistic regression and spatial analysis; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Statistical analysis of observed associations; no explicit disease prediction, progression or transmission model is described."
+        "diseaseModellingBasis": "Statistical analysis of observed associations; no explicit disease prediction, progression or transmission model is described.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -12895,7 +12965,9 @@
         "confidence": "High",
         "evidence": "Proposed randomised trial; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation."
+        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -12973,7 +13045,9 @@
         "confidence": "Medium",
         "evidence": "Phenomenological qualitative study; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation."
+        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -13047,7 +13121,9 @@
         "confidence": "Medium",
         "evidence": "Co-design and validation of feedback tool; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation."
+        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -13113,7 +13189,9 @@
         "confidence": "Medium",
         "evidence": "Planned diagnostic accuracy and predictive validity assessment; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract."
+        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -13163,7 +13241,9 @@
         "confidence": "Medium",
         "evidence": "Scoping review; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model."
+        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -13209,7 +13289,9 @@
         "confidence": "Medium",
         "evidence": "Qualitative analysis using conceptual framework; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model."
+        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -13267,7 +13349,9 @@
         "confidence": "Medium",
         "evidence": "Formative mixed-methods research; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model."
+        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -13321,7 +13405,9 @@
         "confidence": "High",
         "evidence": "Usability survey and thematic analysis; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model."
+        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -13375,7 +13461,9 @@
         "confidence": "Medium",
         "evidence": "Attributable Shigella burden estimation; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract."
+        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -13433,7 +13521,9 @@
         "confidence": "Medium",
         "evidence": "Observational cohort in progress; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model."
+        "diseaseModellingBasis": "Descriptive disease or health profiling; the abstract does not describe construction of a disease model.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -13491,7 +13581,9 @@
         "confidence": "Medium",
         "evidence": "Lot quality assurance sampling decision thresholds; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract."
+        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -13585,7 +13677,9 @@
         "confidence": "Medium",
         "evidence": "Mediation analysis of knowledge, attitudes and practices; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Statistical analysis of observed associations; no explicit disease prediction, progression or transmission model is described."
+        "diseaseModellingBasis": "Statistical analysis of observed associations; no explicit disease prediction, progression or transmission model is described.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -13647,7 +13741,9 @@
         "confidence": "High",
         "evidence": "Clinical prediction model using PfHRP2; verify full paper for complete methods",
         "diseaseModelling": "Yes",
-        "diseaseModellingBasis": "Clinical prediction of malaria-related coma aetiology"
+        "diseaseModellingBasis": "Clinical prediction of malaria-related coma aetiology",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -13693,7 +13789,9 @@
         "confidence": "Medium",
         "evidence": "Existing large language model for questionnaire-to-form conversion; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract."
+        "diseaseModellingBasis": "Statistical analysis of study data; no explicit disease model is established in the abstract.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     },
     {
@@ -13739,7 +13837,9 @@
         "confidence": "Medium",
         "evidence": "Evidence juries and knowledge translation; verify full paper for complete methods",
         "diseaseModelling": "No",
-        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation."
+        "diseaseModellingBasis": "No disease model described; the study reports observations, methods or findings without a formal disease representation.",
+        "forecasting": "No",
+        "forecastingBasis": "No explicit future time-specific forecast identified in the abstract classification."
       }
     }
   ]
